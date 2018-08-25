@@ -1,0 +1,30 @@
+<ul class="social-media-list">
+    {% if site.discord_link %}
+    <li>
+        <a href="{{ site.discord_link }}">
+            <i class="fab fa-discord"></i> Discord
+        </a>
+    </li>
+    {% endif %}
+    {% if site.facebook_username %}
+    <li>
+        <a href="https://www.facebook.com/groups/{{ site.facebook_username }}">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+    </li>
+    {% endif %}
+    {% if site.mal_id %}
+    <li>
+        <a href="https://myanimelist.net/clubs.php?cid={{ site.mal_id }}">
+            <i class="fas fa-link"></i> MAL
+        </a>
+    </li>
+    {% endif %}
+    {% if site.anilist_username %}
+    <li>
+        <a href="https://anilist.co/user/{{ site.anilist_username }}">
+            <i class="fas fa-link"></i> AniList
+        </a>
+    </li>
+    {% endif %}
+</ul>
