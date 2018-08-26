@@ -1,0 +1,37 @@
+---
+---
+
+@import "minima";
+
+.wrapper {
+    max-width: 800px;
+}
+
+/* NAVIGATION BAR
+ -------------------------------------------------- */
+@media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+#navbar {
+  background-color: transparent;
+  padding: 0.5rem 0;
+}
+
+.navbar-expand-md .navbar-collapse {
+  justify-content: flex-end;
+}
+
+#sublink {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#sublink-menu {
+    top: 80%;
+}
+
+#site-title {
+    font-size: 26px;
+}

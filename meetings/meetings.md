@@ -18,22 +18,3 @@ at the start or end of term or used to fill any gaps in the schedule. Most, if n
 these meetings will be independent from the other series being watched at CUAMS so they are
 a good opportunity to come to a meeting if you don't want to commit to watching a whole
 series during term time.
-
-# Main Meetings
-This year main meetings are held once a week on Tuesday from 7-10pm
-
-{% include anime-summary.html
-    title="Nichijou"
-    image="http://cuams.soc.ucam.org/anime/Nichijou.jpg"
-    episodes="26"
-    year="2011"
-    studio="Kyoto Animation"
-    schedule="Lent/Easter 2018"
-    info="foo"
-%}
-
-# Sunday Meetings
-This year Sunday meetings are held once a week on Sundays from 2.30-5.30pm
-
-# Bonus Meetings
-No bonus meetings have been announced just yet but keep an eye out for future updates

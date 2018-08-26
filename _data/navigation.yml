@@ -1,0 +1,11 @@
+- title: About
+  url: /about
+- title: Meetings
+  url: /meetings
+  sublinks:
+    - title: Main Meetings
+      url: /meetings/main
+    - title: Sunday Meetings
+      url: /meetings/sunday
+    - title: Bonus Meetings
+      url: /meetings/bonus
