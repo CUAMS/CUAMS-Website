@@ -1,7 +1,7 @@
 ---
 layout: meeting
 title: Bonus Meetings
-header: No bonus meetings have been announced just yet but keep an eye out for future updates
-type: bonus
+header: Bonus meetings are held sporadically during the year, usually in place of a main or Sunday meeting
+meetingtype: bonus
 permalink: /meetings/bonus
 ---
