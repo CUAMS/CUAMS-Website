@@ -1,0 +1,28 @@
+- type: main
+  shows:
+  - title: Nichijou
+    image: https://cdn.anilist.co/img/dir/anime/reg/10165-8M57FttyMui8.png
+    episodes: 26
+    year: 2011
+    studio: Kyoto Animation
+    schedule: Lent/Easter 2018
+    info:
+    - title: Official Site
+      link: www.kyotoanimation.co.jp/en/works/nichijou/
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=12142
+    - title: MAL
+      link: https://myanimelist.net/anime/10165/Nichijou
+  - title: Mahou Shoujo Madoka★Magica
+    image: https://cdn.anilist.co/img/dir/anime/reg/9756.jpg
+    episodes: 12
+    year: 2011
+    studio: Shaft
+    schedule: Always
+    info:
+    - title: Official Site
+      link: www.kyotoanimation.co.jp/en/works/nichijou/
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=12142
+    - title: MAL
+      link: https://myanimelist.net/anime/10165/Nichijou

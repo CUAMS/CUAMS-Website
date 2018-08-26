@@ -1,16 +1,7 @@
 ---
-layout: page
+layout: meeting
 title: Main Meetings
+header: This year main meetings are held once a week on Tuesday from 7-10pm
+meetingtype: main
 permalink: /meetings/main
 ---
-This year main meetings are held once a week on Tuesday from 7-10pm
-
-{% include anime-summary.html
-    title="Nichijou"
-    image="http://cuams.soc.ucam.org/anime/Nichijou.jpg"
-    episodes="26"
-    year="2011"
-    studio="Kyoto Animation"
-    schedule="Lent/Easter 2018"
-    info="foo"
-%}
