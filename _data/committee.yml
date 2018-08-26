@@ -1,0 +1,55 @@
+- title: Current Committee
+  positions:
+  - role: President
+    image: sam.jpg
+    holder: Sam Gooch
+    email: sg799
+  - role: Secretary
+    image: will.jpg
+    holder: Will Barnes
+    email: wjb49
+  - role: Treasurer
+    image: guoxuan.jpg
+    holder: Guoxuan Xia
+    email: gx218
+  - role: Webmaster
+    image: jemma.jpg
+    holder: Jemma Henry
+    email: jah246
+  - role: Food Lord
+    image: oscar.jpg
+    holder: Oscar Brown
+    email: omb28
+  - role: External Officer
+    holder: Can Hou
+    email: ch714
+  - role: Social Secretary
+    image: ben.jpg
+    holder: Ben Bai
+    email: byhb2
+- title: Previous Committee
+  positions:
+  - role: President
+    image: daniel.jpg
+    holder: Daniel Oakes
+    email: dda02
+  - role: Secretary
+    image: philip.png
+    holder: Philip De Friend
+    email: pd422
+  - role: Treasurer
+    image: sam.jpg
+    holder: Sam Gooch
+    email: sg799
+  - role: Webmaster
+    image: jemma.jpg
+    holder: Jemma Henry
+    email: jah246
+  - role: Food Lord
+    image: anthea.jpg
+    holder: Anthea Chui
+    email: acc70
+  - role: External Officer
+    holder: Anson Lam Ho Ching
+    email: hcal4
+

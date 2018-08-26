@@ -1,3 +1,5 @@
+- title: Home
+  url: /
 - title: About
   url: /about
 - title: Meetings
@@ -11,3 +13,5 @@
       url: /meetings/sunday
     - title: Bonus Meetings
       url: /meetings/bonus
+- title: Committee
+  url: /committee

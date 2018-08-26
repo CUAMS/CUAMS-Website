@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<p>{{ page.header }}</p>
+{{ content }}
 <div class="summary-container">
     {% for meeting in site.data.meetings %}
         {% if meeting.type == page.meetingtype %}

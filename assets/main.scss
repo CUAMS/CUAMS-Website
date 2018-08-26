@@ -11,6 +11,30 @@
     max-width: 800px;
 }
 
+dl {
+    margin: 0;
+}
+
+dt {
+    display: inline;
+    font-weight: bold;
+}
+
+dd {
+    display: inline;
+    margin: 0;
+}
+
+dd:before {
+    content: " ";
+    white-space: pre;
+}
+
+dd:after {
+    content: "\A";
+    white-space: pre;
+}
+
 /* --------------------------------------------------
     NAVIGATION BAR
  -------------------------------------------------- */
@@ -81,26 +105,31 @@ figure img {
     margin-left: 1.5em;
 }
 
-figure dl {
+/* --------------------------------------------------
+    COMMITTEE
+ -------------------------------------------------- */
+
+.committee-container {
+    margin-top: 20px;
+}
+
+#committee-contents {
+    padding: 0;
     margin: 0;
 }
 
-figure dt {
-    display: inline;
-    font-weight: bold;
+.committee-member {
+    display: flex;
+    padding: 8px 0;
 }
 
-figure dd {
-    display: inline;
-    margin: 0;
+.committee-member img {
+    display: block;
+    height: 100%;
+    max-height: 119.2px;
+    width: auto;
 }
 
-figure dd:before {
-    content: " ";
-    white-space: pre;
-}
-
-figure dd:after {
-    content: "\A";
-    white-space: pre;
+.committee-member-details {
+    padding: 8px;
 }

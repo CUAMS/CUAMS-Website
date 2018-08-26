@@ -1,0 +1,25 @@
+---
+layout: page
+---
+{{ content }}
+{% for committee in site.data.committee %}
+    <div class="committee-container">
+        <h2>{{ committee.title }}</h2>
+        <div id="committee-contents" class="container">
+            <div class="row">
+            {% for member in committee.positions %}
+                <div class="committee-member col-12 col-md-6">
+                    <img src="/assets/images/committee/{{ member.image | default: 'default.jpg' }}" alt="{{ member.holder }}"/>
+                    <div class="committee-member-details">
+                        <h3>{{ member.role }}</h3>
+                        <dl>
+                            <dt>Current Holder:</dt><dd>{{ member.holder }}</dd>
+                            <dt>Email:</dt><dd>{{ member.email }}</dd>
+                        </dl>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endfor %}
