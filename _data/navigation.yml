@@ -1,8 +1,10 @@
 - title: About
   url: /about
 - title: Meetings
-  url: /meetings
   sublinks:
+    - title: Summary
+      url: /meetings
+    - title: separator
     - title: Main Meetings
       url: /meetings/main
     - title: Sunday Meetings

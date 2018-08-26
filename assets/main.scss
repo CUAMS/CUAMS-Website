@@ -7,21 +7,17 @@
     max-width: 800px;
 }
 
-/* NAVIGATION BAR
+/* --------------------------------------------------
+    NAVIGATION BAR
  -------------------------------------------------- */
-@media (min-width: 768px) {
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
-}
 
 #navbar {
-  background-color: transparent;
-  padding: 0.5rem 0;
+    background-color: transparent;
+    padding: 0.5rem 0;
 }
 
 .navbar-expand-md .navbar-collapse {
-  justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 #sublink {
@@ -32,6 +28,17 @@
     top: 80%;
 }
 
+@media (max-width: 768px) {
+    #sublink-menu {
+        border: none;
+        margin: 0;
+    }
+}
+
 #site-title {
     font-size: 26px;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
 }
