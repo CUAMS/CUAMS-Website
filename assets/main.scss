@@ -8,7 +8,7 @@
  -------------------------------------------------- */
 
 .wrapper {
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 dl {
@@ -69,6 +69,49 @@ dd:after {
 
 .dropdown-toggle {
     cursor: pointer;
+}
+
+/* --------------------------------------------------
+    BANNER
+ -------------------------------------------------- */
+
+.cuams-banner {
+    background-color: #eee;
+    height: 50vh;
+    display: flex;
+    width: 100%;
+}
+
+.cuams-name {
+    flex-grow: 3;
+    flex-shrink: 1;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cuams-name-text {
+    max-width: 680px;
+}
+
+@media (max-width: 768px) {
+    .banner-mascot-container {
+        display: none;
+    }
+}
+
+.banner-mascot-container {
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.banner-mascot {
+    display: block;
+    height: 100%;
+    width: auto;
 }
 
 /* --------------------------------------------------
