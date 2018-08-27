@@ -3,13 +3,11 @@
 
 @import "minima";
 
+$base-font-family: "Raleway", Arial, sans-serif;
+
 /* --------------------------------------------------
     GLOBAL
  -------------------------------------------------- */
-
-.wrapper {
-    max-width: 1200px;
-}
 
 dl {
     margin: 0;
@@ -33,6 +31,14 @@ dd:before {
 dd:after {
     content: "\A";
     white-space: pre;
+}
+
+.root {
+    font-family: $base-font-family
+}
+
+.wrapper {
+    max-width: 1200px;
 }
 
 /* --------------------------------------------------
@@ -86,33 +92,39 @@ dd:after {
     flex-grow: 3;
     flex-shrink: 1;
     font-size: 3rem;
+    font-family: "Lato", $base-font-family;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .cuams-name-text {
     max-width: 680px;
 }
 
-@media (max-width: 768px) {
-    .banner-mascot-container {
-        display: none;
-    }
-}
-
 .banner-mascot-container {
     flex-grow: 1;
     flex-shrink: 0;
     height: 100%;
-    padding: 8px;
+    padding: 20px;
 }
 
 .banner-mascot {
     display: block;
     height: 100%;
     width: auto;
+}
+
+@media (max-width: 768px) {
+    .banner-mascot-container {
+        display: none;
+    }
+
+    .cuams-name {
+        font-size: 2rem;
+    }
 }
 
 /* --------------------------------------------------
