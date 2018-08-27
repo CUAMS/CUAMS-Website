@@ -13,5 +13,7 @@
       url: /meetings/sunday
     - title: Bonus Meetings
       url: /meetings/bonus
+- title: Schedule
+  url: /schedule
 - title: Committee
   url: /committee
