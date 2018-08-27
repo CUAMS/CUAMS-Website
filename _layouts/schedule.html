@@ -7,14 +7,14 @@ layout: page
     {% for term in site.data.schedule %}
     <div class="term-container">
         <h2>{{ term.term }}</h2>
-        <table class="table term-information">
+        <table class="table table-sm table-responsive-sm term-information">
             <thead class="thead-light">
                 <tr>
                     <th scope="col">Date</th>
                     <th scope="col">Time</th>
                     <th scope="col">Venue</th>
                     <th scope="col">Event</th>
-                    <th scope="col">Details</th>
+                    <th scope="col">Shows</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,7 +24,15 @@ layout: page
                         <td>{{ meeting.time }}</td>
                         <td>{{ meeting.venue }}</td>
                         <td>{{ meeting.event }}</td>
-                        <td>{{ meeting.details }}</td>
+                        <td>
+                            <div class="show-container">
+                                {% for show in meeting.shows %}
+                                    <div class="schedule-show">
+                                        {{ show }}{% unless forloop.last %},&nbsp;{% endunless %}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>
