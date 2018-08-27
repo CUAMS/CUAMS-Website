@@ -3,30 +3,32 @@ layout: page
 ---
 {{ content }}
 {%- assign date_format = site.minima.date_format | default: "%a, %-d %b %Y" -%}
-{% for term in site.data.schedule %}
-<div class="term-container">
-    <h2>{{ term.term }}</h2>
-    <table>
-        <thead>
-            <tr>
-                <td>Date</td>
-                <td>Time</td>
-                <td>Venue</td>
-                <td>Event</td>
-                <td>Details</td>
-            </tr>
-        </thead>
-        <tbody>
-            {% for meeting in term.meetings %}
+<div class="schedule-container">
+    {% for term in site.data.schedule %}
+    <div class="term-container">
+        <h2>{{ term.term }}</h2>
+        <table class="table term-information">
+            <thead class="thead-light">
                 <tr>
-                    <td>{{ meeting.date | date: date_format }}</td>
-                    <td>{{ meeting.time }}</td>
-                    <td>{{ meeting.venue }}</td>
-                    <td>{{ meeting.event }}</td>
-                    <td>{{ meeting.details }}</td>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Venue</th>
+                    <th scope="col">Event</th>
+                    <th scope="col">Details</th>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                {% for meeting in term.meetings %}
+                    <tr>
+                        <td>{{ meeting.date | date: date_format }}</td>
+                        <td>{{ meeting.time }}</td>
+                        <td>{{ meeting.venue }}</td>
+                        <td>{{ meeting.event }}</td>
+                        <td>{{ meeting.details }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}

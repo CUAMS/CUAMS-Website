@@ -162,6 +162,22 @@ figure img {
 }
 
 /* --------------------------------------------------
+    SCHEDULE
+ -------------------------------------------------- */
+
+.schedule-container {
+   padding-top: 8px;
+}
+
+.term-container:not(:first-child) {
+    padding-top: 2rem;
+}
+
+.term-information {
+    margin-top: 1rem;
+}
+
+/* --------------------------------------------------
     COMMITTEE
  -------------------------------------------------- */
 
