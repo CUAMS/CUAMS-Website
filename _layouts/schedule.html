@@ -4,39 +4,43 @@ layout: page
 {{ content }}
 {%- assign date_format = site.minima.date_format | default: "%a, %-d %b %Y" -%}
 <div class="schedule-container">
-    {% for term in site.data.schedule %}
-    <div class="term-container">
-        <h2>{{ term.term }}</h2>
-        <table class="table table-sm table-responsive-sm term-information">
-            <thead class="thead-light">
-                <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">Time</th>
-                    <th scope="col">Venue</th>
-                    <th scope="col">Event</th>
-                    <th scope="col">Shows</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for meeting in term.meetings %}
-                    <tr>
-                        <td>{{ meeting.date | date: date_format }}</td>
-                        <td>{{ meeting.time }}</td>
-                        <td>{{ meeting.venue }}</td>
-                        <td>{{ meeting.event }}</td>
-                        <td>
-                            <div class="show-container">
-                                {% for show in meeting.shows %}
-                                    <div class="schedule-show">
-                                        {{ show }}{% unless forloop.last %},&nbsp;{% endunless %}
+    {% if site.data.schedule.size > 0 %}
+        {% for term in site.data.schedule %}
+            <div class="term-container">
+                <h2>{{ term.term }}</h2>
+                <table class="table table-sm table-responsive-sm term-information">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Venue</th>
+                            <th scope="col">Event</th>
+                            <th scope="col">Shows</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for meeting in term.meetings %}
+                            <tr>
+                                <td>{{ meeting.date | date: date_format }}</td>
+                                <td>{{ meeting.time }}</td>
+                                <td>{{ meeting.venue }}</td>
+                                <td>{{ meeting.event }}</td>
+                                <td>
+                                    <div class="show-container">
+                                        {% for show in meeting.shows %}
+                                            <div class="schedule-show">
+                                                {{ show }}{% unless forloop.last %},&nbsp;{% endunless %}
+                                            </div>
+                                        {% endfor %}
                                     </div>
-                                {% endfor %}
-                            </div>
-                        </td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-    {% endfor %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>The schedule for this year has not yet been finalised; please check back later for updates</p>
+    {% endif %}
 </div>

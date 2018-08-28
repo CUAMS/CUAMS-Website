@@ -2,6 +2,8 @@
   url: /
 - title: About
   url: /about
+- title: News
+  url: /news
 - title: Meetings
   sublinks:
     - title: Summary

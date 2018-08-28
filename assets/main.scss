@@ -3,7 +3,8 @@
 
 @import "minima";
 
-$base-font-family: "Raleway", Arial, sans-serif;
+$base-font-family: "Open Sans", Arial, sans-serif;
+$spacing-unit: 8px;
 
 /* --------------------------------------------------
     GLOBAL
@@ -35,6 +36,11 @@ dd:after {
 
 .root {
     font-family: $base-font-family
+}
+
+.site-header {
+    border: none;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.16);
 }
 
 .wrapper {
@@ -78,11 +84,32 @@ dd:after {
 }
 
 /* --------------------------------------------------
+    FOOTER
+ -------------------------------------------------- */
+
+.social-container {
+    display: flex;
+}
+
+.icon {
+    width: 15px;
+    margin-right: $spacing-unit;
+}
+
+/* --------------------------------------------------
+    HOME
+ -------------------------------------------------- */
+
+.more-link {
+    font-size: 1.5rem;
+}
+
+/* --------------------------------------------------
     BANNER
  -------------------------------------------------- */
 
 .cuams-banner {
-    background-color: #eee;
+    background-color: #A3C1AD;
     height: 50vh;
     display: flex;
     width: 100%;
@@ -92,7 +119,8 @@ dd:after {
     flex-grow: 3;
     flex-shrink: 1;
     font-size: 3rem;
-    font-family: "Lato", $base-font-family;
+    font-family: "Ubuntu", $base-font-family;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +160,7 @@ dd:after {
  -------------------------------------------------- */
 
 .summary-container {
-    padding: 8px 0;
+    padding: $spacing-unit 0;
 }
 
 figure {
@@ -154,7 +182,7 @@ figcaption:after {
 .summary-content {
     display: flex;
     justify-content: space-between;
-    padding: 8px;
+    padding: $spacing-unit;
 }
 
 figure img {
@@ -166,7 +194,7 @@ figure img {
  -------------------------------------------------- */
 
 .schedule-container {
-   padding-top: 8px;
+   padding-top: $spacing-unit;
 }
 
 .term-container:not(:first-child) {
@@ -197,7 +225,7 @@ figure img {
 
 .committee-member {
     display: flex;
-    padding: 8px 0;
+    padding: $spacing-unit 0;
 }
 
 .committee-member img {
@@ -208,5 +236,5 @@ figure img {
 }
 
 .committee-member-details {
-    padding: 8px;
+    padding: $spacing-unit;
 }
