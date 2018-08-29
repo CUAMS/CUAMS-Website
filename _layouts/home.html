@@ -24,13 +24,14 @@ layout: banner-default
                     </h3>
                     {%- if site.show_excerpts -%}
                         {{ post.excerpt }}
+                        <a href="{{ post.url | relative_url }}">Read more...</a>
                     {%- endif -%}
                 </li>
             {%- endfor -%}
+            {%- if site.posts.size > 5 -%}
+            <li><h3><a href="/news" class="more-link">View more posts &rarr;</a></h3></li>
+            {%- endif -%}
         </ul>
-        {%- if site.posts.size > 5 -%}
-            <h3><a href="/news" class="more-link">View more &rarr;</a></h3>
-        {%- endif -%}
     {%- endif -%}
 
 </div>

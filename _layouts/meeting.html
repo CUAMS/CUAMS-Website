@@ -8,8 +8,8 @@ layout: page
                 {% if meeting.shows.size > 0 %}
                     <p>This year we will be watching:</p>
                     {% for show in meeting.shows %}
-                        <figure>
-                            <figcaption>{{ show.title }}</figcaption>
+                        <div class="anime-container">
+                            <div class="show-title">{{ show.title }}</div>
                             <div class="summary-content">
                                 <dl>
                                     <dt>Episodes:</dt><dd>{{ show.episodes }}</dd>
@@ -30,7 +30,7 @@ layout: page
                                 </dl>
                                 <img src="{{ show.image }}" alt="" height="200" width="150">
                             </div>
-                        </figure>
+                        </div>
                     {% endfor %}
                 {% else %}
                     <p>The schedule for this year has not yet been finalised; please check back later for updates</p>

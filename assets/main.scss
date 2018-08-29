@@ -157,6 +157,21 @@ dd:after {
 }
 
 /* --------------------------------------------------
+    NEWS
+ -------------------------------------------------- */
+
+.post-list li:not(:last-child):after {
+    content: '';
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 20px $spacing-unit 0 $spacing-unit;
+}
+
+.post-list li {
+    margin-bottom: 20px;
+}
+
+/* --------------------------------------------------
     SUMMARIES
  -------------------------------------------------- */
 
@@ -164,17 +179,17 @@ dd:after {
     padding: $spacing-unit 0;
 }
 
-figure {
+.anime-container {
     margin-bottom: 1em;
     padding: 1px;
     position: relative;
 }
 
-figcaption {
+.show-title {
     font-size: 2rem;
 }
 
-figcaption:after {
+.show-title:after {
     content: '';
     display: block;
     border: 1px solid #111;
@@ -186,7 +201,7 @@ figcaption:after {
     padding: $spacing-unit;
 }
 
-figure img {
+.show img {
     margin-left: 1.5em;
 }
 
