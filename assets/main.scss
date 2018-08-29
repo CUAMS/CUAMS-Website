@@ -97,6 +97,12 @@ dd:after {
     text-align:center;
 }
 
+.social-media-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
 /* --------------------------------------------------
     HOME
  -------------------------------------------------- */

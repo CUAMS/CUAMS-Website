@@ -21,6 +21,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: cuams
 discord_link: https://discord.gg/aA3Cpqw
+mailing_list: https://lists.srcf.net/mailman/listinfo/cuams-list
+wiki_link: http://cuams.soc.ucam.org/wiki/
 mal_id: 30379
 anilist_username: CUAMS
 

@@ -1,38 +1,58 @@
-<ul class="social-media-list">
+<div class="container social-media-list">
+    <div class="row">
     {% if site.discord_link %}
-    <li>
-        <a href="{{ site.discord_link }}">
-            <div class="social-container">
-                <div class="icon"><i class="fab fa-discord"></i></div>Discord
-            </div>
-        </a>
-    </li>
-    {% endif %}
-    {% if site.facebook_username %}
-    <li>
-        <a href="https://www.facebook.com/groups/{{ site.facebook_username }}">
-            <div class="social-container">
-                <div class="icon"><i class="fab fa-facebook-f"></i></div>Facebook
-            </div>
-        </a>
-    </li>
-    {% endif %}
-    {% if site.mal_id %}
-    <li>
-        <a href="https://myanimelist.net/clubs.php?cid={{ site.mal_id }}">
-            <div class="social-container">
-                <div class="icon"><i class="fas fa-link"></i></div>MAL
-            </div>
-        </a>
-    </li>
-    {% endif %}
-    {% if site.anilist_username %}
-    <li>
-        <a href="https://anilist.co/user/{{ site.anilist_username }}">
-            <div class="social-container">
-                <div class="icon"><i class="fas fa-link"></i></div>AniList
-            </div>
-        </a>
-    </li>
-    {% endif %}
-</ul>
+        <div class="col-6">
+            <a href="{{ site.discord_link }}">
+                <div class="social-container">
+                    <div class="icon"><i class="fab fa-discord"></i></div>Discord
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% if site.facebook_username %}
+        <div class="col-6">
+            <a href="https://www.facebook.com/groups/{{ site.facebook_username }}">
+                <div class="social-container">
+                    <div class="icon"><i class="fab fa-facebook-f"></i></div>Facebook
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% if site.mailing_list %}
+        <div class="col-6">
+            <a href="{{ site.mailing_list }}">
+                <div class="social-container">
+                    <div class="icon"><i class="fas fas fa-envelope"></i></div>Mailing list
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% if site.wiki_link %}
+        <div class="col-6">
+            <a href="{{ site.wiki_link }}">
+                <div class="social-container">
+                    <div class="icon"><i class="fas fa-link"></i></div>Wiki
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% if site.mal_id %}
+        <div class="col-6">
+            <a href="https://myanimelist.net/clubs.php?cid={{ site.mal_id }}">
+                <div class="social-container">
+                    <div class="icon"><i class="fas fa-link"></i></div>MAL
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% if site.anilist_username %}
+        <div class="col-6">
+            <a href="https://anilist.co/user/{{ site.anilist_username }}">
+                <div class="social-container">
+                    <div class="icon"><i class="fas fa-link"></i></div>Anilist
+                </div>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+</div>
