@@ -4,6 +4,7 @@
 # Dependencies: PyYaml - `pip install PyYaml`
 
 from datetime import date, timedelta
+from collections import defaultdict
 
 TERMS = ["Michaelmas", "Lent", "Easter"]
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -22,88 +23,253 @@ def main():
     start_time = get_time("start")
     end_time = get_time("end")
     shows = get_shows()
-    generate_schedule(term, start_date, end_date, day, venue, start_time, end_time, shows)
+    generate_term(term, start_date, end_date, day, venue, start_time, end_time, shows)
 
 # General stuff
 
-class MeetingType:
-    """A helper class encapsulating a meeting type"""
-    def __init__(self, venue, meeting_type, start_time, end_time, shows):
-        """Build a meeting. This is the only constructor.
-        venue         -- the venue of the meeting
-        meeting_type  -- the type of a meeting
-        start_time    -- the start time of the meeting
-        end_time      -- the end time of the meeting
-        shows         -- a list of (title, episode count) tuples
+class Show:
+    def __init__(self, title, episode_count, episode_length):
+        """Constructor
+
+        Arguments:
+        title          -- the title of the show
+        episode_count  -- the number of episodes in the show
+        episode_weight -- the length of the episode in minutes
+        """
+        self.title = title
+        self.episode_count = episode_count
+        self.episode_length = episode_length
+
+    def get_proportion(self, episodes_shown):
+        return episodes_shown/self.episode_count
+
+    def get_prop_from_shows(self, shows):
+        return self.get_proportion(shows[self])
+
+class Slot:
+    def __init__(self, shows):
+        """Constructor
+
+        Arguments:
+        shows -- a list of Show objects
         """
 
+        self.shows = shows
+
+        self.count = sum(show.episode_count for show in shows)
+        self.avg_length = sum(show.episode_length for show in shows)
+
+    def get_show(self, episode_number):
+        for show in self.shows:
+            episode_number -= show.episode_count
+            if episode_number <= 0:
+                return show
+        return None
+
+    def get_proportion(self, episodes_shown):
+        return episodes_shown/self.count
+
+class MeetingType:
+    """A helper class encapsulating a meeting type"""
+    def __init__(self, day, venue, event, start_time, end_time, shows):
+        """Constructor
+
+        Arguments:
+        day           -- the day of the week the meeting is on, as an integer
+                         from 0 (Monday) to 6 (Sunday)
+        venue         -- the venue of the meeting
+        event         -- the user-readable name of this meeting (eg. Main Meeting)
+        start_time    -- the start time of the meeting
+        end_time      -- the end time of the meeting
+        shows         -- a list of Show objects
+        """
+        
+        self.day = day
         self.venue = venue
-        self.type = meeting_type
+        self.event = event
         self.start_time = start_time
         self.end_time = end_time
         self.shows = shows
 
-def generate_schedule(term, start_date, end_date, day, venue, start_time, end_time, shows):
-    """Generate a schedule
+    def _get_next(self, shows, time_left, meeting_proportion):
+        min_prop = 1
+        min_eps = float("inf")
+
+        behind_eps = None
+        behind_prop = None
+        for (show, ep) in shows.items():
+            prop = show.get_proportion(ep)
+            if show.episode_length > time_left:
+                continue
+
+            if (ep < min_eps) and (prop < meeting_proportion):
+                min_eps = ep
+                behind_eps = show
+                
+            if prop < min_prop:
+                min_prop = prop
+                behind_prop = show
+
+        if behind_eps:
+            return behind_eps
+        else:
+            return behind_prop
+
+    def _distribute(self, start_date, end_date, min_length, max_length, meetings=False, shows=False):
+        """Returns a list of Meeting objects, making a best effort to distribute the shows between the given dates,
+        along with state for distributing over longer periods
+
+        Arguments:
+        start_date     -- the first possible day for a meeting to occur
+        end_date       --  the last possible day for a meeting to occur
+        min_length     -- the minimum length of a meeting in minutes
+        max_length     -- the maximum length of a meeting in minutes
+        meetings (Opt) -- the existing allocated meetings
+        shows (Opt)    -- the existing state of the shows dict
+        """
+
+        days_til_first = (7 + self.day - start_date.weekday()) % 7
+        first_meeting = start_date + timedelta(days_til_first)
+
+        days_before_last = (7 + self.day - end_date.weekday()) % 7
+        last_meeting = end_date - timedelta(days_before_last)
+
+        week_count = 1 + (last_meeting - first_meeting).days // 7
+
+        # Assignment algorithm - go for the one with the least proportion at each step
+        # we have a catchup mechanism that if a show ever gets behind meetings we add more eps
+
+        if not shows:
+            shows = {}
+
+            for show in self.shows:
+                shows[show] = 0
+
+        if not meetings:
+            meetings = []
+
+        for week_number in range(0, week_count):
+            meeting_date = first_meeting + (ONE_WEEK * week_number)
+            episodes = defaultdict(list)
+            current = 0
+            
+            meeting_prop = (week_number + 1) / week_count
+            while True:
+                next_show = self._get_next(shows, max_length - current, meeting_prop)
+                
+                if next_show == None:
+                    break
+                elif ((next_show.get_prop_from_shows(shows) < meeting_prop)
+                      or (current < min_length)):
+                    next_episode = shows[next_show] + 1
+                    shows[next_show] = next_episode
+                    
+                    episodes[next_show].append(next_episode)
+                    current += next_show.episode_length
+                else:
+                    break
+            episode_list = list(episodes.items())
+
+            if episode_list:
+                meetings.append(Meeting(self, meeting_date, list(episodes.items())))
+
+        return (meetings, shows)
+
+    def distribute_terms(self, dates, min_length, max_length):
+        """
+        Returns a list of Meeting objects, making a best effort to distribute the shows between the given dates,
+        along with state for distributing over longer periods
+
+        Arguments:
+        start_date -- the first possible day for a meeting to occur
+        end_date   --  the last possible day for a meeting to occur
+        min_length -- the minimum length of a meeting in minutes
+        max_length -- the maximum length of a meeting in minutes
+        """
+
+        meetings = False
+        shows = False
+        for start_date, end_date in dates:
+            meetings, shows = self._distribute(start_date, end_date, min_length, max_length, meetings, shows)
+
+        return meetings
+        
+
+    def distribute(self, start_date, end_date, min_length, max_length):
+        """Returns a list of Meeting objects, making a best effort to distribute the shows between the given dates
+
+        Arguments:
+        start_date -- the first possible day for a meeting to occur
+        end_date   --  the last possible day for a meeting to occur
+        min_length -- the minimum length of a meeting in minutes
+        max_length -- the maximum length of a meeting in minutes
+        """
+        return self._distribute(start_date, end_date, min_length, max_length, False, False)[0]
+
+class Meeting:
+    """A helper class which encapsulates a single meeting"""
+    def __init__(self, meeting_type, date, episodes):
+        """Constructor
+
+        Arguments:
+        meeting_type -- a MeetingType object which contains other details about
+                        this meeting
+        date         -- a date object denoting the exact date of this meeting
+        episodes     -- a list of (show, int list) tuples which denote the
+                        episodes being shown at this meeting
+        """
+
+        self.type = meeting_type
+        self.date = date
+        self.episodes = episodes
+
+    def to_yaml(self):
+        lines = []
+        lines.append("- date: " + self.date.isoformat())
+        lines.append("  time: {}&#8203;-&#8203;{}".format(self.type.start_time,
+            self.type.end_time))
+        lines.append("  venue: {}".format(self.type.venue))
+        lines.append("  event: {}".format(self.type.event))
+        lines.append("  shows:")
+        for episode in self.episodes:
+            sorted_eps = sorted(episode[1])
+            first = sorted_eps[0]
+            last = sorted_eps[-1]
+
+            if first == last:
+                lines.append("   - {} {}".format(episode[0].title, first))
+            else:
+                lines.append("   - {} {}-{}".format(episode[0].title, first, last))
+        return lines
+
+
+def generate_term(term, start_date, end_date, meeting_types):
+    """Generate the YAML for a term's schedule
 
     Arguments:
-    term       -- the term name (eg. Michaelmas)
-    start_date -- the start date of the term (also used to determine display year)
-    end_date   -- the end date of the term
-    day        -- the day of the week (integer where Monday is 0 and Sunday is 6)
-    venue      -- the venue (eg. Angevin Room, Queens')
-    start_time -- the start time
-    end_time   -- the end time
-    shows      -- a list of (title, episode count) tuples
+    term          -- the term name (eg. Michaelmas)
+    start_date    -- the start date of the term (also used to determine display year)
+    end_date      -- the end date of the term
+    meeting_types -- a list of MeetingType objects
     """
 
     lines = []
     lines.append("- term: {} {}".format(term, start.year))
     lines.append("  meetings:")
     
-    days_til_first = (7 + day - start.day) % 7
-    first_meeting = start + timedelta(days_til_first)
+    meetings = []
+    for meeting_type in meeting_types:
+        meetings += meeting_type.distribute()
 
-    days_before_last = (7 + day - end.day) % 7
-    last_meeting = end - timedelta(days_before_last)
+    meetings.sort(key=extract_date)
 
-    weeks = (last_meeting - first_meeting).days // 7
+    for meeting in meetings:
+        lines += indent_all(meeting.to_yaml(), 2)
 
-    meeting = MeetingType(venue, meeting_type, start_time, end_time, shows)
+    return lines
 
-    for i in range(weeks):
-        lines += indent_all(generate_meeting(first_meeting, i, weeks, meeting), 2)
-
-def generate_meeting(first_meeting, week_number, total_weeks, meeting):
-    """Get the YAML for a meeting
-
-    Arguments:
-    first_meeting -- the date object for the first meeting
-    week_number   -- the number of weeks through the total schedule
-    total_weeks   -- the total number of weeks
-    meeting       -- a MeetingType encapsulating the meeting details
-    """
-
-    lines = []
-    meeting_date = first_meeting + (ONE_WEEK * 7)
-    lines.append("- date: {}".format(this_meeting.isoformat()))
-    lines.append("  time: {}&#8203;-&#8203;{}".format(meeting.start_time, meeting.end_time))
-    lines.append("  event: " + meeting.type);
-    lines.append("  shows: ")
-    lines.append(indent_all(generate_shows(meeting.shows, week_number, total_weeks), 2))
-
-def generate_shows(shows, week_number, total_weeks):
-    """Get the YAML for the shows at a given meeting
-
-    Arguments:
-    shows       -- a list of (title, episode count) tuples
-    week_number -- the week number of the term
-    total_weeks -- the total number of weeks in the term
-    """
-
-    lines = []
-    
-    # TODO(WJBarnes456): Decide on how we'll compute this
+def extract_date(x):
+    return x.date
 
 def indent(line, spaces):
     return " " * spaces + line
@@ -112,10 +278,10 @@ def indent_all(lines, spaces):
     return [indent(line, spaces) for line in lines]
 
 
-
 # YAML stuff
 
 # TODO(WJBarnes456): Implement YAML input
+
 
 # CLI stuff
 
