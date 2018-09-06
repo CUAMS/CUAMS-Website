@@ -12,15 +12,8 @@ mainMeeting = MeetingType(1, "Angevin Room, Queens'", "Main Meeting", "7", "10pm
 
 testLent = MeetingType(1, "Angevin Room, Queens'", "Main Meeting", "7", "10pm",
                           [Show("Nichijou", 26, 24),
-                           Show("MiA", 13, 24),
+                           Slot([Show("MiA", 13, 24), Show("Princess Principal", 13, 24)]),
                            Show("Samurai Champloo", 26, 24)])
-
-testSlot = Slot([Show("Baccano!", 13, 24), Show("Nichijou", 26, 24)])
-
-print(testSlot.get_show(1).title)
-
-print(testSlot.get_show(14).title)
-
 startM = date(2017,10,14)
 endM = date(2017,11,21)
 

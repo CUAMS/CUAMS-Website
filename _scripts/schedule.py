@@ -15,7 +15,7 @@ ONE_WEEK = timedelta(7)
 
 
 def main():
-    term = get_term();
+    term = get_term()
     start_date = get_date("start", term)
     end_date = get_date("end", term)
     day = get_day()
@@ -45,8 +45,21 @@ class Show:
 
     def get_prop_from_shows(self, shows):
         return self.get_proportion(shows[self])
+        
+    def format(self, episodes):
+        """Returns a string representing the given episodes of the show"""
+        sorted_eps = sorted(episodes)
+        first = sorted_eps[0]
+        last = sorted_eps[-1]
+
+        if first == last:
+            return ["{} {}".format(self.title, first)]
+        else:
+            return ["{} {}-{}".format(self.title, first, last)]
+        
 
 class Slot:
+    """Helper class, duck-typed to work the same as a Show - aggregate pattern"""
     def __init__(self, shows):
         """Constructor
 
@@ -56,8 +69,8 @@ class Slot:
 
         self.shows = shows
 
-        self.count = sum(show.episode_count for show in shows)
-        self.avg_length = sum(show.episode_length for show in shows)
+        self.episode_count = sum(show.episode_count for show in shows)
+        self.episode_length = sum(show.episode_length for show in shows)/len(shows)
 
     def get_show(self, episode_number):
         for show in self.shows:
@@ -67,7 +80,30 @@ class Slot:
         return None
 
     def get_proportion(self, episodes_shown):
-        return episodes_shown/self.count
+        return episodes_shown/self.episode_count
+    
+    def get_prop_from_shows(self, shows):
+        return self.get_proportion(shows[self])
+    
+    def get_show(self, episode_number):
+        for show in self.shows:
+            prev_num = episode_number
+            episode_number -= show.episode_count
+            if episode_number <= 0:
+                return (show, prev_num)
+        return (None, episode_number)
+        
+    def format(self, episodes):
+        sorted_eps = sorted(episodes)
+        
+        shows = defaultdict(list)
+        for ep in sorted_eps:
+            print(ep)
+            show, new_ep = self.get_show(ep)
+            shows[show].append(new_ep)
+        
+        return [show.format(eps)[0] for show,eps in shows.items()]
+        
 
 class MeetingType:
     """A helper class encapsulating a meeting type"""
@@ -231,15 +267,9 @@ class Meeting:
         lines.append("  venue: {}".format(self.type.venue))
         lines.append("  event: {}".format(self.type.event))
         lines.append("  shows:")
-        for episode in self.episodes:
-            sorted_eps = sorted(episode[1])
-            first = sorted_eps[0]
-            last = sorted_eps[-1]
-
-            if first == last:
-                lines.append("   - {} {}".format(episode[0].title, first))
-            else:
-                lines.append("   - {} {}-{}".format(episode[0].title, first, last))
+        for show,episodes in self.episodes:
+            for line in show.format(episodes):
+                lines.append("   - " + line) 
         return lines
 
 
@@ -326,7 +356,7 @@ def get_shows():
             print("Current schedule: ")
             for show in shows: print_show(show)
         
-        choice = menu();
+        choice = menu()
 
         if choice == ADD:
             add_show(shows)
@@ -349,7 +379,7 @@ def menu():
         print("2. Remove show")
         print("0. Exit")
 
-        choice = input();
+        choice = input()
         
         if choice == "1":
             return ADD
