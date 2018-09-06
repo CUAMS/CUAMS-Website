@@ -1,6 +1,14 @@
 ---
 layout: banner-default
 ---
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1&appId=2169014630011026';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="home">
     {%- if page.title -%}
@@ -9,29 +17,40 @@ layout: banner-default
 
     {{ content }}
 
-    {%- if site.posts.size > 0 -%}
-        <h2 class="post-list-heading">{{ page.list_title | default: "News" }}</h2>
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-        <ul class="post-list">
-            {%- for post in site.posts limit: 5 -%}
-                <li>
-                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                    <span class="post-meta">{{ post.date | date: date_format }}</span>
-                    <h3>
-                        <a class="post-link" href="{{ post.url | relative_url }}">
-                            {{ post.title | escape }}
-                        </a>
-                    </h3>
-                    {%- if site.show_excerpts -%}
-                        {{ post.excerpt }}
-                        <a href="{{ post.url | relative_url }}">Read more...</a>
-                    {%- endif -%}
-                </li>
-            {%- endfor -%}
-            {%- if site.posts.size > 5 -%}
-            <li><h3><a href="/news" class="more-link">View more posts &rarr;</a></h3></li>
-            {%- endif -%}
-        </ul>
-    {%- endif -%}
+    <div class="container">
+        <div class="row">
+            <div class="news-column">
+                {%- if site.posts.size > 0 -%}
+                    <h2 class="post-list-heading">{{ page.list_title | default: "News" }}</h2>
+                    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+                    <ul class="post-list">
+                        {%- for post in site.posts limit: 5 -%}
+                            <li>
+                                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                                <h3>
+                                    <a class="post-link" href="{{ post.url | relative_url }}">
+                                        {{ post.title | escape }}
+                                    </a>
+                                </h3>
+                                {%- if site.show_excerpts -%}
+                                    {{ post.excerpt }}
+                                    <a href="{{ post.url | relative_url }}">Read more...</a>
+                                {%- endif -%}
+                            </li>
+                        {%- endfor -%}
+                        {%- if site.posts.size > 5 -%}
+                        <li><h3><a href="/news" class="more-link">View more posts &rarr;</a></h3></li>
+                        {%- endif -%}
+                    </ul>
+                {%- endif -%}
+            </div>
+
+            <div class="social-widgets">
+                <iframe src="https://discordapp.com/widget?id=376846154517839882&theme=dark" width="350px" height="500" allowtransparency="true" frameborder="0"></iframe>
+                <div class="fb-group" data-href="https://www.facebook.com/groups/cuams" data-width="350px" data-show-social-context="true" data-show-metadata="false"></div>
+            </div>
+        </div>
+    </div>
 
 </div>

@@ -111,6 +111,43 @@ dd:after {
     font-size: 1.5rem;
 }
 
+.social-widgets {
+    width: 350px;
+}
+
+@media (min-width: 992px) {
+    .news-column {
+        width: calc(100% - 370px);
+        margin-right: 20px;
+    }
+
+    .fb-group {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 800px) {
+    .social-widgets {
+        display: flex;
+        width: 100%;
+    }
+
+    .fb-group {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .social-widgets {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .fb-group {
+        margin-top: 20px;
+    }
+}
+
 /* --------------------------------------------------
     BANNER
  -------------------------------------------------- */
