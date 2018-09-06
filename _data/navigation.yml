@@ -5,16 +5,7 @@
 - title: News
   url: /news
 - title: Meetings
-  sublinks:
-    - title: Summary
-      url: /meetings
-    - title: separator
-    - title: Main Meetings
-      url: /meetings/main
-    - title: Sunday Meetings
-      url: /meetings/sunday
-    - title: Bonus Meetings
-      url: /meetings/bonus
+  url: /meetings
 - title: Schedule
   url: /schedule
 - title: Committee

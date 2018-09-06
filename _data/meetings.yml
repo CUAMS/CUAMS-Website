@@ -1,4 +1,4 @@
-- type: main
+- type: Main
   shows:
   - title: Nichijou
     image: https://cdn.anilist.co/img/dir/anime/reg/10165-8M57FttyMui8.png
@@ -26,5 +26,5 @@
       link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=12142
     - title: MAL
       link: https://myanimelist.net/anime/10165/Nichijou
-- type: sunday
-- type: bonus
+- type: Sunday
+- type: Bonus

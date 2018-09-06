@@ -1,0 +1,54 @@
+---
+layout: page
+---
+{{ content }}
+
+<div class="summary-container accordion" id="meeting-container">
+    {% for meeting in site.data.meetings %}
+            <div class="card" id="meeting-information">
+                <div class="card-header meeting-header" id="heading-{{ meeting.type }}" data-toggle="collapse"
+                     data-target="#collapse-{{ meeting.type }}" aria-expanded="false"
+                     aria-controls="collapse-{{ meeting.type }}"
+                >
+                    <h3 class="mb-0 meeting-label">
+                        {{ meeting.type }} Meetings<i class="fa fa-angle-down rotate-icon"></i>
+                    </h3>
+                </div>
+
+                <div id="collapse-{{ meeting.type }}" class="collapse"
+                     aria-labelledby="heading-{{ meeting.type }}" data-parent="#meeting-container">
+                    <div class="card-body">
+                        {% if meeting.shows.size > 0 %}
+                            {% for show in meeting.shows %}
+                                <div class="anime-container">
+                                    <div class="show-title">{{ show.title }}</div>
+                                    <div class="summary-content">
+                                        <dl>
+                                            <dt>Episodes:</dt><dd>{{ show.episodes }}</dd>
+                                            <dt>Published:</dt><dd>{{ show.year }}</dd>
+                                            <dt>Studio:</dt><dd>{{ show.studio }}</dd>
+                                            <dt>Showing:</dt><dd>{{ show.schedule }}</dd>
+                                            {% if show.info %}
+                                            <dt>More Info:</dt>
+                                            <dd>
+                                                {% for info in show.info %}
+                                                <a href="{{ info.link }}">{{ info.title }}</a>
+                                                {% unless forloop.last %}
+                                                |
+                                                {% endunless %}
+                                                {% endfor %}
+                                            </dd>
+                                            {% endif %}
+                                        </dl>
+                                        <img src="{{ show.image }}" alt="" height="200" width="150">
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <p>The schedule for this year has not yet been finalised; please check back later for updates</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+    {% endfor %}
+</div>

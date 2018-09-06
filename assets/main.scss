@@ -40,7 +40,6 @@ dd:after {
 
 .site-header {
     border: none;
-    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.16);
 }
 
 .wrapper {
@@ -218,6 +217,35 @@ dd:after {
     SUMMARIES
  -------------------------------------------------- */
 
+.card-header {
+    cursor: pointer;
+}
+
+#meeting-information {
+    border: 0;
+}
+
+.card-header.meeting-header {
+    background: transparent;
+}
+
+.meeting-label {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.rotate-icon {
+    -webkit-transition: transform 0.35s ease; /* Safari */
+    transition: transform 0.35s ease;
+}
+
+[aria-expanded="true"] .rotate-icon {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari 3-8 */
+    transform: rotate(180deg);
+}
+
 .summary-container {
     padding: $spacing-unit 0;
 }
@@ -242,6 +270,7 @@ dd:after {
     display: flex;
     justify-content: space-between;
     padding: $spacing-unit;
+    overflow-x: auto;
 }
 
 .show img {
