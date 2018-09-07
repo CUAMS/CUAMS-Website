@@ -1,5 +1,5 @@
 # A lil' script which generates a schedule given a series of dates
-# Written by Will Barnes 03/09/2018
+# Written by Will Barnes September 2018
 
 # Dependencies: PyYaml - `pip install PyYaml`
 
@@ -13,32 +13,21 @@ ADD = "add"
 REMOVE = "remove"
 ONE_WEEK = timedelta(7)
 
-
-def main():
-    term = get_term()
-    start_date = get_date("start", term)
-    end_date = get_date("end", term)
-    day = get_day()
-    venue = get_venue()
-    start_time = get_time("start")
-    end_time = get_time("end")
-    shows = get_shows()
-    generate_term(term, start_date, end_date, day, venue, start_time, end_time, shows)
-
 # General stuff
 
 class Show:
-    def __init__(self, title, episode_count, episode_length):
+    def __init__(self, title, episode_count, slot_number):
         """Constructor
 
         Arguments:
         title          -- the title of the show
         episode_count  -- the number of episodes in the show
         episode_weight -- the length of the episode in minutes
+        slot_number    -- the number of the slot this show is in
         """
         self.title = title
         self.episode_count = episode_count
-        self.episode_length = episode_length
+        self.slot_number = slot_number
 
     def get_proportion(self, episodes_shown):
         return episodes_shown/self.episode_count
@@ -70,14 +59,7 @@ class Slot:
         self.shows = shows
 
         self.episode_count = sum(show.episode_count for show in shows)
-        self.episode_length = sum(show.episode_length for show in shows)/len(shows)
-
-    def get_show(self, episode_number):
-        for show in self.shows:
-            episode_number -= show.episode_count
-            if episode_number <= 0:
-                return show
-        return None
+        self.slot_number = shows[0].slot_number
 
     def get_proportion(self, episodes_shown):
         return episodes_shown/self.episode_count
@@ -127,7 +109,10 @@ class MeetingType:
         self.end_time = end_time
         self.shows = shows
 
-    def _get_next(self, shows, time_left, meeting_proportion):
+    def _get_next(self, shows, eps_left, meeting_proportion):
+        if eps_left == 0:
+            return None
+            
         min_prop = 1
         min_eps = float("inf")
 
@@ -135,8 +120,6 @@ class MeetingType:
         behind_prop = None
         for (show, ep) in shows.items():
             prop = show.get_proportion(ep)
-            if show.episode_length > time_left:
-                continue
 
             if (ep < min_eps) and (prop < meeting_proportion):
                 min_eps = ep
@@ -151,15 +134,15 @@ class MeetingType:
         else:
             return behind_prop
 
-    def _distribute(self, start_date, end_date, min_length, max_length, meetings=False, shows=False):
+    def _distribute(self, start_date, end_date, min_eps, max_eps, meetings=False, shows=False):
         """Returns a list of Meeting objects, making a best effort to distribute the shows between the given dates,
         along with state for distributing over longer periods
 
         Arguments:
         start_date     -- the first possible day for a meeting to occur
         end_date       --  the last possible day for a meeting to occur
-        min_length     -- the minimum length of a meeting in minutes
-        max_length     -- the maximum length of a meeting in minutes
+        min_eps        -- the minimum number of episodes in a meeting
+        max_eps        -- the maximum number of episodes in a meeting
         meetings (Opt) -- the existing allocated meetings
         shows (Opt)    -- the existing state of the shows dict
         """
@@ -167,7 +150,7 @@ class MeetingType:
         days_til_first = (7 + self.day - start_date.weekday()) % 7
         first_meeting = start_date + timedelta(days_til_first)
 
-        days_before_last = (7 + self.day - end_date.weekday()) % 7
+        days_before_last = (7 - self.day + end_date.weekday()) % 7
         last_meeting = end_date - timedelta(days_before_last)
 
         week_count = 1 + (last_meeting - first_meeting).days // 7
@@ -186,32 +169,33 @@ class MeetingType:
 
         for week_number in range(0, week_count):
             meeting_date = first_meeting + (ONE_WEEK * week_number)
+            print(meeting_date.isoformat())
             episodes = defaultdict(list)
             current = 0
             
             meeting_prop = (week_number + 1) / week_count
             while True:
-                next_show = self._get_next(shows, max_length - current, meeting_prop)
+                next_show = self._get_next(shows, max_eps - current, meeting_prop)
                 
                 if next_show == None:
                     break
                 elif ((next_show.get_prop_from_shows(shows) < meeting_prop)
-                      or (current < min_length)):
+                      or (current < min_eps)):
                     next_episode = shows[next_show] + 1
                     shows[next_show] = next_episode
                     
                     episodes[next_show].append(next_episode)
-                    current += next_show.episode_length
+                    current += 1
                 else:
                     break
             episode_list = list(episodes.items())
 
             if episode_list:
-                meetings.append(Meeting(self, meeting_date, list(episodes.items())))
+                meetings.append(Meeting(self, meeting_date, episode_list))
 
         return (meetings, shows)
 
-    def distribute_terms(self, dates, min_length, max_length):
+    def distribute_terms(self, dates, min_eps, max_eps):
         """
         Returns a list of Meeting objects, making a best effort to distribute the shows between the given dates,
         along with state for distributing over longer periods
@@ -219,28 +203,28 @@ class MeetingType:
         Arguments:
         start_date -- the first possible day for a meeting to occur
         end_date   --  the last possible day for a meeting to occur
-        min_length -- the minimum length of a meeting in minutes
-        max_length -- the maximum length of a meeting in minutes
+        min_eps    -- the minimum number of episodes in a meeting
+        max_eps    -- the maximum number of episodes in a meeting
         """
 
         meetings = False
         shows = False
         for start_date, end_date in dates:
-            meetings, shows = self._distribute(start_date, end_date, min_length, max_length, meetings, shows)
+            meetings, shows = self._distribute(start_date, end_date, min_eps, max_eps, meetings, shows)
 
         return meetings
         
 
-    def distribute(self, start_date, end_date, min_length, max_length):
+    def distribute(self, start_date, end_date, min_eps, max_eps):
         """Returns a list of Meeting objects, making a best effort to distribute the shows between the given dates
 
         Arguments:
         start_date -- the first possible day for a meeting to occur
         end_date   --  the last possible day for a meeting to occur
-        min_length -- the minimum length of a meeting in minutes
-        max_length -- the maximum length of a meeting in minutes
+        min_eps    -- the minimum length of a meeting in minutes
+        max_eps    -- the maximum length of a meeting in minutes
         """
-        return self._distribute(start_date, end_date, min_length, max_length, False, False)[0]
+        return self._distribute(start_date, end_date, min_eps, max_eps, False, False)[0]
 
 class Meeting:
     """A helper class which encapsulates a single meeting"""
@@ -257,7 +241,7 @@ class Meeting:
 
         self.type = meeting_type
         self.date = date
-        self.episodes = episodes
+        self.episodes = sorted(episodes, key=lambda x:x[0].slot_number)
 
     def to_yaml(self):
         lines = []
@@ -315,80 +299,11 @@ def indent_all(lines, spaces):
 
 # CLI stuff
 
-def get_term():
-    while True:
-        user_term = input("Please enter the term you would like to make a schedule for " +
-                get_options(TERMS))
-        for term in TERMS:
-            if user_term in term:
-                return term
-        print("That doesn't seem to be a valid term. Please try again.")
+# TODO(WJBarnes456): Implement CLI
 
-def get_options(options):
-    return "(available options " + ", ".join(options) + ")\n"
-
-def get_date(date_type, term):
-    while True:
-        user_date = input("What is the " + date_type + " date of this " + term + " term? (YYYY-mm-dd)\n")
-        try:
-            parts = user_date.split("-")
-            year, month, day = [int(part) for part in parts]
-            return date(year, month, day)
-        except ValueError:
-            print("That doesn't seem to be a valid date. Please try again.")
-
-def get_day():
-    while True:
-        user_day = input("What day of the week is the meeting occurring on? " +
-                get_options(DAYS))
-        for day in DAYS:
-            if user_day in day:
-                return DAYS.index(day)
-            else:
-                print("That doesn't seem to be a valid day. Please try again.")
-
-def get_shows():
-    shows = []
-    while True:
-        if len(shows) == 0:
-            print("There are currently no shows on the schedule.")
-        else:
-            print("Current schedule: ")
-            for show in shows: print_show(show)
-        
-        choice = menu()
-
-        if choice == ADD:
-            add_show(shows)
-        elif choice == REMOVE:
-            remove_show(shows)
-        elif choice == EXIT:
-            return shows
-
-def get_time(time_type):
-    return input("When will the meeting " + time_type + "? ")
-
-def print_show(show):
-    title, episodes = show
-    print("{}: {} episodes".format(title, episodes))
-
-def menu():
-    while True:
-        print("Options: ")
-        print("1. Add show")
-        print("2. Remove show")
-        print("0. Exit")
-
-        choice = input()
-        
-        if choice == "1":
-            return ADD
-        elif choice == "2":
-            return REMOVE
-        elif choice == "0":
-            return EXIT
-        else:
-            print("Unknown choice, please try again\n")
-
+def run_cli():
+    print("This script will eventually have a CLI. Give it some time.\nHit enter to exit.")
+    input()
+    
 if __name__ == '__main__':
-    main()
+    run_cli()
