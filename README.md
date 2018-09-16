@@ -31,6 +31,8 @@ The rest of the guide will assume that you're using the command line but any
 Git commands can likely be done through your GUI instead.
 
 ## Set Up
+[Return to Top](#cuams-website)
+
 Once you have installed the pre-requisites, you can now download the project.
 To do this, you will need to **clone** the project using Git. To do this, you
 will need to navigate to a directory where you'd like to download the project
