@@ -4,6 +4,12 @@ RewriteEngine            On
 # If we're visiting any alias, redirect to srcf instead
 RewriteCond %{HTTP_HOST}    !^cuams\.soc\.srcf\.net [NC]
 RewriteCond %{HTTP_HOST}    !^$
-# Forcibly redirect http to https
+# Only redirect https to srcf.net
 RewriteCond %{REQUEST_SCHEME} http [NC]
 RewriteRule ^(.*)        https://cuams.soc.srcf.net/$1 [L,R=permanent]
+
+# Forcibly redirect http to https
+RewriteCond %{REQUEST_SCHEME} http$ [NC]
+RewriteRule ^(.*)        https://cuams.soc.srcf.net/$1
+
+ErrorDocument 404 /404.html

@@ -23,23 +23,23 @@ layout: page
                                 <div class="anime-container">
                                     <div class="show-title">{{ show.title }}</div>
                                     <div class="summary-content">
-                                        <dl>
-                                            <dt>Episodes:</dt><dd>{{ show.episodes }}</dd>
-                                            <dt>Published:</dt><dd>{{ show.year }}</dd>
-                                            <dt>Studio:</dt><dd>{{ show.studio }}</dd>
-                                            <dt>Showing:</dt><dd>{{ show.schedule }}</dd>
+                                        <div>
+                                            <div><span class="label">Episodes:</span> {{ show.episodes }}</div>
+                                            <div><span class="label">Published:</span> {{ show.year }}</div>
+                                            <div><span class="label">Studio:</span> {{ show.studio }}</div>
+                                            <div><span class="label">Showing:</span> {{ show.schedule }}</div>
                                             {% if show.info %}
-                                            <dt>More Info:</dt>
-                                            <dd>
+                                            <div>
+                                                <span class="label">More Info:</span>
                                                 {% for info in show.info %}
                                                 <a href="{{ info.link }}">{{ info.title }}</a>
                                                 {% unless forloop.last %}
                                                 |
                                                 {% endunless %}
                                                 {% endfor %}
-                                            </dd>
+                                            </div>
                                             {% endif %}
-                                        </dl>
+                                        </div>
                                         <img src="{{ show.image }}" alt="" height="200" width="150">
                                     </div>
                                 </div>

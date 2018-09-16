@@ -14,24 +14,9 @@ dl {
     margin: 0;
 }
 
-dt {
+.label {
     display: inline;
     font-weight: bold;
-}
-
-dd {
-    display: inline;
-    margin: 0;
-}
-
-dd:before {
-    content: " ";
-    white-space: pre;
-}
-
-dd:after {
-    content: "\A";
-    white-space: pre;
 }
 
 .root {
