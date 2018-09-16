@@ -2,6 +2,9 @@ _site
 .sass-cache
 .jekyll-metadata
 
+# Ignore anime images so we don't upload copyrighted material to GitHub
+/assets/images/anime/*
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml

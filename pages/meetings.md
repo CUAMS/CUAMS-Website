@@ -6,7 +6,7 @@ permalink: /meetings/
 
 We hold two regular meetings per week most weeks during full term, taking a
 break in Easter term to allow people to focus on their exams. All meetings
-are held in a Cambridge college somewhere (usually Queens) with snacks and
+are held in a Cambridge college somewhere (usually Queens') with snacks and
 drinks to enhance the experience.
 
 The shows shown at main meetings and Sunday meetings will be different so
