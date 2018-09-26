@@ -12,10 +12,10 @@ layout: page
                     <img src="/assets/images/committee/{{ member.image | default: 'default.jpg' }}" alt="{{ member.holder }}"/>
                     <div class="committee-member-details">
                         <h3>{{ member.role }}</h3>
-                        <dl>
-                            <dt>Current Holder:</dt><dd>{{ member.holder }}</dd>
-                            <dt>Email:</dt><dd>{{ member.email }}</dd>
-                        </dl>
+                        <div>
+                            <div><span class="label">Current Holder:</span> {{ member.holder }}</div>
+                            <div><span class="label">Email:</span> {{ member.email }}</div>
+                        </div>
                     </div>
                 </div>
             {% endfor %}

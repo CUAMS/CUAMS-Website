@@ -10,10 +10,6 @@ $spacing-unit: 8px;
     GLOBAL
  -------------------------------------------------- */
 
-dl {
-    margin: 0;
-}
-
 .label {
     display: inline;
     font-weight: bold;
@@ -317,8 +313,7 @@ dl {
 
 .committee-member img {
     display: block;
-    height: 100%;
-    max-height: 119.2px;
+    height: 119.2px;
     width: auto;
 }
 
