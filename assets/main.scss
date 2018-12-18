@@ -84,6 +84,25 @@ $spacing-unit: 8px;
 }
 
 /* --------------------------------------------------
+    ACCORDION
+ -------------------------------------------------- */
+
+.card-header {
+    cursor: pointer;
+}
+
+.rotate-icon {
+    -webkit-transition: transform 0.35s ease; /* Safari */
+    transition: transform 0.35s ease;
+}
+
+[aria-expanded="true"] .rotate-icon {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari 3-8 */
+    transform: rotate(180deg);
+}
+
+/* --------------------------------------------------
     HOME
  -------------------------------------------------- */
 
@@ -212,10 +231,6 @@ $spacing-unit: 8px;
     SUMMARIES
  -------------------------------------------------- */
 
-.card-header {
-    cursor: pointer;
-}
-
 #meeting-information {
     border: 0;
 }
@@ -228,17 +243,6 @@ $spacing-unit: 8px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-}
-
-.rotate-icon {
-    -webkit-transition: transform 0.35s ease; /* Safari */
-    transition: transform 0.35s ease;
-}
-
-[aria-expanded="true"] .rotate-icon {
-    -ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Safari 3-8 */
-    transform: rotate(180deg);
 }
 
 .summary-container {
@@ -276,21 +280,25 @@ $spacing-unit: 8px;
     SCHEDULE
  -------------------------------------------------- */
 
+#term-information {
+    border: 0;
+}
+
+.card-header.schedule-header {
+    background: transparent;
+}
+
 .schedule-container {
    padding-top: $spacing-unit;
-}
-
-.term-container:not(:first-child) {
-    padding-top: 2rem;
-}
-
-.term-information {
-    margin-top: 1rem;
 }
 
 .show-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.term-information {
+    overflow-x: auto;
 }
 
 /* --------------------------------------------------
