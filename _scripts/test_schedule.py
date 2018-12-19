@@ -1,4 +1,4 @@
-from schedule import MeetingType, Meeting, Show, Slot, generate_terms
+from schedule import MeetingType, Meeting, Show, Slot, Term, generate_terms
 from datetime import date
 
 def print_meetings(meets):
@@ -24,7 +24,11 @@ sundayLentEaster = MeetingType(6, "Bowett Room, Queens'", "Sunday Meeting", "2.3
 startM = date(2017,10,14)
 endM = date(2017,11,21)
 
-print_meetings(mainMeeting.distribute(startM, endM, 5, 7))
+lines = generate_terms([Term("Michaelmas", startM, endM)],
+                       [mainMeeting],
+                       5, 7)
+
+print("\n".join(lines))
 
 startL = date(2019, 1, 20)
 endL = date(2019, 3, 12)
@@ -32,8 +36,7 @@ endL = date(2019, 3, 12)
 startE = date(2019, 4, 28)
 endE = date(2019, 5, 22)
 
-lines = generate_terms(["Lent", "Easter"],
-                       [(startL, endL), (startE, endE)],
+lines = generate_terms([Term("Lent", startL, endL), Term("Easter", startE, endE)],
                        [mainLentEaster, sundayLentEaster],
                        5, 7)
 
@@ -41,3 +44,4 @@ print("\n".join(lines))
 
 
 input()
+ 

@@ -3,7 +3,7 @@
 
 # Dependencies: PyYaml - `pip install PyYaml`
 
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 from collections import defaultdict
 
 TERMS = ["Michaelmas", "Lent", "Easter"]
@@ -32,6 +32,9 @@ class Show:
         self.title = title
         self.episode_count = episode_count
         self.slot_number = slot_number
+    
+    def __str__(self):
+        return "{} ({} episodes)".format(self.title, self.episode_count)
 
     def get_proportion(self, episodes_shown):
         return episodes_shown/self.episode_count
@@ -53,20 +56,37 @@ class Show:
 
 class Slot:
     """Helper class, duck-typed to work the same as a Show - aggregate pattern"""
-    def __init__(self, shows):
+    def __init__(self, shows, slot_number = None):
         """Constructor
 
         Arguments:
         shows -- a list of Show objects
         """
 
+        self.set_shows(shows)
+        
+        if slot_number == None:
+            self.slot_number = shows[0].slot_number
+        else:
+            self.slot_number = slot_number
+    
+    def __str__(self):
+        return "[" + ", ".join([str(show) for show in self.shows]) + "]"
+        
+    def set_shows(self, shows):
         self.shows = shows
-
-        self.episode_count = sum(show.episode_count for show in shows)
-        self.slot_number = shows[0].slot_number
+        self.reset_count()
+    
+    def reset_count(self):
+        self.episode_count = sum(show.episode_count for show in self.shows)
+        
 
     def get_proportion(self, episodes_shown):
-        return episodes_shown/self.episode_count
+        # Handle special case with empty slot
+        if self.episode_count > 0:
+            return episodes_shown/self.episode_count
+        else:
+            return 1
     
     def get_prop_from_shows(self, shows):
         return self.get_proportion(shows[self])
@@ -84,7 +104,6 @@ class Slot:
         
         shows = defaultdict(list)
         for ep in sorted_eps:
-            print(ep)
             show, new_ep = self.get_show(ep)
             shows[show].append(new_ep)
         
@@ -173,7 +192,6 @@ class MeetingType:
 
         for week_number in range(0, week_count):
             meeting_date = first_meeting + (ONE_WEEK * week_number)
-            print(meeting_date.isoformat())
             episodes = defaultdict(list)
             current = 0
             
@@ -199,7 +217,7 @@ class MeetingType:
 
         return (meetings, shows)
 
-    def distribute_terms(self, dates, min_eps, max_eps):
+    def distribute_dates(self, dates, min_eps, max_eps):
         """
         Returns a list of Meeting objects, making a best effort to distribute the shows between the given dates,
         along with state for distributing over longer periods
@@ -219,6 +237,9 @@ class MeetingType:
 
         return meetings
         
+    def distribute_terms(self, terms, min_eps, max_eps):
+        return self.distribute_dates([(t.start_date, t.end_date) for t in terms], min_eps, max_eps)
+        
 
     def distribute(self, start_date, end_date, min_eps, max_eps):
         """Returns a list of Meeting objects, making a best effort to distribute the shows between the given dates
@@ -230,6 +251,9 @@ class MeetingType:
         max_eps    -- the maximum length of a meeting in minutes
         """
         return self._distribute(start_date, end_date, min_eps, max_eps, False, False)[0]
+        
+    def distribute(self, term, min_eps, max_eps):
+        return distribute(term.start_date, term.end_date, min_eps, max_eps)
 
 class Meeting:
     """A helper class which encapsulates a single meeting"""
@@ -260,6 +284,13 @@ class Meeting:
             for line in show.format(episodes):
                 lines.append("   - " + line) 
         return lines
+        
+class Term:
+    """A helper class encapsulating a term"""
+    def __init__(self, name, start_date, end_date):
+        self.name = name
+        self.start_date = start_date
+        self.end_date = end_date
 
 
 def generate_term(term, start_date, end_date, meeting_types, min_eps = MIN_EPS, max_eps = MAX_EPS):
@@ -287,7 +318,7 @@ def generate_term(term, start_date, end_date, meeting_types, min_eps = MIN_EPS, 
 
     return lines
     
-def generate_terms(terms, dates, meeting_types, min_eps = MIN_EPS, max_eps = MAX_EPS):
+def generate_terms(terms, meeting_types, min_eps = MIN_EPS, max_eps = MAX_EPS):
     """Generate the YAML for a Lent/Easter schedule
 
     Arguments:
@@ -297,24 +328,26 @@ def generate_terms(terms, dates, meeting_types, min_eps = MIN_EPS, max_eps = MAX
             end_date is the last possible day for a meeting to occur
     meeting_types -- a list of MeetingType objects
     """
+    
+    # Copy lists to avoid damaging the originals
+    terms = list(terms)
+    
     meetings = []
     for meeting_type in meeting_types:
-        meetings += meeting_type.distribute_terms(dates, min_eps, max_eps)
+        meetings += meeting_type.distribute_terms(terms, min_eps, max_eps)
 
     meetings.sort(key=extract_date)
 
     lines = []
-    nextDate = dates.pop(0)[0]
-    nextTerm = terms.pop(0)
+    next_term = terms.pop(0)
     for meeting in meetings:
-        if nextDate and meeting.date >= nextDate:
-            lines.append("- term: {} {}".format(nextTerm, nextDate.year))
+        if next_term and meeting.date >= next_term.start_date:
+            lines.append("- term: {} {}".format(next_term.name, next_term.start_date.year))
             lines.append("  meetings:")
-            if dates:
-                nextDate = dates.pop(0)[0]
-                nextTerm = terms.pop(0)
+            if terms:
+                next_term = terms.pop(0)
             else:
-                nextDate = None
+                next_term = None
         lines += indent_all(meeting.to_yaml(), 2)
 
     return lines
@@ -327,20 +360,320 @@ def indent(line, spaces):
 
 def indent_all(lines, spaces):
     return [indent(line, spaces) for line in lines]
+    
+# Placeholder meetings etc
+
+def placeholder_type():
+    return MeetingType(1, "Bowett Room, Queens'", "Placeholder Meeting", "7", "10pm", [Slot([], 1), Slot([], 2), Slot([], 3)])
+
+def placeholder_term():
+    return Term("Michaelmas", date(2018, 10, 2), date(2018, 11, 30))
+
+def placeholder_show(number):
+    return Show("Madoka Magica", 12, number)
 
 
 # YAML stuff
 
 # TODO(WJBarnes456): Implement YAML input
 
+# CLI utility functions
+
+
+def get_new_day():
+    new_day = None
+    while new_day == None:
+        option = input("New day: ")
+        
+        for i, day in enumerate(DAYS):
+            if option in day:
+                new_day = i
+        
+        if new_day == None:
+            print("Not sure! Please try again")
+    
+    return new_day
+    
+def get_new_string(thing):
+    option = input("New {}: ".format(thing))
+    return option
+    
+def get_new_int(thing, pos_only = False):
+    while True:
+        try:
+            option = int(input("New {}: ".format(thing)))
+            if (not pos_only) or option > 0:
+                return option
+            else:
+                print("{} must be positive. Please try again.", thing)
+        except ValueError:
+            print("That is not a number. Please try again.")
+            
+def get_new_date(thing):
+    while True:
+        try:
+            option = input("New {} (YYYY-MM-DD): ".format(thing))
+            return datetime.strptime(option, "%Y-%m-%d").date()
+        except ValueError:
+            print("That is not a valid date. Please try again.")
 
 # CLI stuff
-
-# TODO(WJBarnes456): Implement CLI
+def print_menu():
+    print("===== MAIN MENU =====")
+    print("1. Change meetings")
+    print("2. Change terms + dates")
+    print("3. Generate schedule")
+    print("0. Exit")
 
 def run_cli():
-    print("This script will eventually have a CLI. Give it some time.\nHit enter to exit.")
-    input()
+    meeting_types = []
+    terms = []
+    
+    while True:
+        print_menu()
+        
+        option = input()
+        if option == "0":
+            return
+        elif option == "1":
+            change_meetings(meeting_types)
+        elif option == "2":
+            change_terms(terms)
+        elif option == "3":
+            export_schedule(meeting_types, terms)
+        else:
+            print("Unknown option, please try again")
+            
+def export_schedule(meeting_types, terms):
+    if len(terms) == 0:
+        print("Terms are empty! Change term dates first")
+        return
+       
+    lines = generate_terms(terms, meeting_types, 5, 7)
+    file = input("Output filename: ")
+    with open(file, "w") as f:
+        for line in lines:
+            f.write(line + "\n")
+            
+    print("File exported, check {}".format(file))
+
+def print_types_menu(meeting_types):
+    print("===== CHANGE MEETINGS =====")
+    for i, meeting_type in enumerate(meeting_types, 1):
+        print("{}. Change {} on {}s".format(i, meeting_type.event, DAYS[meeting_type.day]))
+    print("{}. Add new meeting".format(len(meeting_types) + 1))
+    
+    print("0. Save and back")
+    
+def change_meetings(meeting_types):
+    while True:
+        try:
+            print_types_menu(meeting_types)
+            option = int(input())
+            
+            if option == 0:
+                return
+            elif option <= len(meeting_types):
+                if change_meeting(meeting_types[option-1]):
+                    del meeting_types[option-1]
+            elif option == len(meeting_types) + 1:
+                meeting = placeholder_type()
+                if not change_meeting(meeting):
+                    meeting_types.append(meeting)
+            else:
+                print("Unknown option, please try again")
+        except ValueError:
+            print("Unknown input, please try again")
+
+def print_meeting_menu(current_meeting):
+    print("===== CHANGE MEETING =====")
+    print("1. Set meeting day (currently {})".format(DAYS[current_meeting.day]))
+    print("2. Set meeting venue (currently '{}')".format(current_meeting.venue))
+    print("3. Set meeting event type (currently '{}')".format(current_meeting.event))
+    print("4. Set meeting start time (currently '{}')".format(current_meeting.start_time))
+    print("5. Set meeting end time (currently '{}')".format(current_meeting.end_time))
+    print("6. Change meeting shows")
+    print("7. Remove meeting")
+    print("0. Save and back")
+    
+def change_meeting(current_meeting):
+    while True:
+        try:
+            print_meeting_menu(current_meeting)
+            option = int(input())
+            
+            if option == 0:
+                return
+            elif option == 1:
+                current_meeting.day = get_new_day()
+            elif option == 2:
+                current_meeting.venue = get_new_string("venue")
+            elif option == 3:
+                current_meeting.event = get_new_string("event")
+            elif option == 4:
+                current_meeting.start_time = get_new_string("start time")
+            elif option == 5:
+                current_meeting.end_time = get_new_string("end time")
+            elif option == 6:
+                change_shows(current_meeting.shows)
+            elif option == 7:
+                return True
+            else:
+                print("Unknown option, please try again")
+                
+        except ValueError:
+            print("Unknown input, please try again")
+
+def print_shows(shows):
+    print("===== CHANGE SHOWS =====")
+    for i, slot in enumerate(shows, 1):
+        print("{0}. Change slot {0} (currently {1})".format(i, str(slot)))
+        
+    print("{}. Add new slot".format(len(shows) + 1))
+    
+    print("0. Save and back")
+    
+def change_shows(shows):
+    while True:
+        try:
+            print_shows(shows)
+            option = int(input())
+            
+            if option == 0:
+                return
+            elif option <= len(shows):
+                if change_slot(shows[option-1]):
+                    del shows[option-1]
+            elif option == len(meeting_types) + 1:
+                slot = Slot([], len(meeting_types) + 1)
+                if not change_slot(slot):
+                    shows.append(slot)
+            else:
+                print("Unknown option, please try again")
+                
+        except ValueError:
+            print("Unknown input, please try again")
+
+def print_slot(slot):
+    print("===== CHANGE SLOT =====")
+    for i, show in enumerate(slot.shows, 1):
+        print("{0}. Change {1}".format(i, str(show)))
+        
+    print("{}. Add new show".format(len(slot.shows) + 1))
+    
+    print("0. Save and back")            
+
+def change_slot(slot):
+    shows = slot.shows
+    while True:
+        try:
+            print_slot(slot)
+            option = int(input())
+            
+            if option == 0:
+                # Recompute episode count to ensure it distributes right
+                slot.reset_count()
+                return
+            elif option <= len(shows):
+                if change_show(shows[option-1]):
+                    del shows[option-1]
+            elif option == len(shows) + 1:
+                show = placeholder_show(slot.slot_number)
+                if not change_show(show):
+                    shows.append(show)
+            else:
+                print("Unknown option, please try again")
+                
+        except ValueError:
+            print("Unknown input, please try again")
+            
+def print_show(show):
+    print("===== CHANGE SHOW =====")
+    print("1. Set show title (currently {})".format(show.title))
+    print("2. Set episode count (currently {})".format(show.episode_count))
+    print("3. Remove show")
+    print("0. Save and back")
+
+def change_show(show):
+    while True:
+        try:
+            print_show(show)
+            option = int(input())
+            
+            if option == 0:
+                return
+            elif option == 1:
+                show.title = get_new_string("title")
+            elif option == 2:
+                show.episode_count = get_new_int("episode count", pos_only = True)
+            elif option == 3:
+                return True
+            else:
+                print("Unknown option, please try again")
+                
+        except ValueError:
+            print("Unknown input, please try again")
+    
+def print_terms(terms):
+    print("===== CHANGE TERMS =====")
+    for i, term in enumerate(terms, 1):
+        print("{}. Change {} term (currently starts {}, ends {})".format(i, term.name, term.start_date, term.end_date))
+    
+    print("{}. Add new term".format(len(terms) + 1))
+    
+    print("0. Exit")
+    
+def change_terms(terms):
+     while True:
+        try:
+            print_terms(terms)
+            option = int(input())
+            
+            if option == 0:
+                return
+            elif option <= len(terms):
+                if change_term(terms[option-1]):
+                    del terms[option-1]
+            elif option == len(terms) + 1:
+                term = placeholder_term()
+                if not change_term(term):
+                    terms.append(term)
+            else:
+                print("Unknown option, please try again")
+                
+        except ValueError:
+            print("Unknown input, please try again")
+
+def print_term(term):
+    print("===== CHANGE TERM =====")
+    print("1. Set term name (currently {})".format(term.name))
+    print("2. Set term start date (currently {})".format(term.start_date))
+    print("3. Set term end date (currently {})".format(term.end_date))
+    print("4. Remove term")
+    print("0. Save and back")
+    
+def change_term(term):
+    while True:
+        try:
+            print_term(term)
+            option = int(input())
+            
+            if option == 0:
+                return
+            elif option == 1:
+                term.name = get_new_string("term name")
+            elif option == 2:
+                term.start_date = get_new_date("start date")
+            elif option == 3:
+                term.end_date = get_new_date("end date")
+            elif option == 4:
+                return True
+            else:
+                print("Unknown option, please try again")
+                
+        except ValueError:
+            print("Unknown input, please try again")
+    
     
 if __name__ == '__main__':
     run_cli()
