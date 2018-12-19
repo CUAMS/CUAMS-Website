@@ -13,6 +13,10 @@ ADD = "add"
 REMOVE = "remove"
 ONE_WEEK = timedelta(7)
 
+# Default constants
+MIN_EPS = 5
+MAX_EPS = 7
+
 # General stuff
 
 class Show:
@@ -201,10 +205,11 @@ class MeetingType:
         along with state for distributing over longer periods
 
         Arguments:
-        start_date -- the first possible day for a meeting to occur
-        end_date   --  the last possible day for a meeting to occur
-        min_eps    -- the minimum number of episodes in a meeting
-        max_eps    -- the maximum number of episodes in a meeting
+        dates   -- a set of tuples (start_date, end_date) where
+            start_date is the first possible day for a meeting to occur
+            end_date is the last possible day for a meeting to occur
+        min_eps -- the minimum number of episodes in a meeting
+        max_eps -- the maximum number of episodes in a meeting
         """
 
         meetings = False
@@ -257,7 +262,7 @@ class Meeting:
         return lines
 
 
-def generate_term(term, start_date, end_date, meeting_types):
+def generate_term(term, start_date, end_date, meeting_types, min_eps = MIN_EPS, max_eps = MAX_EPS):
     """Generate the YAML for a term's schedule
 
     Arguments:
@@ -268,16 +273,48 @@ def generate_term(term, start_date, end_date, meeting_types):
     """
 
     lines = []
-    lines.append("- term: {} {}".format(term, start.year))
+    lines.append("- term: {} {}".format(term, start_date.year))
     lines.append("  meetings:")
     
     meetings = []
     for meeting_type in meeting_types:
-        meetings += meeting_type.distribute()
+        meetings += meeting_type.distribute(start_date, end_date, min_eps, max_eps)
 
     meetings.sort(key=extract_date)
 
     for meeting in meetings:
+        lines += indent_all(meeting.to_yaml(), 2)
+
+    return lines
+    
+def generate_terms(terms, dates, meeting_types, min_eps = MIN_EPS, max_eps = MAX_EPS):
+    """Generate the YAML for a Lent/Easter schedule
+
+    Arguments:
+    terms         -- the term names (eg. [Lent, Easter])
+    dates         -- a set of tuples (start_date, end_date) where
+            start_date is the first possible day for a meeting to occur
+            end_date is the last possible day for a meeting to occur
+    meeting_types -- a list of MeetingType objects
+    """
+    meetings = []
+    for meeting_type in meeting_types:
+        meetings += meeting_type.distribute_terms(dates, min_eps, max_eps)
+
+    meetings.sort(key=extract_date)
+
+    lines = []
+    nextDate = dates.pop(0)[0]
+    nextTerm = terms.pop(0)
+    for meeting in meetings:
+        if nextDate and meeting.date >= nextDate:
+            lines.append("- term: {} {}".format(nextTerm, nextDate.year))
+            lines.append("  meetings:")
+            if dates:
+                nextDate = dates.pop(0)[0]
+                nextTerm = terms.pop(0)
+            else:
+                nextDate = None
         lines += indent_all(meeting.to_yaml(), 2)
 
     return lines
