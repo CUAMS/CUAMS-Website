@@ -21,6 +21,5 @@ e-mail or the schedule, most of the more informal events end up being organised
 through [Discord]({{site.discord_link}}), which is recommended to anyone who
 wants to fully take part in the fun and games.
 
-Membership costs £4 per term or £10 per year, which funds the weekly showings
-including the food and drink at the meetings. Membership is open to anyone, not
-just University students.
+The society is open to all and not just limited to students and staff of the
+university so if you're in the Cambridge area, feel free to come say hi.
