@@ -136,35 +136,40 @@
     venue: Bowett Room, Queens'
     event: Sunday Meeting
     shows:
-    - TBC
+    - Megalo Box 1-2
+    - SHIROBAKO 1-4
   - date: 2019-01-29
     time: 7&#8203;-&#8203;10pm
     venue: Bowett Room, Queens'
     event: Main Meeting
     shows:
-    - TBC
+    - Kids on the Slope 1-2
+    - Zetsuen no Tempest 1-4
   - date: 2019-02-03
     time: 2.30&#8203;-&#8203;5.30pm
     venue: Bowett Room, Queens'
     event: Sunday Meeting
     shows:
-    - TBC
+    - Megalo Box 3-4
+    - SHIROBAKO 5-8
   - date: 2019-02-05
     time: 7&#8203;-&#8203;10pm
     venue: Bowett Room, Queens'
     event: Main Meeting
     shows:
-    - TBC
+    - Kids on the Slope 3-4
+    - Zetsuen no Tempest 5-8
   - date: 2019-02-10
     time: 2.30&#8203;-&#8203;5.30pm
     venue: Bowett Room, Queens'
     event: Sunday Meeting
     shows:
-    - TBC
+    - Megalo Box 5-6
+    - SHIROBAKO 9-12
   - date: 2019-02-12
     time: 7&#8203;-&#8203;10pm
     venue: Bowett Room, Queens'
-    event: Main Meeting &#38; AGM
+    event: AGM
     shows:
     - TBC
   - date: 2019-02-17
@@ -172,41 +177,47 @@
     venue: Bowett Room, Queens'
     event: Sunday Meeting
     shows:
-    - TBC
+    - Megalo Box 7-8
+    - SHIROBAKO 13-16
   - date: 2019-02-19
     time: 7&#8203;-&#8203;10pm
     venue: Armitage Room (FF end), Queens'
     event: Main Meeting
     shows:
-    - TBC
+    - Kids on the Slope 5-6
+    - Zetsuen no Tempest 9-12
   - date: 2019-02-24
     time: 2.30&#8203;-&#8203;5.30pm
     venue: Angevin Room, Queens'
     event: Sunday Meeting
     shows:
-    - TBC
+    - Megalo Box 9-10
+    - SHIROBAKO 17-20
   - date: 2019-02-26
     time: 7&#8203;-&#8203;10pm
     venue: Erasmus Room, Queens'
     event: Main Meeting
     shows:
-    - TBC
+    - Kids on the Slope 7-8
+    - Zetsuen no Tempest 13-16
   - date: 2019-03-03
     time: 2.30&#8203;-&#8203;5.30pm
     venue: Erasmus Room, Queens'
     event: Sunday Meeting
     shows:
-    - TBC
+    - Megalo Box 11-12
+    - SHIROBAKO 21-24
   - date: 2019-03-05
     time: 7&#8203;-&#8203;10pm
     venue: Erasmus Room, Queens'
     event: Main Meeting
     shows:
-    - TBC
+    - Kids on the Slope 9-10
+    - Zetsuen no Tempest 17-20
   - date: 2019-03-10
     time: 2.30&#8203;-&#8203;5.30pm
     venue: Bowett Room, Queens'
-    event: Sunday Meeting
+    event: Bonus Meeting
     shows:
     - TBC
   - date: 2019-03-12
@@ -214,7 +225,8 @@
     venue: Bowett Room, Queens'
     event: Main Meeting
     shows:
-    - TBC
+    - Kids on the Slope 11-12
+    - Zetsuen no Tempest 21-24
 - term: Easter 2019
   meetings:
   - date: 2019-04-23

@@ -39,6 +39,32 @@
       link: https://myanimelist.net/anime/34822/Tsuki_ga_Kirei
     - title: ANN
       link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19019
+  - title: Kids on the Slope
+    image: /assets/images/anime/Kids-on-the-Slope.jpg
+    episodes: 12
+    year: 2012
+    studio: MAPPA
+    schedule: Lent 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/12531/Sakamichi-no-Apollon/
+    - title: MAL
+      link: https://myanimelist.net/anime/12531/Sakamichi_no_Apollon
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=13944
+  - title: Zetsuen no Tempest
+    image: /assets/images/anime/Zetsuen-no-Tempest.jpg
+    episodes: 24
+    year: 2012
+    studio: BONES
+    schedule: Lent 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/14075/Zetsuen-no-Tempest/
+    - title: MAL
+      link: https://myanimelist.net/anime/14075/Zetsuen_no_Tempest
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=14331
 - type: Sunday
   shows:
   - title: Gabriel Dropout
@@ -80,6 +106,32 @@
       link: https://myanimelist.net/anime/22135/Ping_Pong_The_Animation
     - title: ANN
       link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=15852
+  - title: Megalo Box
+    image: /assets/images/anime/Megalo-Box.jpg
+    episodes: 13
+    year: 2018
+    studio: TMS Entertainment
+    schedule: Lent 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/100298/Megalo-Box/
+    - title: MAL
+      link: https://myanimelist.net/anime/36563/Megalo_Box
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=20565
+  - title: SHIROBAKO
+    image: /assets/images/anime/SHIROBAKO.jpg
+    episodes: 24
+    year: 2014
+    studio: P.A. Works
+    schedule: Lent 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/20812/SHIROBAKO/
+    - title: MAL
+      link: https://myanimelist.net/anime/25835/Shirobako
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16189
 - type: Bonus
   shows:
   - title: Voices of a Distant Star
