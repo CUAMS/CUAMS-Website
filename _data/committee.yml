@@ -1,55 +1,60 @@
 - title: Current Committee
   positions:
   - role: President
-    image: sam.jpg
-    holder: Sam Gooch
-    email: sg799
-  - role: Secretary
-    image: will.jpg
+    image: will_revdab_18.jpg
     holder: Will Barnes
     email: wjb49
+  - role: Secretary
+    image: roger_18.jpg
+    holder: Roger Ren
+    email: rsr42
   - role: Treasurer
-    image: guoxuan.jpg
+    image: guoxuan_18.jpg
     holder: Guoxuan Xia
     email: gx218
   - role: Webmaster
-    image: jemma.jpg
-    holder: Jemma Henry
-    email: jah246
+    image: ben_18.jpg
+    holder: Ben Bai
+    email: byhb2
   - role: Food Lord
-    image: oscar.jpg
+    image: oscar_18.jpg
     holder: Oscar Brown
     email: omb28
   - role: External Officer
-    image: can.jpg
-    holder: Can Hou
-    email: ch714
+    image: adam_18.jpg
+    holder: Adam Berman
+    email: agb61
   - role: Social Secretary
-    image: ben.jpg
-    holder: Ben Bai
-    email: byhb2
+    image: emma_18.jpg
+    holder: Emma Chang Liu
+    email: cl756
 - title: Previous Committee
   positions:
   - role: President
-    image: daniel.jpg
-    holder: Daniel Oakes
-    email: dda02
-  - role: Secretary
-    image: philip.png
-    holder: Philip De Friend
-    email: pd422
-  - role: Treasurer
-    image: sam.jpg
+    image: sam_17.jpg
     holder: Sam Gooch
     email: sg799
+  - role: Secretary
+    image: will_17.jpg
+    holder: Will Barnes
+    email: wjb49
+  - role: Treasurer
+    image: guoxuan_17.jpg
+    holder: Guoxuan Xia
+    email: gx218
   - role: Webmaster
-    image: jemma.jpg
+    image: jemma_17.jpg
     holder: Jemma Henry
     email: jah246
   - role: Food Lord
-    image: anthea.jpg
-    holder: Anthea Chui
-    email: acc70
+    image: oscar_17.jpg
+    holder: Oscar Brown
+    email: omb28
   - role: External Officer
-    holder: Anson Lam Ho Ching
-    email: hcal4
+    image: can_17.jpg
+    holder: Can Hou
+    email: ch714
+  - role: Social Secretary
+    image: ben_17.jpg
+    holder: Ben Bai
+    email: byhb2
