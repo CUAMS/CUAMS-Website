@@ -65,6 +65,32 @@
       link: https://myanimelist.net/anime/14075/Zetsuen_no_Tempest
     - title: ANN
       link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=14331
+  - title: Kyousougiga
+    image: /assets/images/anime/Kyousou_Giga_TV.jpg
+    episodes: 10+1
+    year: 2013
+    studio: Toei Animation
+    schedule: Easter 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/19703/Kyousougiga-TV/
+    - title: MAL
+      link: https://myanimelist.net/anime/19703/Kyousou_Giga_TV
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=15509
+  - title: Girls' Last Tour
+    image: /assets/images/anime/Shoujo_Shuumatsu_Ryokou.jpg
+    episodes: 12
+    year: 2017
+    studio: White Fox
+    schedule: Easter 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/99420/Shoujo-Shuumatsu-Ryokou/
+    - title: MAL
+      link: https://myanimelist.net/anime/35838/Shoujo_Shuumatsu_Ryokou
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19827
 - type: Sunday
   shows:
   - title: Gabriel Dropout
@@ -132,6 +158,32 @@
       link: https://myanimelist.net/anime/25835/Shirobako
     - title: ANN
       link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16189
+  - title: Gamers!
+    image: /assets/images/anime/Gamers.jpg
+    episodes: 12
+    year: 2017
+    studio: Pine Jam
+    schedule: Easter 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/97766/Gamers/ 
+    - title: MAL
+      link: https://myanimelist.net/anime/34280/Gamers
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19399
+  - title: Shoujo☆Kageki Revue Starlight
+    image: /assets/images/anime/Shoujo☆Kageki_Revue_Starlight.jpg
+    episodes: 12
+    year: 2018
+    studio: Kinema Citrus
+    schedule: Easter 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/98658/ShoujoKageki-Revue-Starlight/
+    - title: MAL
+      link: https://myanimelist.net/anime/35503/Shoujo%E2%98%86Kageki_Revue_Starlight
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=20891
 - type: Bonus
   shows:
   - title: Voices of a Distant Star
@@ -238,3 +290,16 @@
       link: https://myanimelist.net/anime/34549/Ryuu_no_Haisha
     - title: ANN
       link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18712
+  - title: The Night is Short, Walk on Girl 
+    image: /assets/images/anime/Yoru_wa_Mijikashi_Arukeyo_Otome.jpg
+    episodes: 1
+    year: 2017
+    studio: Science SARU
+    schedule: Easter 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/97917/Yoru-wa-Mijikashi-Arukeyo-Otome
+    - title: MAL
+      link: https://myanimelist.net/anime/34537/Yoru_wa_Mijikashi_Arukeyo_Otome 
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18915
