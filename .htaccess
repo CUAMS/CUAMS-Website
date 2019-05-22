@@ -12,4 +12,15 @@ RewriteRule ^(.*)        https://cuams.soc.srcf.net/$1 [L,R=permanent]
 RewriteCond %{REQUEST_SCHEME} http$ [NC]
 RewriteRule ^(.*)        https://cuams.soc.srcf.net/$1
 
+# Redirect the old php pages
+RewriteRule ^committee\.php$ /committee/ [R=permanent]
+RewriteRule ^about\.php$ /about/ [R=permanent]
+RewriteRule ^easter-meeting/schedule\.php$ /schedule/ [R=permanent]
+RewriteRule ^main-meeting\.php$ /meetings/ [R=permanent]
+RewriteRule ^easter-meeting\.php$ /meetings/ [R=permanent]
+RewriteRule ^bonus-meeting\.php$ /meetings/ [R=permanent]
+RewriteRule ^sunday-meeting\.php$ /meetings/ [R=permanent]
+RewriteRule ^schedule\.php$ /schedule/ [R=permanent]
+RewriteRule ^index\.php$ / [R=permanent]
+
 ErrorDocument 404 /404.html
