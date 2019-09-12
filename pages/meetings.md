@@ -11,8 +11,8 @@ college, and we provide snacks and drinks to enhance the experience unless
 otherwise specified.
 
 Main meetings and Sunday meetings have different sets of shows, so there is no
-obligation to attend both sets of meetings.  That said, you are welcome to
-attend both if you want to maximise your CUAMS anime intake.
+obligation to attend both, but you're welcome to do so if you want to maximise
+your CUAMS anime intake.
 
 Bonus meetings are mostly, if not entirely, independent from the other series
 we're watching, so feel free to come along to any that take your fancy.
