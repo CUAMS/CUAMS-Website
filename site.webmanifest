@@ -1,0 +1,20 @@
+{
+    "name": "CUAMS",
+    "short_name": "CUAMS",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#a3c1ad",
+    "background_color": "#a3c1ad",
+    "start_url": "https://cuams.soc.srcf.net/",
+    "display": "standalone"
+}
