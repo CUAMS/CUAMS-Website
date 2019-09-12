@@ -1,357 +1,95 @@
 - type: Main
   shows:
-  - title: Sora yori mo Tooi Basho / A Place Further than the Universe
-    image: /assets/images/anime/Sora-yori-mo-Tooi-Basho.jpg
-    episodes: 13
-    year: 2018
-    studio: MADHOUSE
-    schedule: Michaelmas 2018
+  - title: TBA
+    image: /assets/images/default.png
+    episodes: "?"
+    year: "?"
+    studio: "?"
+    schedule: Michaelmas 2019
     info:
     - title: AL
-      link: https://anilist.co/anime/99426/Sora-yori-mo-Tooi-Basho/
+      link: https://anilist.co/
     - title: MAL
-      link: https://myanimelist.net/anime/35839/Sora_yori_mo_Tooi_Basho
+      link: https://myanimelist.net/
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19828
-  - title: Mahou Shoujo Madoka★Magica
-    image: /assets/images/anime/Madoka.jpg
-    episodes: 12
-    year: 2011
-    studio: Shaft
-    schedule: Michaelmas 2018
-    info:
-    - title: AL
-      link: https://anilist.co/anime/9756/Mahou-Shoujo-MadokaMagica/
-    - title: MAL
-      link: https://myanimelist.net/anime/9756/Mahou_Shoujo_Madoka★Magica
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=12120
-  - title: Tsuki ga Kirei
-    image: /assets/images/anime/Tsuki-ga-Kirei.png
-    episodes: 12
-    year: 2017
-    studio: feel.
-    schedule: Michaelmas 2018
-    info:
-    - title: AL
-      link: https://anilist.co/anime/98202/Tsuki-ga-Kirei/
-    - title: MAL
-      link: https://myanimelist.net/anime/34822/Tsuki_ga_Kirei
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19019
-  - title: Kids on the Slope
-    image: /assets/images/anime/Kids-on-the-Slope.jpg
-    episodes: 12
-    year: 2012
-    studio: MAPPA
-    schedule: Lent 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/12531/Sakamichi-no-Apollon/
-    - title: MAL
-      link: https://myanimelist.net/anime/12531/Sakamichi_no_Apollon
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=13944
-  - title: Zetsuen no Tempest
-    image: /assets/images/anime/Zetsuen-no-Tempest.jpg
-    episodes: 24
-    year: 2012
-    studio: BONES
-    schedule: Lent 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/14075/Zetsuen-no-Tempest/
-    - title: MAL
-      link: https://myanimelist.net/anime/14075/Zetsuen_no_Tempest
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=14331
-  - title: Kyousougiga
-    image: /assets/images/anime/Kyousou_Giga_TV.jpg
-    episodes: 10+1
-    year: 2013
-    studio: Toei Animation
-    schedule: Easter 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/19703/Kyousougiga-TV/
-    - title: MAL
-      link: https://myanimelist.net/anime/19703/Kyousou_Giga_TV
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=15509
-  - title: Girls' Last Tour
-    image: /assets/images/anime/Shoujo_Shuumatsu_Ryokou.jpg
-    episodes: 12
-    year: 2017
-    studio: White Fox
-    schedule: Easter 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/99420/Shoujo-Shuumatsu-Ryokou/
-    - title: MAL
-      link: https://myanimelist.net/anime/35838/Shoujo_Shuumatsu_Ryokou
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19827
+      link: https://www.animenewsnetwork.com/
 - type: Sunday
   shows:
-  - title: Gabriel Dropout
-    image: /assets/images/anime/Gabriel-Dropout.jpg
-    episodes: 12
-    year: 2017
-    studio: Doga Kobo
-    schedule: Michaelmas 2018
+  - title: TBA
+    image: /assets/images/default.png
+    episodes: "?"
+    year: "?"
+    studio: "?"
+    schedule: Michaelmas 2019
     info:
     - title: AL
-      link: https://anilist.co/anime/21878/Gabriel-Dropout/
+      link: https://anilist.co/
     - title: MAL
-      link: https://myanimelist.net/anime/33731/Gabriel_DropOut
+      link: https://myanimelist.net/
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18671
-  - title: Youjo Senki
-    image: /assets/images/anime/Youjo-Senki.jpg
-    episodes: 12
-    year: 2017
-    studio: NUT
-    schedule: Michaelmas 2018
-    info:
-    - title: AL
-      link: https://anilist.co/anime/21613/Youjo-Senki/
-    - title: MAL
-      link: https://myanimelist.net/anime/32615/Youjo_Senki
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18692
-  - title: Ping Pong the Animation
-    image: /assets/images/anime/Ping-Pong.jpg
-    episodes: 11
-    year: 2014
-    studio: Tatsunoko Production
-    schedule: Michaelmas 2018
-    info:
-    - title: AL
-      link: https://anilist.co/anime/20607/Ping-Pong-the-Animation/
-    - title: MAL
-      link: https://myanimelist.net/anime/22135/Ping_Pong_The_Animation
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=15852
-  - title: Megalo Box
-    image: /assets/images/anime/Megalo-Box.jpg
-    episodes: 13
-    year: 2018
-    studio: TMS Entertainment
-    schedule: Lent 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/100298/Megalo-Box/
-    - title: MAL
-      link: https://myanimelist.net/anime/36563/Megalo_Box
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=20565
-  - title: SHIROBAKO
-    image: /assets/images/anime/SHIROBAKO.jpg
-    episodes: 24
-    year: 2014
-    studio: P.A. Works
-    schedule: Lent 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/20812/SHIROBAKO/
-    - title: MAL
-      link: https://myanimelist.net/anime/25835/Shirobako
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16189
-  - title: Gamers!
-    image: /assets/images/anime/Gamers.jpg
-    episodes: 12
-    year: 2017
-    studio: Pine Jam
-    schedule: Easter 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/97766/Gamers/ 
-    - title: MAL
-      link: https://myanimelist.net/anime/34280/Gamers
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19399
-  - title: Shoujo☆Kageki Revue Starlight
-    image: /assets/images/anime/Shoujo☆Kageki_Revue_Starlight.jpg
-    episodes: 12
-    year: 2018
-    studio: Kinema Citrus
-    schedule: Easter 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/98658/ShoujoKageki-Revue-Starlight/
-    - title: MAL
-      link: https://myanimelist.net/anime/35503/Shoujo%E2%98%86Kageki_Revue_Starlight
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=20891
+      link: https://www.animenewsnetwork.com/
 - type: Bonus
   shows:
-  - title: Voices of a Distant Star
-    image: /assets/images/anime/Hoshi-no-Koe.jpg
+  - title: Daicon III
+    image: /assets/images/anime/Daicon-III.jpg
     episodes: 1
-    year: 2002
-    studio: CoMix Wave Films
+    year: 1981
+    studio: Daicon Film (later Gainax)
     schedule: Freshers' Squash
     info:
     - title: AL
-      link: https://anilist.co/anime/256/Hoshi-no-Koe/
+      link: https://anilist.co/anime/2724/Daicon-Opening-Animations
     - title: MAL
-      link: https://myanimelist.net/anime/256/Hoshi_no_Koe
+      link: https://myanimelist.net/anime/2724/Daicon_Opening_Animations
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=775
-  - title: When Marnie was There
-    image: /assets/images/anime/When-Marnie-was-There.png
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=817
+  - title: Daicon IV
+    image: /assets/images/anime/Daicon-IV.jpg
     episodes: 1
-    year: 2014
-    studio: Studio Ghibli
+    year: 1983
+    studio: Daicon Film (later Gainax)
     schedule: Freshers' Squash
     info:
     - title: AL
-      link: https://anilist.co/anime/20555/Omoide-no-Marnie/
+      link: https://anilist.co/anime/2724/Daicon-Opening-Animations
     - title: MAL
-      link: https://myanimelist.net/anime/21557/Omoide_no_Marnie
+      link: https://myanimelist.net/anime/2724/Daicon_Opening_Animations
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=15761
-  - title: "Mahou Shoujo Madoka★Magica Movie 3: Rebellion"
-    image: /assets/images/anime/Rebellion.jpg
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=817
+  - title: Dareka no Manazashi (Someone's Gaze)
+    image: /assets/images/anime/Dareka-no-Manazashi.jpg
     episodes: 1
     year: 2013
-    studio: Shaft
-    schedule: Michaelmas 2018
+    studio: CoMix Wave Films, NEST, and TYO M1 Production
+    schedule: Freshers' Squash
     info:
     - title: AL
-      link: https://anilist.co/anime/11981/Mahou-Shoujo-MadokaMagica-Movie-3-Hangyaku-no-Monogatari/
+      link: https://anilist.co/anime/17121/Dareka-no-Manazashi
     - title: MAL
-      link: https://myanimelist.net/anime/11981/Mahou_Shoujo_Madoka★Magica_Movie_3__Hangyaku_no_Monogatari
+      link: https://myanimelist.net/anime/17121/Dareka_no_Manazashi
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=14850
-  - title: "Mahoutsukai no Yome: Hoshi Matsu Hito / The Ancient Magus' Bride: Those Awaiting a Star"
-    image: /assets/images/anime/MagusBride.jpg
-    episodes: 3
-    year: 2013
-    studio: Wit Studio
-    schedule: Lent 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/21688/Mahoutsukai-no-Yome-Hoshi-Matsu-Hito/
-    - title: MAL
-      link: https://myanimelist.net/anime/32902/Mahoutsukai_no_Yome__Hoshi_Matsu_Hito
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18136
-  - title: Doukyuusei
-    image: /assets/images/anime/Doukyuusei.jpg
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=15115
+  - title: Shelter
+    image: /assets/images/anime/Shelter.jpg
     episodes: 1
     year: 2016
     studio: A-1 Pictures
-    schedule: Lent 2019
+    schedule: Freshers' Squash
     info:
     - title: AL
-      link: https://anilist.co/anime/21096/Doukyuusei/
+      link: https://anilist.co/anime/97731/Shelter/
     - title: MAL
-      link: https://myanimelist.net/anime/30346/Doukyuusei_Movie
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16977
-  - title: Uchuu Patrol Luluco / Space Patrol Luluco
-    image: /assets/images/anime/Luluco.png
-    episodes: 13
-    year: 2016
-    studio: Trigger
-    schedule: Lent 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/21637/Uchuu-Patrol-Luluco/
-    - title: MAL
-      link: https://myanimelist.net/anime/32681/Uchuu_Patrol_Luluco
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18054
-  - title: "She and Her Cat: Everything Flows"
-    image: /assets/images/anime/Kanoneko.jpg
-    episodes: 4
-    year: 2016
-    studio: LIDENFILMS
-    schedule: Lent 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/21577/Kanojo-to-Kanojo-no-Neko-Everything-Flows
-    - title: MAL
-      link: https://myanimelist.net/anime/32491/Kanojo_to_Kanojo_no_Neko__Everything_Flows
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=17980
-  - title: Ryuu no Haisha / The Dragon Dentist
-    image: /assets/images/anime/RyuuNoHaisha.jpg
-    episodes: 2
-    year: 2017
-    studio: Khara
-    schedule: Lent 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/87539/Ryuu-no-Haisha
-    - title: MAL
-      link: https://myanimelist.net/anime/34549/Ryuu_no_Haisha
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18712
-  - title: The Night is Short, Walk on Girl 
-    image: /assets/images/anime/Yoru_wa_Mijikashi_Arukeyo_Otome.jpg
+      link: https://myanimelist.net/anime/34240/Shelter
+  - title: "Maquia: When the Promised Flower Blooms (SayoAsa)"
+    image: /assets/images/anime/Maquia.jpg
     episodes: 1
-    year: 2017
-    studio: Science SARU
-    schedule: Easter 2019
+    year: 2018
+    studio: P.A.Works
+    schedule: Freshers' Squash
     info:
     - title: AL
-      link: https://anilist.co/anime/97917/Yoru-wa-Mijikashi-Arukeyo-Otome
+      link: https://anilist.co/anime/99457/Sayonara-no-Asa-ni-Yakusoku-no-Hana-wo-Kazarou
     - title: MAL
-      link: https://myanimelist.net/anime/34537/Yoru_wa_Mijikashi_Arukeyo_Otome 
+      link: https://myanimelist.net/anime/35851/Sayonara_no_Asa_ni_Yakusoku_no_Hana_wo_Kazarou
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18915
-  - title: Teekyuu 9
-    image: /assets/images/anime/Teekyuu_9.jpg
-    episodes: 12
-    year: 2017
-    studio: Millepensee
-    schedule: Easter 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/98566
-    - title: MAL
-      link: https://myanimelist.net/anime/35370/Teekyuu_9
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19543
-  - title: "Sarusuberi: Miss Hokusai"
-    image: "/assets/images/anime/Sarusuberi__Miss_Hokusai.jpg"
-    episodes: 1
-    year: 2015
-    studio: "Production I.G"
-    schedule: Easter 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/20709
-    - title: MAL
-      link: https://myanimelist.net/anime/23987/Sarusuberi__Miss_Hokusai
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16822
-  - title: Genius Party
-    image: /assets/images/anime/Genius_Party.jpg 
-    episodes: 7
-    year: 2007
-    studio: Studio 4°C
-    schedule: Easter 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/3508
-    - title: MAL
-      link: https://myanimelist.net/anime/3508/Genius_Party
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=5844
-  - title: Sword of the Stranger
-    image: /assets/images/anime/Stranger__Mukou_Hadan.jpg
-    episodes: 1
-    year: 2007
-    studio: Bones
-    schedule: Easter 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/2418
-    - title: MAL
-      link: https://myanimelist.net/anime/2418/Stranger__Mukou_Hadan
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=2340
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19848
