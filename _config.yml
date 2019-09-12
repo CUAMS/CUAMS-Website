@@ -18,7 +18,7 @@ email: cuams-list-owner@srcf.net
 description: >- # this means to ignore newlines until "baseurl:"
   The official website for the Cambridge University Anime and Manga Society
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://cuams.soc.srcf.net
 facebook_username: cuams
 discord_link: https://discord.gg/aA3Cpqw
 mailing_list: https://lists.srcf.net/mailman/listinfo/cuams-list
