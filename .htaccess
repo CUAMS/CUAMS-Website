@@ -23,4 +23,9 @@ RewriteRule ^sunday-meeting\.php$ /meetings/ [R=permanent]
 RewriteRule ^schedule\.php$ /schedule/ [R=permanent]
 RewriteRule ^index\.php$ / [R=permanent]
 
+# Use custom 404 page
 ErrorDocument 404 /404.html
+
+# Pretend indices don't exist
+Options -Indexes
+ErrorDocument 403 /404.html
