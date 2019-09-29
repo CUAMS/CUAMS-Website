@@ -1,33 +1,202 @@
 - type: Main
   shows:
-  - title: TBA
-    image: /assets/images/default.png
-    episodes: "?"
-    year: "?"
-    studio: "?"
+  - title: "Hinamatsuri"
+    image: "/assets/images/anime/Hinamatsuri.jpg"
+    episodes: 12
+    year: 2018
+    studio: "feel."
     schedule: Michaelmas 2019
     info:
     - title: AL
-      link: https://anilist.co/
+      link: https://anilist.co/anime/100077
     - title: MAL
-      link: https://myanimelist.net/
+      link: https://myanimelist.net/anime/36296/Hinamatsuri
     - title: ANN
-      link: https://www.animenewsnetwork.com/
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=20335
+  - title: "SSSS. Gridman"
+    image: "/assets/images/anime/SSSSGridman.jpg"
+    episodes: 12
+    year: 2018
+    studio: "Trigger"
+    schedule: Michaelmas 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/99424
+    - title: MAL
+      link: https://myanimelist.net/anime/35847/SSSSGridman
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=20369
+  - title: "ACCA: 13-Territory Inspection Dept (ACCA-13)"
+    image: "/assets/images/anime/ACCA__13-ku_Kansatsu-ka.jpg"
+    episodes: 12
+    year: 2017
+    studio: "Madhouse"
+    schedule: Michaelmas 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/21823
+    - title: MAL
+      link: https://myanimelist.net/anime/33337/ACCA__13-ku_Kansatsu-ka
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18461
+  - title: "Humanity has Declined!"
+    image: "/assets/images/anime/Jinrui_wa_Suitai_Shimashita.jpg"
+    episodes: 12
+    year: 2012
+    studio: "AIC A.S.T.A."
+    schedule: Lent 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/10357
+    - title: MAL
+      link: https://myanimelist.net/anime/10357/Jinrui_wa_Suitai_Shimashita
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=13787
+  - title: "Shouwa Genroku Rakugo Shinjuu"
+    image: "/assets/images/anime/Shouwa_Genroku_Rakugo_Shinjuu.jpg"
+    episodes: 13
+    year: 2016
+    studio: "Studio Deen"
+    schedule: Lent/Easter 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/20972
+    - title: MAL
+      link: https://myanimelist.net/anime/28735/Shouwa_Genroku_Rakugo_Shinjuu
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16614
+  - title: "Spice and Wolf (Ookami to Koushinryou)"
+    image: "/assets/images/anime/Ookami_to_Koushinryou.jpg"
+    episodes: 13
+    year: 2008
+    studio: "Imagin"
+    schedule: Lent 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/2966
+    - title: MAL
+      link: https://myanimelist.net/anime/2966/Ookami_to_Koushinryou
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=8537
+  - title: "Angel Beats!"
+    image: "/assets/images/anime/Angel_Beats.jpg"
+    episodes: 13
+    year: 2010
+    studio: "P.A. Works"
+    schedule: Easter 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/6547
+    - title: MAL
+      link: https://myanimelist.net/anime/6547/Angel_Beats
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=10885
+  - title: "Spice and Wolf II"
+    image: "/assets/images/anime/Spice_and_Wolf_II.jpg"
+    episodes: 12
+    year: 2009
+    studio: "Brain's Base"
+    schedule: Easter 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/5341/Ookami-to-Koushinryou-II
+    - title: MAL
+      link: https://myanimelist.net/anime/5341/Ookami_to_Koushinryou_II
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=10269
 - type: Sunday
   shows:
-  - title: TBA
-    image: /assets/images/default.png
-    episodes: "?"
-    year: "?"
-    studio: "?"
+  - title: "Girls und Panzer"
+    image: "/assets/images/anime/Girls___Panzer.jpg"
+    episodes: 12
+    year: 2012
+    studio: "Actas"
     schedule: Michaelmas 2019
     info:
     - title: AL
-      link: https://anilist.co/
+      link: https://anilist.co/anime/14131
     - title: MAL
-      link: https://myanimelist.net/
+      link: https://myanimelist.net/anime/14131/Girls___Panzer
     - title: ANN
-      link: https://www.animenewsnetwork.com/
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16864
+  - title: "Seishun Buta Yarou (Bunny Girl Senpai)"
+    image: "/assets/images/anime/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai.jpg"
+    episodes: 13
+    year: 2018
+    studio: "CloverWorks"
+    schedule: Michaelmas 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/91170
+    - title: MAL
+      link: https://myanimelist.net/anime/37450/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21406
+  - title: "School-Live! (Gakkou Gurashi)"
+    image: "/assets/images/anime/Gakkougurashi.jpg"
+    episodes: 12
+    year: 2015
+    studio: "Lerche"
+    schedule: Michaelmas 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/20754
+    - title: MAL
+      link: https://myanimelist.net/anime/24765/Gakkougurashi
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16603
+  - title: "Blood Blockade Battlefront (Kekkai Sensen)"
+    image: "/assets/images/anime/Kekkai_Sensen.jpg"
+    episodes: 12
+    year: 2015
+    studio: "Bones"
+    schedule: Lent 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/20727
+    - title: MAL
+      link: https://myanimelist.net/anime/24439/Kekkai_Sensen
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16340
+  - title: "Plastic Memories"
+    image: "/assets/images/anime/Plastic_Memories.jpg"
+    episodes: 13
+    year: 2015
+    studio: "Doga Kobo"
+    schedule: Lent 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/20872
+    - title: MAL
+      link: https://myanimelist.net/anime/27775/Plastic_Memories
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16377
+  - title: "Blood Blockade Battlefront (Kekkai Sensen) & Beyond"
+    image: "/assets/images/anime/Kekkai_Sensen___Beyond.jpg"
+    episodes: 12
+    year: 2017
+    studio: "Bones"
+    schedule: Easter 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/97886
+    - title: MAL
+      link: https://myanimelist.net/anime/34451/Kekkai_Sensen___Beyond
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18900
+  - title: "Granbelm"
+    image: "/assets/images/anime/Granbelm.jpg"
+    episodes: 13
+    year: 2019
+    studio: "Nexus"
+    schedule: Easter 2019
+    info:
+    - title: AL
+      link: https://anilist.co/anime/108147
+    - title: MAL
+      link: https://myanimelist.net/anime/39417/Granbelm
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21873
 - type: Bonus
   shows:
   - title: Daicon III
