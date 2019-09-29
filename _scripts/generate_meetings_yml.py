@@ -40,7 +40,12 @@ def getAnimeYamlBlock(anime_name, assets_dir_string, schedule, delay=3):
             if search_response.status_code == 200:
                 break
             elif search_response.status_code == 429:
-                delay = delay*2
+                # If we get a retry-after, respect it, otherwise just double
+                try:
+                    delay = int(search_response.headers['Retry-after'])
+                except TypeError:
+                    delay = delay*2
+
                 print(f'Delaying for {delay}s ...')
                 time.sleep(delay)
             else:
@@ -71,7 +76,7 @@ def getAnimeYamlBlock(anime_name, assets_dir_string, schedule, delay=3):
 
         # Get anime info
         print('Getting MAL anime info...')
-        anime_response = searchRequestWrapper(requests.get, delay, url=anime_url)
+        anime_response = searchRequestWrapper(requests.get, delay, url=anime_url, headers = {'User-agent': 'CUAMS Scraper'})
 
         anime_soup = bs4.BeautifulSoup(anime_response.text, 'html.parser')
         anime_image_url = anime_soup.find(itemprop='image').get('src')
@@ -186,14 +191,17 @@ if __name__ == '__main__':
             f.write(f'     - "{show.anime_name}"\n')
 
     blocks = []
-    for show_type in TYPES:
-        blocks.append(f'- type: {show_type}')
-        for show in shows:
-            if show.type == show_type:
-                print(f'--- Processing {show.anime_name} ---')
-                block = getAnimeYamlBlock(show.anime_name, assets_dir_string, show.schedule, delay=5)
-                print(block)
-                blocks.append(block)
+    try:
+        for show_type in TYPES:
+            blocks.append(f'- type: {show_type}')
+            for show in shows:
+                if show.type == show_type:
+                    print(f'--- Processing {show.anime_name} ---')
+                    block = getAnimeYamlBlock(show.anime_name, assets_dir_string, show.schedule, delay=5)
+                    print(block)
+                    blocks.append(block)
+    except KeyboardInterrupt:
+        print("Aborted, writing results to file")
 
     with open(out_meetings_yaml_file, 'w') as f:
         f.write('\n'.join(blocks))

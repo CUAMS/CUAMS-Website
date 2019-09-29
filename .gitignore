@@ -9,6 +9,9 @@ Vim swap files
 # Ignore anime images so we don't upload copyrighted material to GitHub
 /assets/images/anime/*
 
+# Ignore script output
+/_scripts/_output
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
