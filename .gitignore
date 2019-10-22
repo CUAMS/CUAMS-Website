@@ -2,9 +2,12 @@ _site
 .sass-cache
 .jekyll-metadata
 
-Vim swap files
+# Vim swap files
 *.swp
 *.swo
+
+# OSX files
+.DS_Store
 
 # Ignore anime images so we don't upload copyrighted material to GitHub
 /assets/images/anime/*
