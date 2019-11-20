@@ -92,11 +92,9 @@
   - date: 2019-11-26
     time: 7&#8203;-&#8203;10pm
     venue: Bowett Room, Queens'
-    event: Main Meeting
+    event: Cancelled
     shows:
-     - Hinamatsuri 11-12
-     - SSSS.Gridman 11-12
-     - ACCA-13 11-12
+     - Cancelled
   - date: 2019-12-01
     time: 2.30&#8203;-&#8203;5.30pm
     venue: Bowett Room, Queens'
@@ -107,7 +105,9 @@
      - School-Live! 11-12
   - date: 2019-12-03
     time: 7&#8203;-&#8203;10&#8203;pm
-    venue: TBC
-    event: Bonus Meeting
+    venue: Selwyn JCR TV Room (TBC)
+    event: Main Meeting
     shows:
-    - TBA
+     - Hinamatsuri 11-12
+     - SSSS.Gridman 11-12
+     - ACCA-13 11-12
