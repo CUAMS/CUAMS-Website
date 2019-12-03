@@ -12,8 +12,9 @@ _site
 # Ignore anime images so we don't upload copyrighted material to GitHub
 /assets/images/anime/*
 
-# Ignore script output
+# Ignore script output and pycache
 /_scripts/_output
+/_scripts/__pycache__
 
 # User-specific stuff
 .idea/**/workspace.xml
