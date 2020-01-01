@@ -254,6 +254,11 @@ class MeetingType:
         
     def distribute(self, term, min_eps, max_eps):
         return distribute(term.start_date, term.end_date, min_eps, max_eps)
+        
+    def to_yaml(self):
+        return [f"- name: {self.event}",
+                f"  time: {self.start_time}&#8203;-&#8203;{self.end_time}",
+                f"  venue: {self.venue}"]
 
 class Meeting:
     """A helper class which encapsulates a single meeting"""
@@ -275,9 +280,6 @@ class Meeting:
     def to_yaml(self):
         lines = []
         lines.append("- date: " + self.date.isoformat())
-        lines.append("  time: {}&#8203;-&#8203;{}".format(self.type.start_time,
-            self.type.end_time))
-        lines.append("  venue: {}".format(self.type.venue))
         lines.append("  event: {}".format(self.type.event))
         lines.append("  shows:")
         for show,episodes in self.episodes:
@@ -305,6 +307,11 @@ def generate_term(term, start_date, end_date, meeting_types, min_eps = MIN_EPS, 
 
     lines = []
     lines.append("- term: {} {}".format(term, start_date.year))
+    lines.append("  events:")
+    
+    for meeting_type in meeting_types:
+        lines += indent_all(meeting_type.to_yaml(), 2)
+    
     lines.append("  meetings:")
     
     meetings = []
@@ -343,12 +350,17 @@ def generate_terms(terms, meeting_types, min_eps = MIN_EPS, max_eps = MAX_EPS):
     for meeting in meetings:
         if next_term and meeting.date >= next_term.start_date:
             lines.append("- term: {} {}".format(next_term.name, next_term.start_date.year))
+            lines.append("  events:")
+            
+            for meeting_type in meeting_types:
+                lines += indent_all(meeting_type.to_yaml(), 4)
+            
             lines.append("  meetings:")
             if terms:
                 next_term = terms.pop(0)
             else:
                 next_term = None
-        lines += indent_all(meeting.to_yaml(), 2)
+        lines += indent_all(meeting.to_yaml(), 4)
 
     return lines
 
