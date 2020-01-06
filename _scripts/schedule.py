@@ -131,6 +131,15 @@ class MeetingType:
         self.start_time = start_time
         self.end_time = end_time
         self.shows = shows
+        
+    def _get_week_count(self, start_date, end_date):
+        days_til_first = (7 + self.day - start_date.weekday()) % 7
+        first_meeting = start_date + timedelta(days_til_first)
+
+        days_before_last = (7 - self.day + end_date.weekday()) % 7
+        last_meeting = end_date - timedelta(days_before_last)
+
+        return 1 + (last_meeting - first_meeting).days // 7
 
     def _get_next(self, shows, eps_left, meeting_proportion):
         if eps_left == 0:
@@ -157,45 +166,46 @@ class MeetingType:
         else:
             return behind_prop
 
-    def _distribute(self, start_date, end_date, min_eps, max_eps, meetings=False, shows=False):
+    def _distribute(self, start_date, end_date, min_eps, max_eps, total_week_count=None, starting_week=0, meetings=None, shows=None):
         """Returns a list of Meeting objects, making a best effort to distribute the shows between the given dates,
         along with state for distributing over longer periods
 
         Arguments:
-        start_date     -- the first possible day for a meeting to occur
-        end_date       --  the last possible day for a meeting to occur
-        min_eps        -- the minimum number of episodes in a meeting
-        max_eps        -- the maximum number of episodes in a meeting
-        meetings (Opt) -- the existing allocated meetings
-        shows (Opt)    -- the existing state of the shows dict
+        start_date           -- the first possible day for a meeting to occur
+        end_date             --  the last possible day for a meeting to occur
+        min_eps              -- the minimum number of episodes in a meeting
+        max_eps              -- the maximum number of episodes in a meeting
+        total_weeks (Opt)    -- the total number of weeks to distribute over 
+        starting_week  (Opt) -- the week to start at in assignment
+        meetings (Opt)       -- the existing allocated meetings
+        shows (Opt)          -- the existing state of the shows dict
         """
 
         days_til_first = (7 + self.day - start_date.weekday()) % 7
         first_meeting = start_date + timedelta(days_til_first)
+        week_count = self._get_week_count(start_date, end_date)
+        
+        if total_week_count is None:
+            total_week_count = week_count
 
-        days_before_last = (7 - self.day + end_date.weekday()) % 7
-        last_meeting = end_date - timedelta(days_before_last)
-
-        week_count = 1 + (last_meeting - first_meeting).days // 7
-
-        # Assignment algorithm - go for the one with the least proportion at each step
-        # we have a catchup mechanism that if a show ever gets behind meetings we add more eps
-
-        if not shows:
+        if shows is None:
             shows = {}
 
             for show in self.shows:
                 shows[show] = 0
 
-        if not meetings:
+        if meetings is None:
             meetings = []
 
-        for week_number in range(0, week_count):
+        # Assignment algorithm - go for the one with the least proportion at each step
+        # we have a catchup mechanism that if a show ever gets behind meetings we add more eps
+
+        for week_number in range(starting_week, starting_week + week_count):
             meeting_date = first_meeting + (ONE_WEEK * week_number)
             episodes = defaultdict(list)
             current = 0
             
-            meeting_prop = (week_number + 1) / week_count
+            meeting_prop = (week_number + 1) / total_week_count
             while True:
                 next_show = self._get_next(shows, max_eps - current, meeting_prop)
                 
@@ -215,7 +225,7 @@ class MeetingType:
             if episode_list:
                 meetings.append(Meeting(self, meeting_date, episode_list))
 
-        return (meetings, shows)
+        return (meetings, shows, starting_week + week_count)
 
     def distribute_dates(self, dates, min_eps, max_eps):
         """
@@ -229,11 +239,19 @@ class MeetingType:
         min_eps -- the minimum number of episodes in a meeting
         max_eps -- the maximum number of episodes in a meeting
         """
-
-        meetings = False
-        shows = False
+        
+        total_week_count = 0
+        for (start_date, end_date) in dates:
+            total_week_count += self._get_week_count(start_date, end_date)
+            
+        meetings = None
+        shows = None
+        starting_week = 0
         for start_date, end_date in dates:
-            meetings, shows = self._distribute(start_date, end_date, min_eps, max_eps, meetings, shows)
+            meetings, shows, starting_week = self._distribute(start_date, end_date, min_eps, max_eps,
+                                                              meetings=meetings, shows=shows,
+                                                              starting_week=starting_week,
+                                                              total_week_count=total_week_count)
 
         return meetings
         
@@ -250,7 +268,7 @@ class MeetingType:
         min_eps    -- the minimum length of a meeting in minutes
         max_eps    -- the maximum length of a meeting in minutes
         """
-        return self._distribute(start_date, end_date, min_eps, max_eps, False, False)[0]
+        return self._distribute(start_date, end_date, min_eps, max_eps)[0]
         
     def distribute(self, term, min_eps, max_eps):
         return distribute(term.start_date, term.end_date, min_eps, max_eps)

@@ -112,107 +112,106 @@
   - date: 2020-01-19
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen 1-3
+     - Kekkai Sensen 1-2
      - Plastic Memories 1-2
      - Hyouka (TBC) 1-2
   - date: 2020-01-21
     venue: Angevin Room, Queens'
     event: Main Meeting
     shows:
-     - Humanity has Declined! 1-3
+     - Humanity has Declined! 1-2
      - Shouwa Genroku Rakugo Shinjuu 1-2
      - Spice and Wolf 1-2
   - date: 2020-01-26
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen 4-5
-     - Plastic Memories 3-5
+     - Kekkai Sensen 3-4
+     - Plastic Memories 3-4
      - Hyouka (TBC) 3-4
   - date: 2020-01-28
     event: Main Meeting
     shows:
-     - Humanity has Declined! 4-5
+     - Humanity has Declined! 3-4
      - Shouwa Genroku Rakugo Shinjuu 3-5
      - Spice and Wolf 3-4
   - date: 2020-02-02
     venue: Erasmus Room, Queens'
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen 6-7
-     - Plastic Memories 6-7
-     - Hyouka (TBC) 5-7
+     - Kekkai Sensen 5-6
+     - Plastic Memories 5-6
+     - Hyouka (TBC) 5-6
   - date: 2020-02-04
     event: Main Meeting
     shows:
-     - Humanity has Declined! 6-7
+     - Humanity has Declined! 5-6
      - Shouwa Genroku Rakugo Shinjuu 6-7
      - Spice and Wolf 5-7
   - date: 2020-02-09
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen 8-10
-     - Plastic Memories 8-9
-     - Hyouka (TBC) 8-9
+     - Kekkai Sensen 7-8
+     - Plastic Memories 7-8
+     - Hyouka (TBC) 7-8
   - date: 2020-02-11
-    event: Main Meeting
+    time: 7&#8203;-&#8203;10pm
+    venue: Bowett Room, Queens'
+    event: <b> AGM </b> & Main Meeting
     shows:
-     - Humanity has Declined! 8-10
+     - Humanity has Declined! 7-8
      - Shouwa Genroku Rakugo Shinjuu 8-9
      - Spice and Wolf 8-9
   - date: 2020-02-16
-    venue: TBC
+    venue: DD48, Queens'
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen 11-12
-     - Plastic Memories 10-12
-     - Hyouka (TBC) 10-11
+     - Kekkai Sensen 9-10
+     - Plastic Memories 9-10
+     - Hyouka (TBC) 9-10
   - date: 2020-02-18
     event: Main Meeting
     shows:
-     - Humanity has Declined! 11-12
-     - Shouwa Genroku Rakugo Shinjuu 10-12
+     - Humanity has Declined! 9-10
+     - Shouwa Genroku Rakugo Shinjuu 10-11
      - Spice and Wolf 10-11
   - date: 2020-02-23
     venue: DD48, Queens'
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen S2 1-2
-     - Plastic Memories 13
-     - Granbelm 1
-     - Hyouka (TBC) 12-14
+     - Kekkai Sensen 11-12
+     - Plastic Memories 11-13
+     - Hyouka (TBC) 11
   - date: 2020-02-25
     event: Main Meeting
     shows:
-     - Angel Beats 1-2
-     - Shouwa Genroku Rakugo Shinjuu 13
-     - Rakugo S2 1
+     - Humanity has Declined! 11-12
+     - Shouwa Genroku Rakugo Shinjuu 11-13
      - Spice and Wolf 12-13
-     - Spice and Wolf OVA 1
   - date: 2020-03-01
     venue: DD48, Queens'
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen S2 3-5
-     - Granbelm 2-3
-     - Hyouka (TBC) 15-16
+     - Kekkai Sensen & Beyond 1-2
+     - Granbelm 1-2
+     - Hyouka (TBC) 12-13
   - date: 2020-03-03
     event: Main Meeting
     shows:
-     - Angel Beats 3-5
-     - Rakugo S2 2-3
-     - Spice and Wolf II 1-2
+     - Angel Beats 1-2
+     - Rakugo S2 1-2
+     - Spice and Wolf II 0-2
   - date: 2020-03-08
     venue: DD48, Queens'
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen S2 6-7
-     - Granbelm 4-6
-     - Hyouka (TBC) 17-18
+     - Kekkai Sensen & Beyond 3-4
+     - Granbelm 3-4
+     - Hyouka (TBC) 14-15
   - date: 2020-03-10
     event: Main Meeting
     shows:
-     - Angel Beats 6-7
-     - Rakugo S2 4-6
+     - Angel Beats 3-4
+     - Rakugo S2 3-4
      - Spice and Wolf II 3-4
 - term: Easter 2020
   events:
@@ -226,46 +225,48 @@
   - date: 2020-04-26
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen S2 8
-     - Granbelm 7-9
-     - Hyouka (TBC) 19
+     - Kekkai Sensen & Beyond 5-6
+     - Granbelm 5-6
+     - Hyouka (TBC) 16-17
   - date: 2020-04-28
     event: Main Meeting
     shows:
-     - Angel Beats 8
-     - Rakugo S2 7
-     - Spice and Wolf II 5-7
+     - Angel Beats! 5-6
+     - Rakugo S2 5-6
+     - Spice and Wolf II 5-6
   - date: 2020-05-03
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen S2 9-10
-     - Granbelm 10-11
-     - Hyouka (TBC) 20
+     - Kekkai Sensen & Beyond 7-8
+     - Granbelm 7-8
+     - Hyouka (TBC) 18-19
   - date: 2020-05-05
     event: Main Meeting
     shows:
-     - Angel Beats 9-10
-     - Rakugo S2 8-9
-     - Spice and Wolf II 8
+     - Angel Beats 7-8
+     - Rakugo S2 7-8
+     - Spice and Wolf II 7-8
   - date: 2020-05-10
     event: Sunday Meeting
     shows:
-     - Kekkai Sensen S2 11-12
-     - Granbelm 12
-     - Hyouka (TBC) 21-22
+     - Kekkai Sensen & Beyond 9-10
+     - Granbelm 9-10
+     - Hyouka (TBC) 20-21
   - date: 2020-05-12
     event: Main Meeting
     shows:
-     - Angel Beats 11-12
-     - Rakugo S2 10
+     - Angel Beats 9-10
+     - Rakugo S2 9-10
      - Spice and Wolf II 9-10
   - date: 2020-05-17
     event: Sunday Meeting
     shows:
-     - Granbelm 13
+     - Kekkai Sensen & Beyond 11-12
+     - Granbelm 11-13
+     - Hyouka (TBC) 22
   - date: 2020-05-19
     event: Main Meeting
     shows:
-     - Angel Beats 13
+     - Angel Beats 11-13
      - Rakugo S2 11-12
      - Spice and Wolf II 11-12

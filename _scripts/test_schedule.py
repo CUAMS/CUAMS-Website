@@ -11,14 +11,14 @@ mainMeeting = MeetingType(1, "Angevin Room, Queens'", "Main Meeting", "7", "10pm
                            Show("The Tatami Galaxy", 11, 3)])
 
 mainLentEaster = MeetingType(1, "Bowett Room, Queens'", "Main Meeting", "7", "10pm",
-                          [Slot([Show("Spice and Wolf", 13, 1), Show("Spice and Wolf II", 13, 1)]),
-                           Show("Tengen Toppa Gurren Lagann", 27, 2),
-                           Slot([Show("Kids on the Slope", 12, 3), Show("Girls' Last Tour", 12, 3) ])])
+                          [Slot([Show("Humanity has Declined!", 12, 1), Show("Angel Beats!", 13, 1)]),
+                           Slot([Show("Shouwa Genroku Rakugo Shinjuu", 13, 2), Show("Rakugo S2", 12, 2)]),
+                           Slot([Show("Spice and Wolf", 13, 3), Show("Spice and Wolf OVA", 1, 3), Show("Spice and Wolf II", 12, 3)])])
                            
 sundayLentEaster = MeetingType(6, "Bowett Room, Queens'", "Sunday Meeting", "2.30", "5.30pm",
-                          [Slot([Show("Oregairu", 13, 1), Show("Oregairu Zoku", 13, 1)]),
-                           Slot([Show("Ga-Rei-Zero", 12, 2), Show("Revue Starlight", 12, 2)]),
-                           Show("Shirobako", 24, 3)])
+                          [Slot([Show("Kekkai Sensen", 12, 1), Show("Kekkai Sensen & Beyond", 12, 1)]),
+                           Slot([Show("Plastic Memories", 13, 2), Show("Granbelm", 13, 2)]),
+                           Show("Hyouka (TBC)", 22, 3)])
 
 
 startM = date(2017,10,14)
@@ -30,11 +30,11 @@ lines = generate_terms([Term("Michaelmas", startM, endM)],
 
 print("\n".join(lines))
 
-startL = date(2019, 1, 20)
-endL = date(2019, 3, 12)
+startL = date(2020, 1, 15)
+endL = date(2020, 3, 11)
 
-startE = date(2019, 4, 28)
-endE = date(2019, 5, 22)
+startE = date(2020, 4, 25)
+endE = date(2020, 5, 20)
 
 lines = generate_terms([Term("Lent", startL, endL), Term("Easter", startE, endE)],
                        [mainLentEaster, sundayLentEaster],
