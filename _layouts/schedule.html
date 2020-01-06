@@ -33,10 +33,33 @@ layout: page
                                 </thead>
                                 <tbody>
                                     {% for meeting in term.meetings %}
+                                        {% comment %}
+                                            Attempt to fetch the event object corresponding to this meeting series.
+                                            
+                                            If one exists, check whether the time/venue for this meeting is the same.
+                                            If they differ, bold it.
+                                            Otherwise, just print the details for this meeting.
+                                        {% endcomment %}
+                                        {% assign event = term.events | where: "name",meeting.event | first %}
                                         <tr>
                                             <td>{{ meeting.date | date: date_format }}</td>
-                                            <td>{{ meeting.time }}</td>
-                                            <td>{{ meeting.venue }}</td>
+                                            {% if event %}
+                                                {% if meeting.time and event.time != meeting.time %}
+                                                <td><b>{{ meeting.time }}</b></td>
+                                                {% else %}
+                                                <td>{{ event.time }}</td>
+                                                {% endif %}
+                                                
+                                                {% if meeting.venue and event.venue != meeting.venue %}
+                                                <td><b>{{ meeting.venue }}</b></td>
+                                                {% else %}
+                                                <td>{{ event.venue }}</td>
+                                                {% endif %}
+                                            {% else %}
+                                                <td>{{ meeting.time }}</td>
+                                                <td>{{ meeting.venue }}</td>
+                                            {% endif %}
+                                            
                                             <td>{{ meeting.event }}</td>
                                             <td>
                                                 <div class="show-container">
