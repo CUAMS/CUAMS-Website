@@ -163,7 +163,7 @@
     episodes: 12
     year: 2015
     studio: "Bones"
-    schedule: Lent 2019
+    schedule: Lent 2020
     info:
     - title: AL
       link: https://anilist.co/anime/20727
@@ -176,7 +176,7 @@
     episodes: 13
     year: 2015
     studio: "Doga Kobo"
-    schedule: Lent 2019
+    schedule: Lent 2020
     info:
     - title: AL
       link: https://anilist.co/anime/20872
@@ -184,12 +184,25 @@
       link: https://myanimelist.net/anime/27775/Plastic_Memories
     - title: ANN
       link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16377
+  - title: "Sound! Euphonium (Hibike! Euphonium)"
+    image: "/assets/images/anime/Hibike_Euphonium.jpg"
+    episodes: 13
+    year: 2015
+    studio: "Kyoto Animation"
+    schedule: Lent 2020
+    info:
+    - title: AL
+      link: https://anilist.co/anime/20912/Hibike-Euphonium
+    - title: MAL
+      link: https://myanimelist.net/anime/27989/Hibike_Euphonium
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16657
   - title: "Blood Blockade Battlefront (Kekkai Sensen) & Beyond"
     image: "/assets/images/anime/Kekkai_Sensen___Beyond.jpg"
     episodes: 12
     year: 2017
     studio: "Bones"
-    schedule: Easter 2019
+    schedule: Easter 2020
     info:
     - title: AL
       link: https://anilist.co/anime/97886
@@ -202,7 +215,7 @@
     episodes: 13
     year: 2019
     studio: "Nexus"
-    schedule: Easter 2019
+    schedule: Easter 2020
     info:
     - title: AL
       link: https://anilist.co/anime/108147
@@ -210,6 +223,19 @@
       link: https://myanimelist.net/anime/39417/Granbelm
     - title: ANN
       link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21873
+  - title: "Sound! Euphonium 2 (Hibike! Euphonium 2)"
+    image: "/assets/images/anime/Hibike_Euphonium_2.jpg"
+    episodes: 13
+    year: 2016
+    studio: "Kyoto Animation"
+    schedule: Easter 2020
+    info:
+    - title: AL
+      link: https://anilist.co/anime/21460/Hibike-Euphonium-2
+    - title: MAL
+      link: https://myanimelist.net/anime/31988/Hibike_Euphonium_2
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18558
 - type: Bonus
   shows:
   - title: Daicon III
@@ -275,3 +301,16 @@
       link: https://myanimelist.net/anime/35851/Sayonara_no_Asa_ni_Yakusoku_no_Hana_wo_Kazarou
     - title: ANN
       link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19848
+  - title: "Ghost in the Shell (Koukaku Kidoutai)"
+    image: /assets/images/anime/Ghost_in_the_Shell.jpg
+    episodes: 1
+    year: 1995
+    studio: Production I.G
+    schedule: Lent Week 0 Bonus Meeting
+    info:
+    - title: AL
+      link: https://anilist.co/anime/43/Koukaku-Kidoutai
+    - title: MAL
+      link: https://myanimelist.net/anime/43/Koukaku_Kidoutai/
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=465
