@@ -1,6 +1,36 @@
 - title: Current Committee
   positions:
   - role: President
+    image: roger_19.jpg
+    holder: Roger Ren
+    email: rsr42
+  - role: Secretary
+    image: alexander_19.jpg
+    holder: Alexander Kent
+    email: ak2147
+  - role: Treasurer
+    image: guoxuan_19.jpg
+    holder: Guoxuan Xia
+    email: gx218
+  - role: Webmaster
+    image: aidan_19.jpg
+    holder: Aidan Brocklebank
+    email: agb67
+  - role: Food Lord
+    image: peter_19.jpg
+    holder: Peter Barnett
+    email: pjb217
+  - role: External Officer
+    image: eugene_19.jpg
+    holder: Eugene Lee
+    email: ytel2
+  - role: Social Secretary
+    image: adam_19.jpg
+    holder: Adam Berman
+    email: agb61
+- title: Previous Committee
+  positions:
+  - role: President
     image: will_revdab_18.jpg
     holder: Will Barnes
     email: wjb49
@@ -28,33 +58,3 @@
     image: emma_18.jpg
     holder: Emma Chang Liu
     email: cl756
-- title: Previous Committee
-  positions:
-  - role: President
-    image: sam_17.jpg
-    holder: Sam Gooch
-    email: sg799
-  - role: Secretary
-    image: will_17.jpg
-    holder: Will Barnes
-    email: wjb49
-  - role: Treasurer
-    image: guoxuan_17.jpg
-    holder: Guoxuan Xia
-    email: gx218
-  - role: Webmaster
-    image: jemma_17.jpg
-    holder: Jemma Henry
-    email: jah246
-  - role: Food Lord
-    image: oscar_18.jpg
-    holder: Oscar Brown
-    email: omb28
-  - role: External Officer
-    image: can_17.jpg
-    holder: Can Hou
-    email: ch714
-  - role: Social Secretary
-    image: ben_17.jpg
-    holder: Ben Bai
-    email: byhb2
