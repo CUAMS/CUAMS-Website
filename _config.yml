@@ -17,8 +17,8 @@ title: CUAMS
 email: cuams-list-owner@srcf.net
 description: >- # this means to ignore newlines until "baseurl:"
   The official website for the Cambridge University Anime and Manga Society
-art_credit: >-
-  Artwork by Jingyao
+art_credit: Jingyao
+art_credit_link: https://quietdistance.net/
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://cuams.soc.srcf.net
 facebook_username: cuams
