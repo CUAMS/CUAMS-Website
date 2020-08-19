@@ -4,7 +4,7 @@
       time: 7&#8203;-&#8203;10&#8203;pm
       venue: Discord
     - name: Book Club
-      time: 2.30&#8203;-&#8203;5.30pm
+      time: 2.30&#8203;-&#8203;3.30pm
       venue: Discord
   meetings:
   - date: 2020-10-13
@@ -32,7 +32,7 @@
   - date: 2020-11-01
     event: Book Club
     shows:
-     - The Gods Lie
+     - TBD
   - date: 2020-11-03
     event: Main Meeting
     shows:
@@ -42,7 +42,7 @@
   - date: 2020-11-08
     event: Book Club
     shows:
-     - The Gods Lie
+     - TBD
   - date: 2020-11-17
     event: Main Meeting
     shows:
@@ -52,7 +52,7 @@
   - date: 2020-11-15
     event: Book Club
     shows:
-     - The Gods Lie
+     - TBD
   - date: 2020-11-24
     event: Main Meeting
     shows:
@@ -62,7 +62,7 @@
   - date: 2020-11-22
     event: Book Club
     shows:
-     - The Gods Lie
+     - TBD
   - date: 2020-11-24
     event: Main Meeting
     shows:
@@ -72,7 +72,7 @@
   - date: 2020-11-29
     event: Book Club
     shows:
-     - The Gods Lie
+     - TBD
 
 - term: Lent 2021
   events:
