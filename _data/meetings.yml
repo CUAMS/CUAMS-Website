@@ -1,329 +1,72 @@
 - type: Main
   shows:
-  - title: "Hinamatsuri"
-    image: "/assets/images/anime/Hinamatsuri.jpg"
+  - title: "Given"
+    image: "/assets/images/anime/Given.jpg"
+    episodes: 11
+    year: 2019
+    studio: "Lerche"
+    schedule: Michaelmas 2020
+    info:
+    - title: AL
+      link: https://anilist.co/anime/108430/Given/
+    - title: MAL
+      link: https://myanimelist.net/anime/39533/Given
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21958
+  - title: "Keep Your Hands Off Eizouken! (Eizouken ni wa Te wo Dasu na!)"
+    image: "/assets/images/anime/Eizouken.jpg"
     episodes: 12
-    year: 2018
-    studio: "feel."
-    schedule: Michaelmas 2019
+    year: 2020
+    studio: "Science SARU"
+    schedule: Michaelmas 2020
     info:
     - title: AL
-      link: https://anilist.co/anime/100077
+      link: https://anilist.co/anime/109298/Eizouken-ni-wa-Te-wo-Dasu-na/
     - title: MAL
-      link: https://myanimelist.net/anime/36296/Hinamatsuri
+      link: https://myanimelist.net/anime/39792/Eizouken_ni_wa_Te_wo_Dasu_na?q=eizouken
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=20335
-  - title: "SSSS.Gridman"
-    image: "/assets/images/anime/SSSSGridman.jpg"
-    episodes: 12
-    year: 2018
-    studio: "Trigger"
-    schedule: Michaelmas 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/99424
-    - title: MAL
-      link: https://myanimelist.net/anime/35847/SSSSGridman
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=20369
-  - title: "ACCA: 13-Territory Inspection Dept (ACCA-13)"
-    image: "/assets/images/anime/ACCA__13-ku_Kansatsu-ka.jpg"
-    episodes: 12
-    year: 2017
-    studio: "Madhouse"
-    schedule: Michaelmas 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/21823
-    - title: MAL
-      link: https://myanimelist.net/anime/33337/ACCA__13-ku_Kansatsu-ka
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18461
-  - title: "Humanity has Declined!"
-    image: "/assets/images/anime/Jinrui_wa_Suitai_Shimashita.jpg"
-    episodes: 12
-    year: 2012
-    studio: "AIC A.S.T.A."
-    schedule: Lent 2020
-    info:
-    - title: AL
-      link: https://anilist.co/anime/10357
-    - title: MAL
-      link: https://myanimelist.net/anime/10357/Jinrui_wa_Suitai_Shimashita
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=13787
-  - title: "Shouwa Genroku Rakugo Shinjuu"
-    image: "/assets/images/anime/Shouwa_Genroku_Rakugo_Shinjuu.jpg"
-    episodes: 13
-    year: 2016
-    studio: "Studio Deen"
-    schedule: Lent 2020
-    info:
-    - title: AL
-      link: https://anilist.co/anime/20972
-    - title: MAL
-      link: https://myanimelist.net/anime/28735/Shouwa_Genroku_Rakugo_Shinjuu
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16614
-  - title: "Spice and Wolf (Ookami to Koushinryou)"
-    image: "/assets/images/anime/Ookami_to_Koushinryou.jpg"
-    episodes: 13
-    year: 2008
-    studio: "Imagin"
-    schedule: Lent 2020
-    info:
-    - title: AL
-      link: https://anilist.co/anime/2966
-    - title: MAL
-      link: https://myanimelist.net/anime/2966/Ookami_to_Koushinryou
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=8537
-  - title: "Angel Beats!"
-    image: "/assets/images/anime/Angel_Beats.jpg"
-    episodes: 13
-    year: 2010
-    studio: "P.A. Works"
-    schedule: Easter 2020 - <b>Cancelled</b>
-    info:
-    - title: AL
-      link: https://anilist.co/anime/6547
-    - title: MAL
-      link: https://myanimelist.net/anime/6547/Angel_Beats
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=10885
-  - title: "Descending Stories: Shouwa Genroku Rakugo Shinjuu"
-    image: "/assets/images/anime/Descending_Stories_Shouwa_Genroku_Rakugo_Shinjuu.jpg"
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=22561
+  - title: "Land of the Lustrous (Houseki no Kuni)"
+    image: "/assets/images/anime/Houseki_no_Kuni.jpg"
     episodes: 12
     year: 2017
-    studio: "Studio Deen"
-    schedule: Easter 2020 - <b>Cancelled</b>
+    studio: "Orange"
+    schedule: Michaelmas 2020
     info:
     - title: AL
-      link: https://anilist.co/anime/21733/Shouwa-Genroku-Rakugo-Shinjuu-Sukeroku-Futatabihen
+      link: https://anilist.co/anime/98707/HousekinoKuni
     - title: MAL
-      link: https://myanimelist.net/anime/33095/Shouwa_Genroku_Rakugo_Shinjuu__Sukeroku_Futatabi-hen
+      link: https://myanimelist.net/anime/35557/Houseki_no_Kuni_TV
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18888
-  - title: "Spice and Wolf II"
-    image: "/assets/images/anime/Spice_and_Wolf_II.jpg"
-    episodes: 12
-    year: 2009
-    studio: "Brain's Base"
-    schedule: Easter 2020 - <b>Cancelled</b>
-    info:
-    - title: AL
-      link: https://anilist.co/anime/5341/Ookami-to-Koushinryou-II
-    - title: MAL
-      link: https://myanimelist.net/anime/5341/Ookami_to_Koushinryou_II
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=10269
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19614
 - type: Sunday
   shows:
-  - title: "Girls und Panzer"
-    image: "/assets/images/anime/Girls___Panzer.jpg"
-    episodes: 12
-    year: 2012
-    studio: "Actas"
-    schedule: Michaelmas 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/14131
-    - title: MAL
-      link: https://myanimelist.net/anime/14131/Girls___Panzer
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16864
-  - title: "Seishun Buta Yarou (Bunny Girl Senpai)"
-    image: "/assets/images/anime/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai.jpg"
-    episodes: 13
-    year: 2018
-    studio: "CloverWorks"
-    schedule: Michaelmas 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/91170
-    - title: MAL
-      link: https://myanimelist.net/anime/37450/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21406
-  - title: "School-Live! (Gakkou Gurashi)"
-    image: "/assets/images/anime/Gakkougurashi.jpg"
-    episodes: 12
-    year: 2015
-    studio: "Lerche"
-    schedule: Michaelmas 2019
-    info:
-    - title: AL
-      link: https://anilist.co/anime/20754
-    - title: MAL
-      link: https://myanimelist.net/anime/24765/Gakkougurashi
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16603
-  - title: "Blood Blockade Battlefront (Kekkai Sensen)"
-    image: "/assets/images/anime/Kekkai_Sensen.jpg"
-    episodes: 12
-    year: 2015
-    studio: "Bones"
-    schedule: Lent 2020
-    info:
-    - title: AL
-      link: https://anilist.co/anime/20727
-    - title: MAL
-      link: https://myanimelist.net/anime/24439/Kekkai_Sensen
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16340
-  - title: "Plastic Memories"
-    image: "/assets/images/anime/Plastic_Memories.jpg"
-    episodes: 13
-    year: 2015
-    studio: "Doga Kobo"
-    schedule: Lent 2020
-    info:
-    - title: AL
-      link: https://anilist.co/anime/20872
-    - title: MAL
-      link: https://myanimelist.net/anime/27775/Plastic_Memories
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16377
-  - title: "Sound! Euphonium (Hibike! Euphonium)"
-    image: "/assets/images/anime/Hibike_Euphonium.jpg"
-    episodes: 13
-    year: 2015
-    studio: "Kyoto Animation"
-    schedule: Lent 2020
-    info:
-    - title: AL
-      link: https://anilist.co/anime/20912/Hibike-Euphonium
-    - title: MAL
-      link: https://myanimelist.net/anime/27989/Hibike_Euphonium
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16657
-  - title: "Blood Blockade Battlefront (Kekkai Sensen) & Beyond"
-    image: "/assets/images/anime/Kekkai_Sensen___Beyond.jpg"
-    episodes: 12
-    year: 2017
-    studio: "Bones"
-    schedule: Easter 2020 - <b>Cancelled</b>
-    info:
-    - title: AL
-      link: https://anilist.co/anime/97886
-    - title: MAL
-      link: https://myanimelist.net/anime/34451/Kekkai_Sensen___Beyond
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18900
-  - title: "Granbelm"
-    image: "/assets/images/anime/Granbelm.jpg"
-    episodes: 13
-    year: 2019
-    studio: "Nexus"
-    schedule: Easter 2020 - <b>Cancelled</b>
-    info:
-    - title: AL
-      link: https://anilist.co/anime/108147
-    - title: MAL
-      link: https://myanimelist.net/anime/39417/Granbelm
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21873
-  - title: "Sound! Euphonium 2 (Hibike! Euphonium 2)"
-    image: "/assets/images/anime/Hibike_Euphonium_2.jpg"
-    episodes: 13
-    year: 2016
-    studio: "Kyoto Animation"
-    schedule: Easter 2020 - <b>Cancelled</b>
-    info:
-    - title: AL
-      link: https://anilist.co/anime/21460/Hibike-Euphonium-2
-    - title: MAL
-      link: https://myanimelist.net/anime/31988/Hibike_Euphonium_2
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18558
+  
 - type: Bonus
   shows:
-  - title: Daicon III
-    image: /assets/images/anime/Daicon-III.jpg
+  - title: "Wolf Children (Ookami Kodomo no Ame to Yuki)"
+    image: /assets/images/anime/Wolf_Children.jpg
     episodes: 1
-    year: 1981
-    studio: Daicon Film (later Gainax)
+    year: 2012
+    studio: Studio Chizu
     schedule: Freshers' Squash
     info:
     - title: AL
-      link: https://anilist.co/anime/2724/Daicon-Opening-Animations
+      link: https://anilist.co/anime/12355/Ookami-Kodomo-no-Ame-to-Yuki/
     - title: MAL
-      link: https://myanimelist.net/anime/2724/Daicon_Opening_Animations
+      link: https://myanimelist.net/anime/12355/Ookami_Kodomo_no_Ame_to_Yuki
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=817
-  - title: Daicon IV
-    image: /assets/images/anime/Daicon-IV.jpg
-    episodes: 1
-    year: 1983
-    studio: Daicon Film (later Gainax)
-    schedule: Freshers' Squash
-    info:
-    - title: AL
-      link: https://anilist.co/anime/2724/Daicon-Opening-Animations
-    - title: MAL
-      link: https://myanimelist.net/anime/2724/Daicon_Opening_Animations
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=817
-  - title: Dareka no Manazashi (Someone's Gaze)
-    image: /assets/images/anime/Dareka-no-Manazashi.jpg
-    episodes: 1
-    year: 2013
-    studio: CoMix Wave Films, NEST, and TYO M1 Production
-    schedule: Freshers' Squash
-    info:
-    - title: AL
-      link: https://anilist.co/anime/17121/Dareka-no-Manazashi
-    - title: MAL
-      link: https://myanimelist.net/anime/17121/Dareka_no_Manazashi
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=15115
-  - title: Shelter
-    image: /assets/images/anime/Shelter.jpg
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=13862
+  - title: "A Silent Voice (Koe no Katachi)"
+    image: /assets/images/anime/Silent_Voice.jpg
     episodes: 1
     year: 2016
-    studio: A-1 Pictures
-    schedule: Freshers' Squash
+    studio: Kyoto Animation
+    schedule: Michaelmas Bonus Meeting
     info:
     - title: AL
-      link: https://anilist.co/anime/97731/Shelter/
+      link: https://anilist.co/anime/20954/Koe-no-Katachi/
     - title: MAL
-      link: https://myanimelist.net/anime/34240/Shelter
-  - title: "Maquia: When the Promised Flower Blooms (SayoAsa)"
-    image: /assets/images/anime/Maquia.jpg
-    episodes: 1
-    year: 2018
-    studio: P.A.Works
-    schedule: Freshers' Squash
-    info:
-    - title: AL
-      link: https://anilist.co/anime/99457/Sayonara-no-Asa-ni-Yakusoku-no-Hana-wo-Kazarou
-    - title: MAL
-      link: https://myanimelist.net/anime/35851/Sayonara_no_Asa_ni_Yakusoku_no_Hana_wo_Kazarou
+      link: https://myanimelist.net/anime/28851/Koe_no_Katachi
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19848
-  - title: "Ghost in the Shell (Koukaku Kidoutai)"
-    image: /assets/images/anime/Ghost_in_the_Shell.jpg
-    episodes: 1
-    year: 1995
-    studio: Production I.G
-    schedule: Lent Week 0 Bonus Meeting
-    info:
-    - title: AL
-      link: https://anilist.co/anime/43/Koukaku-Kidoutai
-    - title: MAL
-      link: https://myanimelist.net/anime/43/Koukaku_Kidoutai/
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=465
-  - title: "The Anthem of the Heart (Kokoro ga Sakebitagatterunda)"
-    image: /assets/images/anime/Anthem_of_the_Heart.jpg
-    episodes: 1
-    year: 2015
-    studio: A-1 Pictures
-    schedule: Lent Bonus Meeting
-    info:
-    - title: AL
-      link: https://anilist.co/anime/20968/Kokoro-ga-Sakebitagatterun-da/
-    - title: MAL
-      link: https://myanimelist.net/anime/28725/Kokoro_ga_Sakebitagatterunda
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16728
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16661

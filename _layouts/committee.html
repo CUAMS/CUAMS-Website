@@ -15,6 +15,9 @@ layout: page
                         <div>
                             <div><span class="label">Current Holder:</span> {{ member.holder }}</div>
                             <div><span class="label">Email:</span> {{ member.email }}</div>
+							{% if committee.title == "Current Committee" %}
+								<div><span class="label">Discord:</span> {{ member.discord }}</div>
+							{% endif %}
                         </div>
                     </div>
                 </div>

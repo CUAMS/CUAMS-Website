@@ -1,279 +1,166 @@
-- term: Michaelmas 2019
+- term: Michaelmas 2020
   events:
     - name: Main Meeting
       time: 7&#8203;-&#8203;10&#8203;pm
-      venue: Bowett Room, Queens'
-    - name: Sunday Meeting
+      venue: Discord
+    - name: Book Club
       time: 2.30&#8203;-&#8203;5.30pm
-      venue: Bowett Room, Queens'
+      venue: Discord
   meetings:
-  - date: 2019-10-19
+  - date: 2020-10-13
     event: Freshers' Squash
     time: 7&#8203;-&#8203;10&#8203;pm
-    venue: Bowett Room, Queens'
+    venue: Discord
     shows:
-    - Daicon III & IV
-    - Dareka no Manazashi
-    - Shelter
-    - "Maquia: When the Promised Flower Blooms"
-  - date: 2019-10-22
+    - Wolf Children
+  - date: 2020-10-20
     event: Main Meeting
     shows:
-     - Hinamatsuri 1-2
-     - SSSS.Gridman 1-2
-     - ACCA-13 1-2
-  - date: 2019-10-27
-    event: Sunday Meeting
+     - Given 1-2
+     - Keep Your Hands Off Eizouken! 1-2
+     - Land of the Lustrous 1-2
+  - date: 2020-10-25
+    event: Book Club
     shows:
-     - Girls und Panzer 1-2
-     - Seishun Buta Yarou 1-3
-     - School-Live! 1-2
-  - date: 2019-10-29
+     - The Gods Lie
+  - date: 2020-10-27
     event: Main Meeting
     shows:
-     - Hinamatsuri 3-4
-     - SSSS.Gridman 3-4
-     - ACCA-13 3-4
-  - date: 2019-11-03
-    event: Sunday Meeting
+     - Given 3-4
+     - Keep Your Hands Off Eizouken! 3-4
+     - Land of the Lustrous 3-4
+  - date: 2020-11-01
+    event: Book Club
     shows:
-     - Girls und Panzer 3-4
-     - Seishun Buta Yarou 4-5
-     - School-Live! 3-4
-  - date: 2019-11-05
+     - The Gods Lie
+  - date: 2020-11-03
     event: Main Meeting
     shows:
-     - Hinamatsuri 5-6
-     - SSSS.Gridman 5-6
-     - ACCA-13 5-6
-  - date: 2019-11-10
-    venue: Erasmus Room, Queens'
-    event: Sunday Meeting
+     - Given 5-6
+     - Keep Your Hands Off Eizouken! 5-6
+     - Land of the Lustrous 5-6
+  - date: 2020-11-08
+    event: Book Club
     shows:
-     - Girls und Panzer 5-6
-     - Seishun Buta Yarou 6-7
-     - School-Live! 5-6
-  - date: 2019-11-12
+     - The Gods Lie
+  - date: 2020-11-17
     event: Main Meeting
     shows:
-     - Hinamatsuri 7-8
-     - SSSS.Gridman 7-8
-     - ACCA-13 7-8
-  - date: 2019-11-17
-    event: Sunday Meeting
+     - Given 7-8
+     - Keep Your Hands Off Eizouken! 7-8
+     - Land of the Lustrous 7-8
+  - date: 2020-11-15
+    event: Book Club
     shows:
-     - Girls und Panzer 7-8
-     - Seishun Buta Yarou 8-9
-     - School-Live! 7-8
-  - date: 2019-11-19
+     - The Gods Lie
+  - date: 2020-11-24
     event: Main Meeting
     shows:
-     - Hinamatsuri 9-10
-     - SSSS.Gridman 9-10
-     - ACCA-13 9-10
-  - date: 2019-11-24
-    event: Sunday Meeting
+     - Given 9-10
+     - Keep Your Hands Off Eizouken! 9-10
+     - Land of the Lustrous 9-10
+  - date: 2020-11-22
+    event: Book Club
     shows:
-     - Girls und Panzer 9-10
-     - Seishun Buta Yarou 10-11
-     - School-Live! 9-10
-  - date: 2019-11-26
+     - The Gods Lie
+  - date: 2020-11-24
     event: Main Meeting
     shows:
-     - Cancelled
-  - date: 2019-12-01
-    event: Sunday Meeting
+     - Given 11
+     - Keep Your Hands Off Eizouken! 11-12
+     - Land of the Lustrous 11-12
+  - date: 2020-11-29
+    event: Book Club
     shows:
-     - Girls und Panzer 11-12
-     - Seishun Buta Yarou 12-13
-     - School-Live! 11-12
-  - date: 2019-12-03
-    venue: Selwyn JCR TV Room
-    event: Main Meeting
-    shows:
-     - Hinamatsuri 11-12
-     - SSSS.Gridman 11-12
-     - ACCA-13 11-12
-- term: Lent 2020
-  events:
-  - name: Main Meeting
-    time: 7&#8203;-&#8203;10pm
-    venue: Bowett Room, Queens'
-  - name: Sunday Meeting
-    time: 2.30&#8203;-&#8203;5.30pm
-    venue: Bowett Room, Queens'
-  meetings:
-  - date: 2020-01-14
-    venue: Bowett Room, Queens'
-    time: 7&#8203;-&#8203;10pm
-    event: Bonus Meeting
-    shows:
-     - Ghost in the Shell
-  - date: 2020-01-19
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen 1-2
-     - Plastic Memories 1-2
-     - Hibike! Euphonium 1-3
-  - date: 2020-01-21
-    venue: Angevin Room, Queens'
-    event: Main Meeting
-    shows:
-     - Humanity has Declined! 1-2
-     - Shouwa Genroku Rakugo Shinjuu 1-2
-     - Spice and Wolf 1-2
-  - date: 2020-01-26
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen 3-4
-     - Plastic Memories 3-4
-     - Hibike! Euphonium 4-5
-  - date: 2020-01-28
-    event: Main Meeting
-    shows:
-     - Humanity has Declined! 3-4
-     - Shouwa Genroku Rakugo Shinjuu 3-4
-     - Spice and Wolf 3-4
-  - date: 2020-02-02
-    venue: Erasmus Room, Queens'
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen 5-6
-     - Plastic Memories 5-6
-     - Hibike! Euphonium 6-7
-  - date: 2020-02-04
-    event: Main Meeting
-    shows:
-     - Humanity has Declined! 5-6
-     - Shouwa Genroku Rakugo Shinjuu 5-7
-     - Spice and Wolf 5-6
-  - date: 2020-02-09
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen 7-8
-     - Plastic Memories 7-8
-     - Hibike! Euphonium 8-9
-  - date: 2020-02-11
-    time: 7&#8203;-&#8203;10pm
-    venue: Bowett Room, Queens'
-    event: <b> AGM </b> & Main Meeting
-    shows:
-     - Humanity has Declined! 7-8
-     - Shouwa Genroku Rakugo Shinjuu 8-9
-     - Spice and Wolf 7-8
-  - date: 2020-02-16
-    venue: DD48, Queens'
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen 9-11
-     - Plastic Memories 9-10
-     - Hibike! Euphonium 10-11
-  - date: 2020-02-18
-    event: Main Meeting
-    shows:
-     - Humanity has Declined! 9-10
-     - Shouwa Genroku Rakugo Shinjuu 10-11
-     - Spice and Wolf 9-10
-  - date: 2020-02-23
-    venue: DD48, Queens'
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen 12
-     - Plastic Memories 11-13
-     - Hibike! Euphonium 12-13
-  - date: 2020-02-25
-    venue: Angevin Room, Queens'
-    event: Main Meeting
-    shows:
-     - Humanity has Declined! 11-12
-     - Shouwa Genroku Rakugo Shinjuu 12-13
-     - Spice and Wolf 11-13
-  - date: 2020-03-01
-    venue: DD48, Queens'
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen & Beyond 1-2
-     - Granbelm 1-2
-     - Hibike! Euphonium S2 1-2
-  - date: 2020-03-03
-    event: Main Meeting
-    shows:
-     - Angel Beats 1-2
-     - Rakugo S2 1-2
-     - Spice and Wolf II 0-2
-  - date: 2020-03-05
-    venue: Angevin Room, Queens'
-    time: 7:30&#8203;-&#8203;10:30pm
-    event: Bonus Meeting
-    shows:
-     - The Anthem of the Heart
-  - date: 2020-03-08
-    venue: DD48, Queens'
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen & Beyond 3-4
-     - Granbelm 3-4
-     - Hibike! Euphonium S2 3-5
-  - date: 2020-03-10
-    event: Main Meeting
-    shows:
-     - Angel Beats 3-4
-     - Rakugo S2 3-4
-     - Spice and Wolf II 3-4
-- term: Easter 2020
+     - The Gods Lie
+
+- term: Lent 2021
   events:
     - name: Main Meeting
-      time: <b>Cancelled</b>
-      venue: --
-    - name: Sunday Meeting
-      time: <b>Cancelled</b>
-      venue: --
+      time: 
+      venue: 
+    - name: Book Club
+      time: 
+      venue: 
   meetings:
-  - date: 2020-04-26
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen & Beyond 5-6
-     - Granbelm 5-6
-     - Hibike! Euphonium S2 6-7
-  - date: 2020-04-28
+  - date:
     event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
     shows:
-     - Angel Beats! 5-6
-     - Rakugo S2 5-6
-     - Spice and Wolf II 5-6
-  - date: 2020-05-03
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen & Beyond 7-8
-     - Granbelm 7-9
-     - Hibike! Euphonium S2 8-9
-  - date: 2020-05-05
+  - date:
     event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
     shows:
-     - Angel Beats 7-8
-     - Rakugo S2 7-8
-     - Spice and Wolf II 7-8
-  - date: 2020-05-10
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen & Beyond 9-10
-     - Granbelm 10-11
-     - Hibike! Euphonium S2 10-11
-  - date: 2020-05-12
+  - date:
     event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
     shows:
-     - Angel Beats 9-10
-     - Rakugo S2 9-10
-     - Spice and Wolf II 9-10
-  - date: 2020-05-17
-    event: Sunday Meeting
-    shows:
-     - Kekkai Sensen & Beyond 11-12
-     - Granbelm 12-13
-     - Hibike! Euphonium S2 12-13
-  - date: 2020-05-19
+  - date:
     event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
     shows:
-     - Angel Beats 11-13
-     - Rakugo S2 11-12
-     - Spice and Wolf II 11-12
+  - date:
+    event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
+    shows:
+  - date:
+    event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
+    shows:
+  - date:
+    event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
+    shows:
+  - date:
+    event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
+    shows:
+- term: Easter 2021
+  events:
+    - name: Main Meeting
+      time: 
+      venue: 
+    - name: Book Club
+      time: 
+      venue: 
+  meetings:
+  - date:
+    event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
+    shows:
+  - date:
+    event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
+    shows:
+  - date:
+    event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
+    shows:
+  - date:
+    event: Main Meeting
+    shows: 
+  - date: 
+    event: Book Club
+    shows:
