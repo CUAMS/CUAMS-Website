@@ -32,7 +32,7 @@
   - date: 2020-11-01
     event: Book Club
     shows:
-     - TBD
+     -
   - date: 2020-11-03
     event: Main Meeting
     shows:
@@ -42,8 +42,8 @@
   - date: 2020-11-08
     event: Book Club
     shows:
-     - TBD
-  - date: 2020-11-17
+     -
+  - date: 2020-11-10
     event: Main Meeting
     shows:
      - Given 7
@@ -52,8 +52,8 @@
   - date: 2020-11-15
     event: Book Club
     shows:
-     - TBD
-  - date: 2020-11-24
+     -
+  - date: 2020-11-17
     event: Main Meeting
     shows:
      - Given 8-9
@@ -62,7 +62,7 @@
   - date: 2020-11-22
     event: Book Club
     shows:
-     - TBD
+     -
   - date: 2020-11-24
     event: Main Meeting
     shows:
@@ -72,95 +72,72 @@
   - date: 2020-11-29
     event: Book Club
     shows:
-     - TBD
+     - 
 
 - term: Lent 2021
   events:
-    - name: Main Meeting
-      time: 
+    - name: Friday Game Night
+      time: 7&#8203;pm
       venue: 
-    - name: Book Club
+    - name: None
       time: 
       venue: 
   meetings:
-  - date:
-    event: Main Meeting
+  - date: 2021-01-22
+    event: Friday Game Night
     shows: 
-  - date: 
-    event: Book Club
+  - date: 2021-01-29
+    event: Friday Game Night
     shows:
-  - date:
-    event: Main Meeting
+  - date: 2021-02-05
+    event: Friday Game Night
     shows: 
-  - date: 
-    event: Book Club
+  - date: 2021-02-12
+    event: Friday Game Night
     shows:
-  - date:
-    event: Main Meeting
+  - date: 2021-02-19
+    event: Friday Game Night
     shows: 
-  - date: 
-    event: Book Club
+  - date: 2021-02-26
+    time: 7&#8203;pm
+    event: Friday Game Night (AGM)
     shows:
-  - date:
-    event: Main Meeting
+  - date: 2021-03-05
+    event: Friday Game Night
     shows: 
-  - date: 
-    event: Book Club
-    shows:
-  - date:
-    event: Main Meeting
+  - date: 2021-03-12
+    event: Friday Game Night
     shows: 
-  - date: 
-    event: Book Club
-    shows:
-  - date:
-    event: Main Meeting
-    shows: 
-  - date: 
-    event: Book Club
-    shows:
-  - date:
-    event: Main Meeting
-    shows: 
-  - date: 
-    event: Book Club
-    shows:
-  - date:
-    event: Main Meeting
-    shows: 
-  - date: 
-    event: Book Club
-    shows:
 - term: Easter 2021
   events:
-    - name: Main Meeting
+    - name: TBD
       time: 
       venue: 
-    - name: Book Club
+    - name: TBD
       time: 
       venue: 
   meetings:
   - date:
-    event: Main Meeting
+    event: TBD
     shows: 
   - date: 
-    event: Book Club
+    event: TBD
     shows:
   - date:
-    event: Main Meeting
+    event: TBD
     shows: 
   - date: 
-    event: Book Club
+    event: TBD
     shows:
   - date:
-    event: Main Meeting
+    event: TBD
     shows: 
   - date: 
-    event: Book Club
+    event: TBD
     shows:
   - date:
-    event: Main Meeting
+    event: TBD
     shows: 
   - date: 
-    event: Book Club
+    event: TBD
     shows:

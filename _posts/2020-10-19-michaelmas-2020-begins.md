@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Michaelmas Term 2020 Begins
-date: 2020-10-12 21:00:00 +0100
+date: 2020-10-19 21:00:00 +0100
 ---
 
 A big thank you and welcome to everyone who attended the Freshers' Squash! The committee has never had to coordinate an online meeting like that before, but it worked out well and it was great to see everone chatting together on the server.
