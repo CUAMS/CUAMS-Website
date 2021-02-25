@@ -19,7 +19,7 @@ your CUAMS anime intake.
 Bonus meetings are mostly, if not entirely, independent from the other series
 we're watching, so feel free to come along to any that take your fancy.
 
-<b>Here is the current plan for Lent 2020:</b>
+<b>Here is the current plan for Lent 2021:</b>
 
 For Lent this year, meetings will be held on Fridays via [Discord]({{ site.discord_link }}), starting officialy at 7pm, though often beginning proper at around 8pm. These meetings are simple game nights, we are not watching shows this term. Current popular choices include Sketchful.io, Anime Music Quiz and various online board games - but people are encouraged to suggest any games at the meeting that people might enjoy. We may or may not also discuss anime and related topics at these.
 
