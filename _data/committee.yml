@@ -1,6 +1,33 @@
 - title: Current Committee
   positions:
   - role: President
+    image: alexander_20.jpg
+    holder: Alexander Kent
+    email: ak2147
+    discord: KasrkinSaser
+  - role: Secretary
+    image: eesa_20.jpg
+    holder: Eesa Ali
+    email: ea490
+    discord: 
+  - role: Treasurer
+    image: ethan_20.jpg
+    holder: Ethan Zajdek
+    email: ez272
+    discord: Zaidek
+  - role: Webmaster
+    image: aidan_20.jpg
+    holder: Aidan Brocklebank
+    email: agb67
+    discord: Tipy4
+  - role: Food Lord
+    image: peter_20.jpg
+    holder: Peter Barnett
+    email: pjb217
+    discord: Leptailurus Serval
+- title: Previous Committee
+  positions:
+  - role: President
     image: roger_19.jpg
     holder: Roger Ren
     email: rsr42
@@ -35,33 +62,3 @@
     holder: Adam Berman
     email: agb61
     discord: Coelacanth
-- title: Previous Committee
-  positions:
-  - role: President
-    image: will_revdab_18.jpg
-    holder: Will Barnes
-    email: wjb49
-  - role: Secretary
-    image: roger_18.jpg
-    holder: Roger Ren
-    email: rsr42
-  - role: Treasurer
-    image: guoxuan_18.jpg
-    holder: Guoxuan Xia
-    email: gx218
-  - role: Webmaster
-    image: ben_18.jpg
-    holder: Ben Bai
-    email: byhb2
-  - role: Food Lord
-    image: wenlong_18.jpg
-    holder: Wenlong Zhao
-    email: wz305
-  - role: External Officer
-    image: adam_18.jpg
-    holder: Adam Berman
-    email: agb61
-  - role: Social Secretary
-    image: emma_18.jpg
-    holder: Emma Chang Liu
-    email: cl756
