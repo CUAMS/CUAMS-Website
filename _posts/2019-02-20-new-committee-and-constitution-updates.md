@@ -8,7 +8,7 @@ Thank you to everyone that attended our AGM last week (Tue 12 Feb), where the 20
 Congratulations to our new and returning committee members, and thank you to departing members for their contribution to the society.
 Amendments were also passed to bring the dated [CUAMS Constitution](/assets/documents/constitution.pdf) up to modern, 3D computer-animated standards.
 
-The members of the [2019/2020 CUAMS Committee](/assets/images/posts/committee_2019-2020.jpg) are:
+The members of the [2018/2019 CUAMS Committee](/assets/images/posts/committee_2018-2019.jpg) are:
 
 - President: Will Barnes
 - Secretary: Roger Ren

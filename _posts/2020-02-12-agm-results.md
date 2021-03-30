@@ -7,7 +7,7 @@ The Annual General Meeting occurred on Tuesday, where we elected a new committee
 
 A big thank you as well to the previous committee, including those who are returning for another year, you have all helped to make CUAMS the wonderful society it is today.
 
-Here are the newly elected [CUAMS Committee Members for 2020/2021](/assets/images/posts/committee_2020-2021.jpg):
+Here are the newly elected [CUAMS Committee Members for 2019-2020](/assets/images/posts/committee_2019-2020.jpg):
 
 - President: Roger Ren
 - Secretary: Alexander Kent
