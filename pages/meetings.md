@@ -19,9 +19,9 @@ your CUAMS anime intake.
 Bonus meetings are mostly, if not entirely, independent from the other series
 we're watching, so feel free to come along to any that take your fancy.
 
-<b>Here is the current plan for Michaelmas 2020:</b>
+<b>Here is the current plan for Lent 2021:</b>
 
-For Michaelmas this year, main meetings will be held on Tuesdays via [Discord]({{ site.discord_link }}), from 7pm till 10pm. We will not be watching the shows during the meeting, instead the committee asks that you watch the specified episodes in advance and discuss them during the meeting. There will not be typical Sunday meetings but there are plans to run a manga book club instead, more information will be available closer to term.
+For Lent this year, meetings will be held on Fridays via [Discord]({{ site.discord_link }}), starting officialy at 7pm, though often beginning proper at around 8pm. These meetings are simple game nights, we are not watching shows this term. Current popular choices include Sketchful.io, Anime Music Quiz and various online board games - but people are encouraged to suggest any games at the meeting that people might enjoy. We may or may not also discuss anime and related topics at these.
 
 For details on the times of bonus meetings, and more information for all specific meetings check out the [schedule](/schedule) page. A
-summary of the shows that we will be watching this year can be found below:
+summary of the shows that we have/will be watching this year can be found below:
