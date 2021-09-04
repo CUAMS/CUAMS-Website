@@ -2,6 +2,9 @@
 #
 # Partially automate generation of meeting YAMLs for CUAMS website
 #
+# If you're just looking to generate the updated file, change the contents of
+# the shows array on the line starting "shows =".
+#
 # Resources:
 # https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 # https://realpython.com/python-f-strings/

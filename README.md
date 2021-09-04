@@ -126,18 +126,20 @@ guide for how this should be laid out. Any images used can either be specified
 to links to external image hosts or provided as relative links
 (e.g. /assets/images/anime/Madoka.jpg) and the image placed in the appropriate
 location in the assets folder; the latter method is preferred as it provides
-faster load times and removes reliance on third party sites
+faster load times and removes reliance on third party sites. This can be
+largely generated automatically using the generation script in
+`_scripts/generate_meetings_yml.py`; just change the contents of the shows array.
 * **Updating the schedule** - this can be changed by updating the schedule.yml
 file, again referring to the current contents to see how this should be laid
-out; this information can be largely generated automatically using the schedule
-generation script but may need to be manually tweaked if there are any changes
-to individual meeting times / locations or adjustments to episode distributions
-required
-* **Updating social / email links** - these are controlled by the _config.yml
+out. This information can be largely generated automatically using the schedule
+generation script in `_scripts/schedule.py` but may need to be manually tweaked
+if there are any changes to individual meeting times / locations or adjustments
+to episode distributions required.
+* **Updating social / email links** - these are controlled by the \_config.yml
 file in the root of the project; if you change this file and are running the
 test server, you will need to restart it with CTRL+C and then re-running the
 `jekyll serve` command since changes to this file do **NOT** result in a
-rebuild of the website
+rebuild of the website.
 
 The other file in this directory, `navigation.yml`, controls what appears in
 the top of the website. This supports nested menus if subcategories are ever
