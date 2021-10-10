@@ -7,12 +7,18 @@
       time: 
       venue: 
   meetings:
-  - date: 2021-10-19
+  - date: 2021-10-12
     event: Freshers' Squash
     time: 7&#8203;-&#8203;10&#8203;pm
     venue: Upper Hall 2, Fitzwilliam College
     shows:
     - Promare
+  - date: 2021-10-19
+    event: Main Meeting
+    shows:
+     - Baccano!
+     - Yuri!!! on Ice
+     - Kakushigoto
   - date: 2021-10-26
     event: Main Meeting
     shows:
