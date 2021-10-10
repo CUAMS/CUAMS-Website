@@ -1,143 +1,119 @@
-- term: Michaelmas 2020
+- term: Michaelmas 2021
   events:
     - name: Main Meeting
       time: 7&#8203;-&#8203;10&#8203;pm
-      venue: Discord
-    - name: Book Club
-      time: 2.30&#8203;-&#8203;3.30pm
-      venue: Discord
+      venue: TBC
+    - name: None
+      time: 
+      venue: 
   meetings:
-  - date: 2020-10-13
+  - date: 2021-10-19
     event: Freshers' Squash
     time: 7&#8203;-&#8203;10&#8203;pm
-    venue: Discord
+    venue: Upper Hall 2, Fitzwilliam College
     shows:
-    - Wolf Children
-  - date: 2020-10-20
+    - Promare
+  - date: 2021-10-26
     event: Main Meeting
     shows:
-     - Given 1-2
-     - Keep Your Hands Off Eizouken! 1-2
-     - Land of the Lustrous 1-2
-  - date: 2020-10-25
-    event: Book Club
-    shows:
-     - The Gods Lie
-  - date: 2020-10-27
+     - Baccano!
+     - Yuri!!! on Ice
+     - Kakushigoto
+  - date: 2021-11-02
     event: Main Meeting
     shows:
-     - Given 3-4
-     - Keep Your Hands Off Eizouken! 3-4
-     - Land of the Lustrous 3-4
-  - date: 2020-11-01
-    event: Book Club
-    shows:
-     -
-  - date: 2020-11-03
+     - Baccano!
+     - Yuri!!! on Ice
+     - Kakushigoto
+  - date: 2021-11-09
     event: Main Meeting
     shows:
-     - Given 5-6
-     - Keep Your Hands Off Eizouken! 5-6
-     - Land of the Lustrous 5-6
-  - date: 2020-11-08
-    event: Book Club
-    shows:
-     -
-  - date: 2020-11-10
+     - Baccano!
+     - Yuri!!! on Ice
+     - Kakushigoto
+  - date: 2021-11-16
     event: Main Meeting
     shows:
-     - Given 7
-     - Keep Your Hands Off Eizouken! 7-8
-     - Land of the Lustrous 7-8
-  - date: 2020-11-15
-    event: Book Club
-    shows:
-     -
-  - date: 2020-11-17
+     - Baccano!
+     - Yuri!!! on Ice
+     - Kakushigoto
+  - date: 2021-11-23
     event: Main Meeting
     shows:
-     - Given 8-9
-     - Keep Your Hands Off Eizouken! 9-10
-     - Land of the Lustrous 9-10
-  - date: 2020-11-22
-    event: Book Club
-    shows:
-     -
-  - date: 2020-11-24
+     - Baccano!
+     - Yuri!!! on Ice
+     - Kakushigoto
+  - date: 2021-11-30
     event: Main Meeting
     shows:
-     - Given 10-11
-     - Keep Your Hands Off Eizouken! 11-12
-     - Land of the Lustrous 11-12
-  - date: 2020-11-29
-    event: Book Club
-    shows:
-     - 
+     - Baccano!
+     - Yuri!!! on Ice
+     - Kakushigoto
 
-- term: Lent 2021
+- term: Lent 2022
   events:
-    - name: Friday Game Night
-      time: 7&#8203;pm
+    - name: Main Meeting
+      time: 7&#8203;-&#8203;10&#8203;pm
+      venue: TBC
+    - name: None
+      time: 
+      venue: 
+  meetings:
+  - date: 2022-01-25
+    event: Main Meeting
+    shows: 
+  - date: 2022-02-01
+    event: Main Meeting
+    shows:
+  - date: 2022-02-08
+    event: Main Meeting
+    shows: 
+  - date: 2022-02-15
+    event: Main Meeting
+    shows:
+  - date: 2022-02-22
+    event: Main Meeting
+    shows: 
+  - date: 2022-03-01
+    time:
+    event: Main Meeting
+    shows:
+  - date: 2022-03-08
+    event: Main Meeting
+    shows: 
+  - date: 2022-03-15
+    event: Main Meeting
+    shows: 
+- term: Easter 2022
+  events:
+    - name: Main Meeting
+      time: 
       venue: 
     - name: None
       time: 
       venue: 
   meetings:
-  - date: 2021-01-22
-    event: Friday Game Night
-    shows: 
-  - date: 2021-01-29
-    event: Friday Game Night
-    shows:
-  - date: 2021-02-05
-    event: Friday Game Night
-    shows: 
-  - date: 2021-02-12
-    event: Friday Game Night
-    shows:
-  - date: 2021-02-19
-    event: Friday Game Night
-    shows: 
-  - date: 2021-02-26
-    time: 7&#8203;pm
-    event: Friday Game Night (AGM)
-    shows:
-  - date: 2021-03-05
-    event: Friday Game Night
-    shows: 
-  - date: 2021-03-12
-    event: Friday Game Night
-    shows: 
-- term: Easter 2021
-  events:
-    - name: TBD
-      time: 
-      venue: 
-    - name: TBD
-      time: 
-      venue: 
-  meetings:
   - date:
-    event: TBD
+    event: 
     shows: 
   - date: 
-    event: TBD
+    event: 
     shows:
   - date:
-    event: TBD
+    event: 
     shows: 
   - date: 
-    event: TBD
+    event: 
     shows:
   - date:
-    event: TBD
+    event: 
     shows: 
   - date: 
-    event: TBD
+    event: 
     shows:
   - date:
-    event: TBD
+    event: 
     shows: 
   - date: 
-    event: TBD
+    event: 
     shows:

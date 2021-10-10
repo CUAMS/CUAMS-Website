@@ -1,63 +1,60 @@
 - type: Main
   shows:
-  - title: "Given"
-    image: "/assets/images/anime/Given.jpg"
-    episodes: 11
-    year: 2019
-    studio: "Lerche"
-    schedule: Michaelmas 2020
+  - title: "Baccano!"
+    image: "/assets/images/anime/Baccano.jpg"
+    episodes: 13
+    year: 2007
+    studio: "Brain's Base"
+    schedule: Michaelmas 2021
     info:
     - title: AL
-      link: https://anilist.co/anime/108430/Given/
+      link: https://anilist.co/anime/2251/Baccano/
     - title: MAL
-      link: https://myanimelist.net/anime/39533/Given
+      link: https://myanimelist.net/anime/2251/Baccano
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21958
-  - title: "Keep Your Hands Off Eizouken! (Eizouken ni wa Te wo Dasu na!)"
-    image: "/assets/images/anime/Eizouken.jpg"
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=7492
+  - title: "Yuri!!! on Ice"
+    image: "/assets/images/anime/Yuri_on_Ice.jpg"
+    episodes: 12
+    year: 2016
+    studio: "MAPPA"
+    schedule: Michaelmas 2021
+    info:
+    - title: AL
+      link: https://anilist.co/anime/21709/Yuri-on-ICE/
+    - title: MAL
+      link: https://myanimelist.net/anime/32995/Yuri_on_Ice
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18191
+  - title: "Kakushigoto"
+    image: "/assets/images/anime/Kakushigoto.jpg"
     episodes: 12
     year: 2020
-    studio: "Science SARU"
-    schedule: Michaelmas 2020
+    studio: "Ajia-Do"
+    schedule: Michaelmas 2021
     info:
     - title: AL
-      link: https://anilist.co/anime/109298/Eizouken-ni-wa-Te-wo-Dasu-na/
+      link: https://anilist.co/anime/113311/Kakushigoto/
     - title: MAL
-      link: https://myanimelist.net/anime/39792/Eizouken_ni_wa_Te_wo_Dasu_na?q=eizouken
+      link: https://myanimelist.net/anime/40716/Kakushigoto_TV
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=22561
-  - title: "Land of the Lustrous (Houseki no Kuni)"
-    image: "/assets/images/anime/Houseki_no_Kuni.jpg"
-    episodes: 12
-    year: 2017
-    studio: "Orange"
-    schedule: Michaelmas 2020
-    info:
-    - title: AL
-      link: https://anilist.co/anime/98707/HousekinoKuni
-    - title: MAL
-      link: https://myanimelist.net/anime/35557/Houseki_no_Kuni_TV
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=19614
-- type: Sunday
-  shows:
-  
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=22900
+
 - type: Bonus
   shows:
-  - title: "Wolf Children (Ookami Kodomo no Ame to Yuki)"
-    image: /assets/images/anime/Wolf_Children.jpg
+  - title: "Promare"
+    image: /assets/images/anime/Promare.jpg
     episodes: 1
-    year: 2012
-    studio: Studio Chizu
+    year: 2019
+    studio: Trigger
     schedule: Freshers' Squash
     info:
     - title: AL
-      link: https://anilist.co/anime/12355/Ookami-Kodomo-no-Ame-to-Yuki/
+      link: https://anilist.co/anime/99425/Promare/
     - title: MAL
-      link: https://myanimelist.net/anime/12355/Ookami_Kodomo_no_Ame_to_Yuki
+      link: https://myanimelist.net/anime/35848/Promare
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=13862
-  - title: "A Silent Voice (Koe no Katachi)"
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21767
     image: /assets/images/anime/Silent_Voice.jpg
     episodes: 1
     year: 2016
