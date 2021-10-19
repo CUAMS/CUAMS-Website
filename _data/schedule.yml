@@ -1,7 +1,7 @@
 - term: Michaelmas 2021
   events:
     - name: Main Meeting
-      time: 7&#8203;-&#8203;10&#8203;pm
+      time: 7&#8203;-&#8203;11&#8203;pm
       venue: TBC
     - name: None
       time: 
@@ -15,12 +15,13 @@
     - Promare
   - date: 2021-10-19
     event: Main Meeting
+    venue: Keynes Hall, King's College
     shows:
-     - Baccano!
-     - Yuri!!! on Ice
-     - Kakushigoto
+     - Baccano! Ep.1-3
+     - Yuri!!! on Ice Ep.1-3
   - date: 2021-10-26
     event: Main Meeting
+    venue: Murray Edwards
     shows:
      - Baccano!
      - Yuri!!! on Ice
