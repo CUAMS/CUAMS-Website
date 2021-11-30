@@ -47,14 +47,17 @@
     shows:
      - Baccano! Ep.10-11
      - Yuri!!! on Ice Ep.9-10
-     - Gekkan Shoujo Nozaki-kun Ep.8-?
+     - Gekkan Shoujo Nozaki-kun Ep.8-10
   - date: 2021-11-30
     event: Main Meeting
     shows:
      - Baccano! Ep.12-13
      - Yuri!!! on Ice Ep.11-12
-     - Gekkan Shoujo Nozaki-kun Ep.?-12
-
+     - Gekkan Shoujo Nozaki-kun Ep.11-12
+  - date: 2021-12-02
+    event: Pub Social
+    venue: The Blue Moon, 2 Norfolk Street
+    time: 7&#8203;&#8203;pm
 - term: Lent 2022
   events:
     - name: Main Meeting
