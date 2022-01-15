@@ -65,37 +65,41 @@
 - term: Lent 2022
   events:
     - name: Main Meeting
-      time: 7&#8203;-&#8203;10&#8203;pm
-      venue: TBC
+      time: 7&#8203;-&#8203;11&#8203;pm
+      venue: Keynes Hall, King's College
     - name: None
       time: 
       venue: 
   meetings:
-  - date: 2022-01-25
-    event: Main Meeting
-    shows: 
+  - date: 2022-01-18
+    event: Bonus Meeting
+    time: 7&#8203;-&#8203;11&#8203;pm
+    venue: Keynes Hall, King's College
+    shows: Baccano! OVAs, Additional First Episodes
   - date: 2022-02-01
     event: Main Meeting
-    shows:
+    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
   - date: 2022-02-08
     event: Main Meeting
-    shows: 
-  - date: 2022-02-15
+    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
+    venue: Long Room, Murray Edwards
+  - date: 2022-02-18
     event: Main Meeting
-    shows:
+    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
   - date: 2022-02-22
     event: Main Meeting
-    shows: 
+    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
+    venue: Long Room, Murray Edwards
   - date: 2022-03-01
-    time:
     event: Main Meeting
-    shows:
+    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
   - date: 2022-03-08
-    event: Main Meeting
-    shows: 
+    event: TBC
+    shows:
+    venue:
   - date: 2022-03-15
     event: Main Meeting
-    shows: 
+    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
 - term: Easter 2022
   events:
     - name: Main Meeting

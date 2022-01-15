@@ -1,44 +1,44 @@
 - type: Main
   shows:
-  - title: "Baccano!"
-    image: "/assets/images/anime/Baccano.jpg"
-    episodes: 13
-    year: 2007
-    studio: "Brain's Base"
-    schedule: Michaelmas 2021
+  - title: "Golden Time"
+    image: "/assets/images/anime/Golden_Time.jpg"
+    episodes: 24
+    year: 2013
+    studio: "J.C.Staff"
+    schedule: Lent 2022
     info:
     - title: AL
-      link: https://anilist.co/anime/2251/Baccano/
+      link: https://anilist.co/anime/17895/Golden-Time/
     - title: MAL
-      link: https://myanimelist.net/anime/2251/Baccano
+      link: https://myanimelist.net/anime/17895/Golden_Time
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=7492
-  - title: "Yuri!!! on Ice"
-    image: "/assets/images/anime/Yuri_on_Ice.jpg"
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=15548
+  - title: "Rokka no Yuusha (Rokka: Braves of the Six Flowers)"
+    image: "/assets/images/anime/Rokka_no_Yuusha.jpg"
     episodes: 12
-    year: 2016
-    studio: "MAPPA"
-    schedule: Michaelmas 2021
+    year: 2015
+    studio: "Passione"
+    schedule: Lent 2022
     info:
     - title: AL
-      link: https://anilist.co/anime/21709/Yuri-on-ICE/
+      link: https://anilist.co/anime/20955/Rokka-no-Yuusha/
     - title: MAL
-      link: https://myanimelist.net/anime/32995/Yuri_on_Ice
+      link: https://myanimelist.net/anime/28497/Rokka_no_Yuusha
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18191
-  - title: "Gekkan Shoujo Nozaki-kun (Monthly Girls' Nozaki-kun)"
-    image: "/assets/images/anime/Nozaki-kun.jpg"
-    episodes: 12
-    year: 2014
-    studio: "Doga Kobo"
-    schedule: Michaelmas 2021
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16554
+  - title: "Yojouhan Shinwa Taikei (The Tatami Galaxy)"
+    image: "/assets/images/anime/Tatami-Galaxy.jpg"
+    episodes: 11
+    year: 2010
+    studio: "Madhouse"
+    schedule: Lent 2022
     info:
     - title: AL
-      link: https://anilist.co/anime/20668/Gekkan-Shoujo-Nozakikun/
+      link: https://anilist.co/anime/7785/Yojouhan-Shinwa-Taikei/
     - title: MAL
-      link: https://myanimelist.net/anime/23289/Gekkan_Shoujo_Nozaki-kun
+      link: https://myanimelist.net/anime/7785/Yojouhan_Shinwa_Taikei
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16036
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=11200
 
 - type: Bonus
   shows:
@@ -47,7 +47,7 @@
     episodes: 1
     year: 2019
     studio: Trigger
-    schedule: Freshers' Squash
+    schedule: Freshers' Squash 2021
     info:
     - title: AL
       link: https://anilist.co/anime/99425/Promare/
