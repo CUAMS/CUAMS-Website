@@ -75,31 +75,38 @@
     event: Bonus Meeting
     time: 7&#8203;-&#8203;11&#8203;pm
     venue: Keynes Hall, King's College
-    shows: Baccano! OVAs, Additional First Episodes
+    shows:
+    - WorldEnd Ep.1
+    - Black Bullet Ep.1
+    - Tonari no Kyuuketsuki-san Ep. 1
+    - Yuru Camp Ep. 1
+    - Hitoribocchi no Marumaru Seikatsu Ep. 1
   - date: 2022-02-01
     event: Main Meeting
-    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
+    shows: Rokka no Yusha, Golden Time, Tatami Galaxy
   - date: 2022-02-08
     event: Main Meeting
-    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
+    shows: Rokka no Yusha, Golden Time, Tatami Galaxy
     venue: Long Room, Murray Edwards
   - date: 2022-02-18
-    event: Main Meeting
-    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
+    event: Annual General Meeting (AGM)
+    time: 7&#8203;-&#8203;11&#8203;pm    
+    shows: Rokka no Yusha, Golden Time, Tatami Galaxy
+    venue: Keynes Hall, King's College
   - date: 2022-02-22
     event: Main Meeting
-    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
+    shows: Rokka no Yusha, Golden Time, Tatami Galaxy
     venue: Long Room, Murray Edwards
-  - date: 2022-03-01
+  - date: 2022-03-02
     event: Main Meeting
-    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
+    shows: Rokka no Yusha, Golden Time, Tatami Galaxy
   - date: 2022-03-08
     event: TBC
     shows:
     venue:
   - date: 2022-03-15
     event: Main Meeting
-    shows: Golden Time, Rokka no Yusha, Tatami Galaxy
+    shows: Rokka no Yusha, Golden Time, Tatami Galaxy
 - term: Easter 2022
   events:
     - name: Main Meeting
