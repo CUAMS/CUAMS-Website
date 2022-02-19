@@ -1,6 +1,43 @@
 - title: Current Committee
   positions:
   - role: President
+    image: ethan_21.jpg
+    holder: Ethan Zajdek
+    email: ez272
+    discord: Zaidek
+  - role: Secretary
+    image: default.jpg
+    holder: Marcus September
+    email: maks2
+    discord: Helge
+  - role: Treasurer
+    image: default.jpg
+    holder: Ayshini Senadeera
+    email: aus25
+    discord: Agenie01954
+  - role: Webmaster
+    image: default.jpg
+    holder: Bernard Dec
+    email: bjd54
+    discord: Beniyu
+  - role: Food Lord
+    image: default.jpg
+    holder: Piers Bowater
+    email:  pb792
+    discord: pliers
+  - role: External Officer
+    image: default.jpg
+    holder: Elliot Leupolz
+    email: eml66
+    discord: Nineveh
+  - role: Social Secretary
+    image: default.jpg
+    holder: Haoran Cao
+    email: hc563
+    discord: CHR
+- title: Previous Committee
+  positions:
+  - role: President
     image: alexander_20.jpg
     holder: Alexander Kent
     email: ak2147
@@ -35,40 +72,3 @@
     holder: Ayshini Senadeera
     email: aus25
     discord: Agenie01954
-- title: Previous Committee
-  positions:
-  - role: President
-    image: roger_19.jpg
-    holder: Roger Ren
-    email: rsr42
-    discord: Bubblestep
-  - role: Secretary
-    image: alexander_19.jpg
-    holder: Alexander Kent
-    email: ak2147
-    discord: KasrkinSaser
-  - role: Treasurer
-    image: guoxuan_19.jpg
-    holder: Guoxuan Xia
-    email: gx218
-    discord: Guoxoug
-  - role: Webmaster
-    image: aidan_19.jpg
-    holder: Aidan Brocklebank
-    email: agb67
-    discord: Tipy4
-  - role: Food Lord
-    image: peter_19.jpg
-    holder: Peter Barnett
-    email: pjb217
-    discord: Koishi
-  - role: External Officer
-    image: eugene_19.jpg
-    holder: Eugene Lee
-    email: ytel2
-    discord: Saltmaster 塩師匠
-  - role: Social Secretary
-    image: adam_19.jpg
-    holder: Adam Berman
-    email: agb61
-    discord: Coelacanth
