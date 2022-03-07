@@ -101,11 +101,12 @@
     event: Main Meeting
     shows: Rokka no Yusha Ep.9-10, Golden Time Ep.9-10, Tatami Galaxy Ep.8-9
   - date: 2022-03-08
-    event: TBC
-    shows:
-    venue:
+    event: Pub Social
+    venue: The Maypole
+    time: 7&#8203;&#8203;pm
   - date: 2022-03-15
     event: Main Meeting
+    time: 7:30&#8203;-&#8203;11:30&#8203;pm   
     shows: Rokka no Yusha Ep.11-12, Golden Time Ep.11-12, Tatami Galaxy Ep.10-11
 - term: Easter 2022
   events:
