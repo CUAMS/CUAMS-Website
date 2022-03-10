@@ -10,7 +10,7 @@ Everyone is welcome to attend, however those who did not sign up using the form 
 
 In other news, the society is also planning to do a movie outing towards the end of term to watch the Jujutsu Kaisen 0: Movie together at **8pm** on **Sunday, 20th of March** at **Vue**. Feel free to book a seat if you wish to attend.
 
-Lastly, please be aware that the main meeting next week at **Keynes Hall, King’s College** on **Tuesday, 15th of March** will start at **7:30pm**.
+Lastly, please be aware that the main meeting next week at **Keynes Hall, King’s College** on **Monday, 14th of March** will start at **7:30pm**.
 
 Pub Address:
 20A Portugal Pl, 
