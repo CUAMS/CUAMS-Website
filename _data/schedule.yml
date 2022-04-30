@@ -117,27 +117,16 @@
       time: 
       venue: 
   meetings:
-  - date:
-    event: 
-    shows: 
-  - date: 
-    event: 
-    shows:
-  - date:
-    event: 
-    shows: 
-  - date: 
-    event: 
-    shows:
-  - date:
-    event: 
-    shows: 
-  - date: 
-    event: 
-    shows:
-  - date:
-    event: 
-    shows: 
-  - date: 
-    event: 
-    shows:
+  - date: 2022-05-01
+    event: Pub Quiz
+    venue: King's College
+    time: 7&#8203;-&#8203;10&#8203;pm    
+  - date: 2022-05-07
+    event: Karaoke
+    venue: SU Lounge (3rd Floor, University Centre, Granta Place)
+    time: 5&#8203;-&#8203;8:30&#8203;pm 
+  - date: 2022-05-13
+    event: Movie Screening
+    shows: Night is Short, Walk on Girl
+    venue: King's College
+    time: 7&#8203;-&#8203;10&#8203;pm 
