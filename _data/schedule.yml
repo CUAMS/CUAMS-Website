@@ -1,132 +1,36 @@
-- term: Michaelmas 2021
+- term: Michaelmas 2022
   events:
-    - name: Main Meeting
-      time: 7&#8203;-&#8203;11&#8203;pm
-      venue: Keynes Hall, King's College
     - name: None
       time: 
       venue: 
   meetings:
-  - date: 2021-10-12
+  - date: 2022-10-09
     event: Freshers' Squash
-    time: 7&#8203;-&#8203;10&#8203;pm
-    venue: Upper Hall 2, Fitzwilliam College
-    shows:
-    - Promare
-  - date: 2021-10-19
-    event: Main Meeting
-    shows:
-     - Baccano! Ep.1-3
-     - Yuri!!! on Ice Ep.1-3
-  - date: 2021-10-26
-    event: Main Meeting
-    venue: Long Room, Murray Edwards
-    shows:
-     - Baccano! Ep.4-5
-     - Yuri!!! on Ice Ep.4
-     - Gekkan Shoujo Nozaki-kun Ep.1-3
-  - date: 2021-11-02
-    event: Main Meeting
-    shows:
-     - Baccano! Ep.6-7
-     - Yuri!!! on Ice Ep.5-6
-     - Gekkan Shoujo Nozaki-kun Ep.4-5
-  - date: 2021-11-09
-    event: Main Meeting
-    venue: Long Room, Murray Edwards
-    shows:
-     - Baccano! Ep.8-9
-     - Yuri!!! on Ice Ep.7-8
-     - Gekkan Shoujo Nozaki-kun Ep.6-7
-  - date: 2021-11-18
-    event: Pub Social
-    venue: The Castle Inn, 38 Castle Street
-    time: 7&#8203;&#8203;pm
-  - date: 2021-11-23
-    event: Main Meeting
-    shows:
-     - Baccano! Ep.10-11
-     - Yuri!!! on Ice Ep.9-10
-     - Gekkan Shoujo Nozaki-kun Ep.8-10
-  - date: 2021-11-30
-    event: Main Meeting
-    shows:
-     - Baccano! Ep.12-13
-     - Yuri!!! on Ice Ep.11-12
-     - Gekkan Shoujo Nozaki-kun Ep.11-12
-  - date: 2021-12-02
-    event: Bowling Trip
-    venue: Tenpin Bowling Alley, Cambridge Leisure Park
-    time: 3&#8203;&#8203;pm
-  - date: 2021-12-02
-    event: Pub Social
-    venue: The Blue Moon, 2 Norfolk Street
-    time: 7&#8203;&#8203;pm
-- term: Lent 2022
-  events:
-    - name: Main Meeting
-      time: 7&#8203;-&#8203;11&#8203;pm
-      venue: Keynes Hall, King's College
-    - name: None
-      time: 
-      venue: 
-  meetings:
-  - date: 2022-01-18
-    event: Bonus Meeting
-    time: 7&#8203;-&#8203;11&#8203;pm
+    time: 6:00pm (for movie) 7:30pm (officially)
     venue: Keynes Hall, King's College
-    shows:
-    - WorldEnd Ep.1
-    - Black Bullet Ep.1
-    - Tonari no Kyuuketsuki-san Ep. 1
-    - Yuru Camp Ep. 1
-    - Hitoribocchi no Marumaru Seikatsu Ep. 1
-  - date: 2022-02-01
-    event: Main Meeting
-    shows: Rokka no Yusha Ep.1-2, Golden Time Ep.1-2, Tatami Galaxy Ep.1-2
-  - date: 2022-02-08
-    event: Main Meeting
-    shows: Rokka no Yusha Ep.3-4, Golden Time Ep.3-4, Tatami Galaxy Ep.3-4
-    venue: Long Room, Murray Edwards
-  - date: 2022-02-18
-    event: Annual General Meeting (AGM)
-    time: 7&#8203;-&#8203;11&#8203;pm    
-    shows: Rokka no Yusha Ep.5-6, Golden Time Ep.5-6, Tatami Galaxy Ep.5
+    shows: 
+    - 5 Centimeters Per Second
+  - date: 2022-10-16
+    event: Karaoke + Pub Meet
+    time: 3:00pm-7:00pm (karaoke)
+    venue: SU (Mill Ln), Pub TBD
+  - date: 2022-10-20
+    event: Art Event
+    time: TBD
+    venue: Murray Edwards
+  - date: 2022-10-25
+    event: Anime Screening (voted)
+    time: TBD
     venue: Keynes Hall, King's College
-  - date: 2022-02-22
-    event: Main Meeting
-    shows: Rokka no Yusha Ep.7-8, Golden Time Ep.7-8, Tatami Galaxy Ep.6-7
-    venue: Long Room, Murray Edwards
-  - date: 2022-03-02
-    event: Main Meeting
-    shows: Rokka no Yusha Ep.9-10, Golden Time Ep.9-10, Tatami Galaxy Ep.8-9
-  - date: 2022-03-08
-    event: Pub Social
-    venue: The Maypole
-    time: 7&#8203;&#8203;pm
-  - date: 2022-03-14
-    event: Main Meeting
-    time: 7:30&#8203;-&#8203;11:30&#8203;pm   
-    shows: Rokka no Yusha Ep.11-12, Golden Time Ep.11-12, Tatami Galaxy Ep.10-11
-- term: Easter 2022
-  events:
-    - name: Main Meeting
-      time: 
-      venue: 
-    - name: None
-      time: 
-      venue: 
-  meetings:
-  - date: 2022-05-01
-    event: Pub Quiz
-    venue: King's College
-    time: 7&#8203;-&#8203;10&#8203;pm    
-  - date: 2022-05-07
-    event: Karaoke
-    venue: SU Lounge (3rd Floor, University Centre, Granta Place)
-    time: 5&#8203;-&#8203;8:30&#8203;pm 
-  - date: 2022-05-13
+  - date: 2022-10-29
+    event: MCM London Meetup
+    time: All-day
+    venue: ExCeL London
+  - date: 2022-11-08
     event: Movie Screening
-    shows: Night is Short, Walk on Girl
-    venue: King's College
-    time: 7&#8203;-&#8203;10&#8203;pm 
+    time: TBD
+    venue: Murray Edwards
+  - date: 2022-11-11
+    event: Members' Formal
+    time: 7:30pm
+    venue: Churchill College
