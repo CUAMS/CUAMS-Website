@@ -1,57 +1,15 @@
 - type: Main
   shows:
-  - title: "Golden Time"
-    image: "/assets/images/anime/Golden_Time.jpg"
-    episodes: 24
-    year: 2013
-    studio: "J.C.Staff"
-    schedule: Lent 2022
+  - title: "Byousoku 5 Centimeter (5 Centimeters Per Second)"
+    image: "/assets/images/anime/5_Centimeters_Per_Second.jpg"
+    episodes: 3
+    year: 2007
+    studio: "CoMix Wave Films"
+    schedule: Freshers' Squash 2022
     info:
     - title: AL
-      link: https://anilist.co/anime/17895/Golden-Time/
+      link: https://anilist.co/anime/1689/Byousoku-5-Centimeter
     - title: MAL
-      link: https://myanimelist.net/anime/17895/Golden_Time
+      link: https://myanimelist.net/anime/1689/Byousoku_5_Centimeter
     - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=15548
-  - title: "Rokka no Yuusha (Rokka: Braves of the Six Flowers)"
-    image: "/assets/images/anime/Rokka_no_Yuusha.jpg"
-    episodes: 12
-    year: 2015
-    studio: "Passione"
-    schedule: Lent 2022
-    info:
-    - title: AL
-      link: https://anilist.co/anime/20955/Rokka-no-Yuusha/
-    - title: MAL
-      link: https://myanimelist.net/anime/28497/Rokka_no_Yuusha
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=16554
-  - title: "Yojouhan Shinwa Taikei (The Tatami Galaxy)"
-    image: "/assets/images/anime/Tatami-Galaxy.jpg"
-    episodes: 11
-    year: 2010
-    studio: "Madhouse"
-    schedule: Lent 2022
-    info:
-    - title: AL
-      link: https://anilist.co/anime/7785/Yojouhan-Shinwa-Taikei/
-    - title: MAL
-      link: https://myanimelist.net/anime/7785/Yojouhan_Shinwa_Taikei
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=11200
-
-- type: Bonus
-  shows:
-  - title: "Promare"
-    image: /assets/images/anime/Promare.jpg
-    episodes: 1
-    year: 2019
-    studio: Trigger
-    schedule: Freshers' Squash 2021
-    info:
-    - title: AL
-      link: https://anilist.co/anime/99425/Promare/
-    - title: MAL
-      link: https://myanimelist.net/anime/35848/Promare
-    - title: ANN
-      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21767
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=6696
