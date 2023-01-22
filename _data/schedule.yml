@@ -30,6 +30,8 @@
     event: Movie Screening
     time: 7:00pm-11:00pm
     venue: Murray Edwards
+    shows: 
+    - Millenium Actress
   - date: 2022-11-11
     event: Members' Formal
     time: 7:30pm
@@ -47,7 +49,7 @@
     time: 7:00pm-11:00pm
     venue: Keynes Hall, King's College
     shows: 
-    - Dragon Dentist
+    - The Dragon Dentist
   - date: 2022-12-03
     event: Cosplay Optional Karaoke
     time: 4:00pm-8:00pm 

@@ -1,4 +1,4 @@
-- type: Main
+- type: Movie
   shows:
   - title: "Byousoku 5 Centimeter (5 Centimeters Per Second)"
     image: "/assets/images/anime/5_Centimeters_Per_Second.jpg"
@@ -13,3 +13,228 @@
       link: https://myanimelist.net/anime/1689/Byousoku_5_Centimeter
     - title: ANN
       link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=6696
+  - title: "Millennium Actress"
+    image: "/assets/images/anime/millenium_actress.jpg"
+    episodes: 1
+    year: 2002
+    studio: "Madhouse"
+    schedule: Movie Screening (8/11/2022)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/1033/Sennen-Joyuu#:~:text=Millenium%20Actress%20blurs%20the%20lines,height%20of%20her%20brilliant%20career.
+    - title: MAL
+      link: https://myanimelist.net/anime/1033/Sennen_Joyuu
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=374
+  - title: "The Dragon Dentist"
+    image: "/assets/images/anime/dragon_dentist.jpg"
+    episodes: 2
+    year: 2017
+    studio: "Khara"
+    schedule: Movie Screening (2/12/2022)
+    info:
+    - title: AL
+      link: https://anilist.co/manga/107776/Ryuu-no-Haisha
+    - title: MAL
+      link: https://drive.google.com/drive/folders/1pe3ELK39WIcpNQmjSUrcrOKdO9jKte4I
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18712
+- type: Voted
+  shows:
+  - title: "Chainsaw Man"
+    image: "/assets/images/anime/chainsaw_man.jpg"
+    episodes: 12
+    year: 2022
+    studio: "MAPPA"
+    schedule: Michaelmas 2022 Anime Screening (voted)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/127230/Chainsaw-Man
+    - title: MAL
+      link: https://myanimelist.net/anime/44511/Chainsaw_Man
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=23843
+  - title: "Hyouka"
+    image: "/assets/images/anime/hyouka.jpg"
+    episodes: 22
+    year: 2012
+    studio: "Kyoto Animation"
+    schedule: Michaelmas 2022 Anime Screening (voted)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/12189/Hyouka
+    - title: MAL
+      link: https://myanimelist.net/anime/12189/Hyouka
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=13817
+  - title: "Cells at Work!"
+    image: "/assets/images/anime/cells_at_work.jpg"
+    episodes: 13
+    year: 2018
+    studio: "David Production"
+    schedule: Michaelmas 2022 Anime Screening (voted)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/100977/Hataraku-Saibou
+    - title: MAL
+      link: https://myanimelist.net/anime/37141/Hataraku_Saibou
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=20564
+  - title: "Love Live! Nijigasaki High School Idol Club"
+    image: "/assets/images/anime/love_live_niji.jpg"
+    episodes: 13
+    year: 2020
+    studio: "Sunrise"
+    schedule: Michaelmas 2022 Anime Screening (voted)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/113970/Love-Live-Nijigasaki-Gakuen-School-Idol-Doukoukai
+    - title: MAL
+      link: https://myanimelist.net/anime/40879/Love_Live_Nijigasaki_Gakuen_School_Idol_Doukoukai
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=22934
+  - title: "Bungou Stray Dogs"
+    image: "/assets/images/anime/bungou_stray_dogs.jpg"
+    episodes: 12
+    year: 2016
+    studio: "Bones"
+    schedule: Michaelmas 2022 Anime Screening (voted)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/21311/Bungou-Stray-Dogs
+    - title: MAL
+      link: 
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=17693
+  - title: "Noragami"
+    image: "/assets/images/anime/noragami.jpg"
+    episodes: 12
+    year: 2014
+    studio: "Bones"
+    schedule: Lent 2023 Anime Screening (voted)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/20447/Noragami
+    - title: MAL
+      link: https://myanimelist.net/anime/20507/Noragami
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=15585
+  - title: "The Misfit of Demon King Academy: History's Strongest Demon King Reincarnates and Goes to School with His Descendants"
+    image: "/assets/images/anime/Misfit_of_Demon_King_Academy.jpg"
+    episodes: 13
+    year: 2020
+    studio: "SILVER LINK."
+    schedule: Lent 2023 Anime Screening (voted)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/112301/Maou-Gakuin-no-Futekigousha-Shijou-Saikyou-no-Maou-no-Shiso-Tensei-shite-Shisontachi-no-Gakkou-e-Kayou
+    - title: MAL
+      link: https://myanimelist.net/anime/40496/Maou_Gakuin_no_Futekigousha__Shijou_Saikyou_no_Maou_no_Shiso_Tensei_shite_Shison-tachi_no_Gakkou_e_Kayou
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=22555
+  - title: "NieR:Automata Ver1.1a"
+    image: "/assets/images/anime/nier_automata.jpg"
+    episodes: Unknown
+    year: 2023
+    studio: "A-1 Pictures"
+    schedule: Lent 2023 Anime Screening (voted)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/145665/NieRAutomata-Ver11a
+    - title: MAL
+      link: https://myanimelist.net/anime/51105/NieR_Automata_Ver11a
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=25372
+  - title: "Kemono Friends"
+    image: "/assets/images/anime/kemono_friends.jpg"
+    episodes: 12
+    year: 2017
+    studio: "Yaoyorozu"
+    schedule: Lent 2023 Anime Screening (voted)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/87496/Kemono-Friends
+    - title: MAL
+      link: https://myanimelist.net/anime/33089/Kemono_Friends
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18799
+  - title: "Yuru Yuri"
+    image: "/assets/images/anime/yuru_yuri.jpg"
+    episodes: 12
+    year: 2011
+    studio: "Doga Kobo"
+    schedule: Lent 2023 Anime Screening (voted)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/10495/Yuru-Yuri
+    - title: MAL
+      link: https://myanimelist.net/anime/10495/Yuru_Yuri
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=12828
+- type: Music
+  shows:   
+  - title: "Bocchi the Rock!"
+    image: "/assets/images/anime/bocchi.jpg"
+    episodes: 12
+    year: 2022
+    studio: "CloverWorks"
+    schedule: Michaelmas 2022 Anime Screening (themed)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/130003/Bocchi-the-Rock=
+    - title: MAL
+      link: https://myanimelist.net/anime/47917/Bocchi_the_Rock
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=24062
+  - title: "Your Lie in April"
+    image: "/assets/images/anime/your_lie_in_april.jpg"
+    episodes: 22
+    year: 2014
+    studio: "A-1 Pictures"
+    schedule: Michaelmas 2022 Anime Screening (themed)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/20665/Shigatsu-wa-Kimi-no-Uso
+    - title: MAL
+      link: https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso
+    - title: ANN
+      link: http://www.animenewsnetwork.co.uk/encyclopedia/anime.php?id=16108
+  - title: "Hibike! Euphonium"
+    image: "/assets/images/anime/hibike_euphonium.jpg"
+    episodes: 13
+    year: 2015
+    studio: "Kyoto Animation"
+    schedule: Michaelmas 2022 Anime Screening (themed)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/20912/Hibike-Euphonium
+    - title: MAL
+      link: https://myanimelist.net/anime/27989/Hibike_Euphonium
+    - title: ANN
+      link: http://www.animenewsnetwork.co.uk/encyclopedia/anime.php?id=16657
+  - title: "Zombieland Saga"
+    image: "/assets/images/anime/zombie_land_saga.jpg"
+    episodes: 12
+    year: 2018
+    studio: "MAPPA"
+    schedule: Michaelmas 2022 Anime Screening (themed)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/103871/Zombie-Land-Saga
+    - title: MAL
+      link: https://myanimelist.net/anime/37976/Zombieland_Saga
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21363
+  - title: "Kono Oto Tomare!"
+    image: "/assets/images/anime/kono_oto_tomare.jpg"
+    episodes: 13
+    year: 2019
+    studio: "Platinum Vision"
+    schedule: Michaelmas 2022 Anime Screening (themed)
+    info:
+    - title: AL
+      link: https://anilist.co/anime/103302/Kono-Oto-Tomare
+    - title: MAL
+      link: https://myanimelist.net/anime/38080/Kono_Oto_Tomare
+    - title: ANN
+      link: https://www.animenewsnetwork.com/encyclopedia/anime.php?id=21237
