@@ -28,9 +28,57 @@
     venue: ExCeL London
   - date: 2022-11-08
     event: Movie Screening
-    time: TBD
+    time: 7:00pm-11:00pm
     venue: Murray Edwards
   - date: 2022-11-11
     event: Members' Formal
     time: 7:30pm
     venue: Churchill College
+  - date: 2022-11-14
+    event: Anime Screening (music themed)
+    time: 7:00pm-11:00pm
+    venue: Keynes Hall, King's College
+  - date: 2022-11-19
+    event: Bouldering + Pub Meet
+    time: 3:00pm (bouldering) 7:00pm (pub)
+    venue: Rainbow Rocket + Tram Depot
+  - date: 2022-12-02
+    event: Movie Screening
+    time: 7:00pm-11:00pm
+    venue: Keynes Hall, King's College
+    shows: 
+    - Dragon Dentist
+  - date: 2022-12-03
+    event: Cosplay Optional Karaoke
+    time: 4:00pm-8:00pm 
+    venue: SU (Mill Ln)
+- term: Lent 2023
+  events:
+    - name: None
+      time: 
+      venue: 
+  meetings:
+  - date: 2023-01-21
+    event: Anime Screening (voted)
+    time: 7:00pm-11:00pm
+    venue: Keynes Hall, King's College
+  - date: 2023-01-28
+    event: Karaoke + Pub Meet
+    time: 4:00pm-8:00pm (karaoke)
+    venue: SU (Mill Ln) + Pub TBD
+  - date: 2023-02-02
+    event: Art Night
+    time: 7:00pm-10:00pm
+    venue: Murray Edwards
+  - date: 2023-02-20
+    event: AGM + Movie Screening
+    time: 7:00pm-11:00pm
+    venue: Keynes Hall, King's College
+  - date: 2023-02-24
+    event: Pub Meet
+    time: TBD
+    venue: TBD
+  - date: 2023-02-27
+    event: Anime Screening (themed)
+    time: 7:00pm-10:00pm
+    venue: Murray Edwards
